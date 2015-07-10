@@ -593,12 +593,13 @@ body .ui-tooltip {
 }
 .portfolio .story figure {
   display: block;
+  width: 1157px;
   margin: 55px auto 45px;
 }
 .portfolio .story figure figcaption {
   font-style: italic;
   font-size: 11.5px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .portfolio .story figure.inline {
   text-align: center;
