@@ -222,7 +222,7 @@ header {
 			a, a:visited {
 				display: block;
 				.tiny-label;
-				margin: 50px auto 0;
+				margin: 60px auto 0;
 				border: 2px solid #5c5c5c;
 				text-align: center;
 				padding: 11px 0 12px;
@@ -445,7 +445,7 @@ body .ui-tooltip {
 /*Misc*/
 
 .portfolio {
-	background: #efefef;
+	background: #fff;
 	.project {
 		border-bottom: 1px solid #666;
 		padding:5% 0 7.5%;
@@ -456,7 +456,7 @@ body .ui-tooltip {
 	}
 	h4 {
 		.tiny-label;
-		color:#767676;
+		color:@text-color-lt;
 		}
 	aside {
 		position: absolute;
@@ -472,6 +472,9 @@ body .ui-tooltip {
 		p,h2,h3,h4 {
 			margin-left:440px;
 			margin-right:270px;
+		}
+		p {
+			font-size: 17px;
 		}
 		h2 {
 			font-size: 2.35em;
@@ -491,8 +494,8 @@ body .ui-tooltip {
 			width:1157px;
 			margin:55px auto 45px;
 			figcaption {
-				font-style: italic;
-				font-size: 11.5px;
+				color:@text-color-lt;
+				font-size: 12px;
 				margin-top: 10px;
 			}
 			&.inline {
