@@ -178,12 +178,8 @@ button {
 }
 a,
 a:visited {
-  color: #e0703f;
+  color: #568aa1;
   text-decoration: none;
-}
-a:hover,
-a:active {
-  color: #eeb197;
 }
 a:hover,
 :focus,
@@ -314,14 +310,14 @@ header h1 sup {
 header a,
 header a:visited {
   color: #568aa1;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 98%, transparent 98%);
+  border-bottom: 1px solid transparent;
 }
 header a:hover,
 header a:visited:hover,
 header a:active,
 header a:visited:active {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 98%, #568aa1 98%);
   color: #fff;
+  border-color: #999;
 }
 header .expand {
   cursor: pointer;
@@ -544,8 +540,15 @@ body .ui-tooltip {
 .portfolio {
   background: #fff;
 }
+.portfolio a {
+  border-bottom: 1px solid #bababa;
+}
+.portfolio a:hover {
+  color: #446e80;
+  border-color: #999;
+}
 .portfolio .project {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #c8c8c8;
   padding: 5% 0 7.5%;
   overflow: hidden;
 }
@@ -570,6 +573,7 @@ body .ui-tooltip {
   margin: 2px 0 15px;
   font-size: 14px;
   font-weight: 600;
+  line-height: 1.4em;
 }
 .portfolio .story p,
 .portfolio .story h2,
@@ -582,7 +586,7 @@ body .ui-tooltip {
   font-size: 17px;
 }
 .portfolio .story h2 {
-  font-size: 2.35em;
+  font-size: 2.2em;
   font-weight: 500;
   margin-top: -7px;
 }
@@ -598,6 +602,14 @@ body .ui-tooltip {
   display: block;
   width: 1157px;
   margin: 55px auto 45px;
+}
+.portfolio .story figure .screen {
+  display: block;
+}
+.portfolio .story figure .iphone {
+  position: relative;
+  z-index: 1;
+  margin: -889px 0 0 0;
 }
 .portfolio .story figure figcaption {
   color: #767676;
