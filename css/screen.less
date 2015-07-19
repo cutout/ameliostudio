@@ -150,14 +150,32 @@ h1, h2, h3, h4, h5 {
 		}
 }
 
-  
+a.btn {
+	display: block;
+	.tiny-label;
+	margin: 0 auto;
+	border: 2px solid #5c5c5c;
+	text-align: center;
+	padding: 13px 0;
+	width: 260px;
+	.rounded(2px);
+	color:inherit;
+	&:hover, &:active {
+		color:#fff;
+		border-color:#b2b2b2;
+		background-image:none;
+	}
+}  
 header {
 	padding:12% 0 10%;
 	color:@reversed;
 	font-weight: 100;
 	background:@bg-dark;
-	.avatar {
-		float:left;
+	@media screen and (max-width: @break-mobile) {
+		padding:30px 0;
+	}
+	.btn {
+		margin-top:60px;
 	}
 	sup a:hover, sup a:active {
 		border:none;
@@ -169,6 +187,12 @@ header {
 		font-weight: 300;
 		letter-spacing: .01em;
 		font-weight: 100;
+		@media screen and (max-width: @break-mobile) {
+			position:static;
+			display: block;
+			text-align: center;
+			margin-bottom: 30px;
+		}
 	}
 	h1 {
 		font-size: 46px;
@@ -199,30 +223,13 @@ header {
 	.expand {
 		cursor: pointer;
 	}
-	.more-wrap {
-			a, a:visited {
-				display: block;
-				.tiny-label;
-				margin: 60px auto 0;
-				border: 2px solid #5c5c5c;
-				text-align: center;
-				padding: 11px 0 12px;
-				width: 260px;
-				.rounded(2px);
-				color:inherit;
-				&:hover, &:active {
-					color:#fff;
-					border-color:#b2b2b2;
-					background-image:none;
-				}
-			}
+	
+	.more {
+		padding-bottom: 20px;
+		&.row {
+			max-width:@content-width-wide;
 		}
-		.more {
-			padding-bottom: 20px;
-			&.row {
-				max-width:@content-width-wide;
-			}
-		}
+	}
 	.intro {
 		p {
 			color:#bebebe;
@@ -274,13 +281,22 @@ header {
 		}
 }
 
-.cd-container {
+header .cd-container {
+	p {
+		font-weight: 400;
+	}
+	strong {
+		color:#fff;
+	}
 	.cd-timeline-img {
 		background: @bg-dark;
 	}
 	.learned li {
 		list-style: square;
 		margin-left: 22px;
+		p {
+			font-size: 15.5px
+		}
 	}
 	.during {
 		margin-top:22px;
@@ -311,7 +327,6 @@ header {
 .ui-tooltip {
 	position: absolute;
 	z-index: 9999;
-	width: 400px;
 	box-shadow: none;
 	-webkit-box-shadow: 0 0 0;
 	box-shadow: 0 0 0;
@@ -320,21 +335,20 @@ header {
 	border-radius: 0;
 	background: rgba(245,245,245,.92);
 	font-size:12px;
-	max-width:420px;
+	text-align: center;
 }
 
-.ui-tooltip .fa {
-	position:absolute;
-	right:10px;
-	top:10px;
-	color:#666
+.ui-tooltip p {
+	font-size: 13px;
+	text-align: left;
+	margin:0;
 }
 
 .ui-tooltip .cover {
-	width:100px;
-	height:100px;
-	float:left;
-	margin:0 16px 0 0
+	width:200px;
+	height:200px;
+	margin:0 auto 6px;
+	display: block;
 }
 
 .ui-tooltip h4 {
@@ -342,13 +356,13 @@ header {
 	font-size: 14px;
 }
 
-.ui-tooltip p {
-	margin-top:0;
-	line-height: 1.45em;
-}
-
-.ui-tooltip p:nth-last-of-type {
-	margin-bottom: 0;
+.ui-tooltip p.date {
+	margin:-3px 0 5px;
+	.tiny-label;
+	font-size: 10.5px;
+	color:@text-color-lt;
+	font-weight: 500 !important;
+	text-align: center;
 }
 
 body .ui-tooltip {
@@ -417,7 +431,7 @@ body .ui-tooltip {
 			border:none;
 			.project-icon {
 				margin-top:45px;
-				margin-bottom: 35px;
+				margin-bottom: 15px;
 			}
 		}
 	}
@@ -522,7 +536,7 @@ body .ui-tooltip {
 			figcaption {
 				color:@text-color-lt;
 				font-size: 12px;
-				margin-top: 10px;
+				margin-top: 15px;
 				@media screen and (max-width: 1157px) {
 					text-align: center;
 				}
@@ -531,7 +545,7 @@ body .ui-tooltip {
 				text-align: center;
 				img {
 					display: inline;
-					margin:0 10px;
+					margin:0 10px 12px;
 				}
 			}
 		}
@@ -560,39 +574,15 @@ body .ui-tooltip {
 
 
 footer {
-	margin-top: 30px;
 	color: #a0a0a0;
-	padding: 40px 15px;
+	padding: 70px 15px 100px;
 	background: @bg-dark;
 	overflow: hidden;
-
-	a, a:visited {
-		border:none;
-		}
-
-	a:hover, a:active {
-		color:#FFF;
-		}
-
-	.left, .right {
-		width:50%
-		}
-
-	.right {
-		text-align: right
-		}
-	
-	#icon-rss {
-		vertical-align: middle;
-		margin-right:5px;
-		}
-	
-	.widget {
-		width: 23%;
-		float: left;
-		margin: 15px 11px 30px;
-		}			
+	text-align: center;
+	.btn {
+		margin-top:20px;
 	}
+}
 	
 	
 	
