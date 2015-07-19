@@ -117,20 +117,6 @@ td {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-q {
-  quotes: "“" "”" "‘" "’";
-}
-q:before,
-q:after {
-  font-family: Georgia, 'Times New Roman';
-  opacity: .5;
-}
-q:before {
-  content: open-quote;
-}
-q:after {
-  content: close-quote;
-}
 sup,
 sub {
   vertical-align: baseline;
@@ -153,21 +139,17 @@ video,
 object {
   display: block;
 }
-body,
-html {
-  min-height: 101%;
-  /*Firefox scrollbar fix*/
-
-  height: 100%;
-  /*Sticky footer*/
-
-}
 body {
   color: #151515;
   min-width: 740px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background: #efefef;
+}
+@media screen and (max-width: 740px) {
+  body {
+    min-width: 0;
+    max-width: 740px;
+  }
 }
 body,
 input,
@@ -234,18 +216,16 @@ h5 {
     background-position: 0 0;
   }
 }
-.container {
-  min-height: 100%;
-  height: auto !important;
-  /*Sticky footer*/
-
-  height: 100%;
-  margin: 0 auto -55px;
-}
 .row {
   max-width: 740px;
   clear: both;
   margin: 0 auto;
+}
+@media screen and (max-width: 1280px) {
+  .row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .row .col-content {
   width: 65.4%;
@@ -273,9 +253,10 @@ h5 {
   min-height: 1px;
 }
 header {
-  padding: 12% 0 7%;
+  padding: 12% 0 10%;
   color: #dde1e5;
   font-weight: 100;
+  background: #222222;
 }
 header .avatar {
   float: left;
@@ -296,11 +277,18 @@ header h1 {
   font-size: 46px;
   line-height: 1.14;
   letter-spacing: -0.03em;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   font-weight: 300;
 }
-header h1 .map-trigger .town {
-  display: none;
+@media screen and (max-width: 1157px) {
+  header h1 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
 }
 header h1 sup {
   top: -1em;
@@ -358,21 +346,6 @@ header .more.row {
 header .intro p {
   color: #bebebe;
 }
-header .intro figure {
-  float: right;
-  margin-left: -100px;
-  margin: 40px 0 40px 40px;
-}
-header .intro figure img {
-  display: block;
-  margin-bottom: 15px;
-}
-header .intro figure figcaption {
-  font-style: italic;
-  text-align: center;
-  display: block;
-  font-size: .85em;
-}
 header .intro h3 {
   margin-top: 40px;
   margin-bottom: -7px;
@@ -388,9 +361,12 @@ header p {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   line-height: 1.35;
-  text-indent: 1.55em;
-  margin-bottom: -15px;
   font-weight: 300;
+}
+@media screen and (max-width: 600px) {
+  header p {
+    font-size: 17px;
+  }
 }
 header p sup a {
   border: none;
@@ -428,6 +404,13 @@ header .row {
 .cd-container .cd-timeline-img {
   background: #222222;
 }
+.cd-container .learned li {
+  list-style: square;
+  margin-left: 22px;
+}
+.cd-container .during {
+  margin-top: 22px;
+}
 .cd-container .cd-timeline-content {
   background: #2d2d2d;
 }
@@ -436,36 +419,6 @@ header .row {
 }
 .cd-container:before {
   background: #2d2d2d;
-}
-.darkSwitch header,
-header {
-  background: #222222;
-}
-.lightSwitch header {
-  background: #e2e2e2;
-}
-.lightSwitch header h1 {
-  color: #111;
-}
-.lightSwitch header .intro p {
-  color: #181818;
-}
-.lightSwitch header .intro h3 {
-  color: #252525;
-}
-.lightSwitch header hr {
-  color: #000;
-  background: #000;
-  opacity: 0.65;
-}
-.lightSwitch header a,
-.lightSwitch header a:visited {
-  color: #118ec5;
-}
-.lightSwitch header a:hover,
-.lightSwitch header a:active {
-  color: #118EC5;
-  border-color: #369fcd;
 }
 .left {
   float: left;
@@ -547,13 +500,46 @@ body .ui-tooltip {
   color: #446e80;
   border-color: #999;
 }
+.portfolio .project-icon {
+  display: block;
+  margin: 0 auto;
+}
 .portfolio .project {
   border-bottom: 1px solid #c8c8c8;
   padding: 5% 0 7.5%;
   overflow: hidden;
 }
+.portfolio .project.first .project-icon {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.portfolio .project.second .project-icon {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.portfolio .project.third {
+  border: none;
+}
+.portfolio .project.third .project-icon {
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+.portfolio video {
+  position: absolute;
+}
+.portfolio video.vid-festival {
+  margin: 319px 0 0 389px;
+}
+.portfolio video.pov-dj {
+  margin: 78px 0 0 605px;
+}
 .portfolio .row {
   max-width: 1280px;
+}
+@media screen and (max-width: 740px) {
+  .portfolio .row {
+    max-width: auto;
+  }
 }
 .portfolio h4 {
   font-size: 12px;
@@ -569,6 +555,17 @@ body .ui-tooltip {
   width: 150px;
   margin-left: 270px;
 }
+@media screen and (max-width: 1157px) {
+  .portfolio aside {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .portfolio aside {
+    position: static;
+    margin-bottom: 32px;
+  }
+}
 .portfolio aside p {
   margin: 2px 0 15px;
   font-size: 14px;
@@ -582,6 +579,23 @@ body .ui-tooltip {
   margin-left: 440px;
   margin-right: 270px;
 }
+@media screen and (max-width: 1157px) {
+  .portfolio .story p,
+  .portfolio .story h2,
+  .portfolio .story h3,
+  .portfolio .story h4 {
+    margin-right: 0;
+    margin-left: 180px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .portfolio .story p,
+  .portfolio .story h2,
+  .portfolio .story h3,
+  .portfolio .story h4 {
+    margin-left: 0;
+  }
+}
 .portfolio .story p {
   font-size: 17px;
 }
@@ -590,6 +604,12 @@ body .ui-tooltip {
   font-weight: 500;
   margin-top: -7px;
   letter-spacing: -0.02em;
+}
+@media screen and (max-width: 600px) {
+  .portfolio .story h2 {
+    font-size: 1.6em;
+    font-weight: 600;
+  }
 }
 .portfolio .story h3 {
   font-weight: 600;
@@ -604,18 +624,43 @@ body .ui-tooltip {
   width: 1157px;
   margin: 55px auto 45px;
 }
+@media screen and (max-width: 1157px) {
+  .portfolio .story figure {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1157px) {
+  .portfolio .story figure video {
+    display: none;
+  }
+}
 .portfolio .story figure .screen {
   display: block;
+}
+@media screen and (max-width: 1157px) {
+  .portfolio .story figure .screen {
+    position: static !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
 }
 .portfolio .story figure .iphone {
   position: relative;
   z-index: 1;
   margin: -889px 0 0 0;
 }
+.portfolio .story figure .ipad {
+  margin-left: 179px;
+}
 .portfolio .story figure figcaption {
   color: #767676;
   font-size: 12px;
   margin-top: 10px;
+}
+@media screen and (max-width: 1157px) {
+  .portfolio .story figure figcaption {
+    text-align: center;
+  }
 }
 .portfolio .story figure.inline {
   text-align: center;
@@ -637,15 +682,12 @@ body .ui-tooltip {
   margin: 0 auto 35px;
   display: block;
 }
-footer,
-.push {
-  height: 55px;
-}
 footer {
   margin-top: 30px;
   color: #a0a0a0;
-  padding: 15px;
+  padding: 40px 15px;
   background: #222222;
+  overflow: hidden;
 }
 footer a,
 footer a:visited {

@@ -35,20 +35,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	.box-sizing;
 	}
 
-q {
-	quotes: "“" "”" "‘" "’";
-	&:before,&:after {
-		font-family: Georgia,'Times New Roman';
-		opacity:.5;
-		}
-	}
-q:before {
-    content: open-quote;
-	}
-q:after {
-    content: close-quote;
-	}
-
 sup, sub {
    vertical-align: baseline;
    position: relative;
@@ -61,18 +47,16 @@ article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,vide
 	display:block
 	}
 
-body,html {
-	min-height:101%; /*Firefox scrollbar fix*/
-	height: 100%; /*Sticky footer*/
-	}
-
 body {
 	color: @text-color; 
 	min-width:@content-width;
 	-ms-text-size-adjust:100%;
 	-webkit-text-size-adjust:100%;
-	background:#efefef;
+	@media screen and (max-width: @content-width) {
+		min-width:0; 
+		max-width:@content-width;
 	}
+}
 
 body, input, textarea, select, button {
 	font-family: @font-body;
@@ -137,17 +121,14 @@ h1, h2, h3, h4, h5 {
 // Grid & Structure
 // =======================================================================
 
-.container {
-	min-height: 100%;
-	height: auto !important; /*Sticky footer*/
-	height: 100%;
-	margin: 0 auto -@footer-sticky;
-}
-
 .row {
 	max-width: @content-width;
 	clear: both;
 	margin:0 auto;
+	@media screen and (max-width: 1280px) {
+			padding-left:20px;
+			padding-right:20px;
+		}
 
 	.col-content {
 		width:@eightcol;
@@ -171,9 +152,10 @@ h1, h2, h3, h4, h5 {
 
   
 header {
-	padding:12% 0 7%;
+	padding:12% 0 10%;
 	color:@reversed;
 	font-weight: 100;
+	background:@bg-dark;
 	.avatar {
 		float:left;
 	}
@@ -192,10 +174,13 @@ header {
 		font-size: 46px;
 		line-height: 1.14;
 		letter-spacing: -.03em;
-		margin-bottom: 15px;
+		margin-bottom: 35px;
 		font-weight: 300;
-		.map-trigger .town {
-			display:none;
+		@media screen and (max-width: 1157px) {
+			font-size: 38px;
+		}
+		@media screen and (max-width: @break-mobile) {
+			font-size: 28px;
 		}
 		sup {
 			top:-1em;
@@ -243,21 +228,6 @@ header {
 			color:#bebebe;
 		}
 		
-		figure {
-			float: right;
-			margin-left: -100px;
-			margin: 40px 0 40px 40px;
-			img {
-				display:block;
-				margin-bottom: 15px;
-			}
-			figcaption {
-				font-style: italic;
-				text-align:center;
-				display:block;
-				font-size: .85em;
-			}
-		}
 		h3 {
 			margin-top: 40px;
 			margin-bottom: -7px;
@@ -274,9 +244,10 @@ header {
 			font-size:24px;
 			.tuning;
 			line-height: 1.35;
-			text-indent: 1.55em;
-			margin-bottom:-15px;
 			font-weight: 300;
+			@media screen and (max-width: @break-mobile) {
+				font-size:17px;
+			}
 			sup a {
 				border:none;
 				font-weight: 400;
@@ -307,6 +278,13 @@ header {
 	.cd-timeline-img {
 		background: @bg-dark;
 	}
+	.learned li {
+		list-style: square;
+		margin-left: 22px;
+	}
+	.during {
+		margin-top:22px;
+	}
 	.cd-timeline-content {
 		background: @bg-medium;
 	}
@@ -321,36 +299,6 @@ header {
 	}*/
 }
 
-.darkSwitch header, header {
-	background: @bg-dark;
-}
-
-.lightSwitch header {
-	background:#e2e2e2;
-	h1 {
-		color:#111;
-	}
-	.intro {
-		p {
-			color:#181818;
-		}
-		h3 {
-			color:#252525;
-		}
-	}
-	hr {
-		color:#000;
-		background: #000;
-		opacity:.65
-	}
-	a, a:visited {
-		color:#118EC5
-	}
-	a:hover, a:active {
-		color:#118EC5;
-		border-color:#369FCD
-	}
-}
 
 .left {
 	float:left
@@ -449,13 +397,44 @@ body .ui-tooltip {
 			border-color:#999;
 		}
 	}
+	.project-icon {
+		display: block;
+		margin:0 auto;
+	}
 	.project {
 		border-bottom: 1px solid #c8c8c8;
 		padding:5% 0 7.5%;
 		overflow: hidden;
+		&.first .project-icon {
+			margin-top:20px;
+			margin-bottom: 35px;
+		}
+		&.second .project-icon {
+			margin-top:20px;
+			margin-bottom:35px;
+		}
+		&.third {
+			border:none;
+			.project-icon {
+				margin-top:45px;
+				margin-bottom: 35px;
+			}
+		}
 	}
+	video {
+		position:absolute;
+		&.vid-festival {
+				margin:319px 0 0 389px;
+			}
+		&.pov-dj {
+			margin:78px 0 0 605px
+		}
+	}	
 	.row {
 		max-width:@content-width-wide;
+		@media screen and (max-width: @content-width) {
+			max-width:auto;
+		}
 	}
 	h4 {
 		.tiny-label;
@@ -465,6 +444,13 @@ body .ui-tooltip {
 		position: absolute;
 		width:150px;
 		margin-left:270px;
+		@media screen and (max-width: 1157px) {
+			margin-left:0;
+		}
+		@media screen and (max-width: @break-mobile) {
+			position:static;
+			margin-bottom: 32px;
+		}
 		p {
 			margin:2px 0 15px;
 			font-size: 14px;
@@ -476,6 +462,13 @@ body .ui-tooltip {
 		p,h2,h3,h4 {
 			margin-left:440px;
 			margin-right:270px;
+			@media screen and (max-width: 1157px) {
+				margin-right:0;
+				margin-left:180px;
+			}
+			@media screen and (max-width: @break-mobile) {
+				margin-left:0;
+			}
 		}
 		p {
 			font-size: 17px;
@@ -485,6 +478,10 @@ body .ui-tooltip {
 			font-weight: 500;
 			margin-top: -7px;
 			letter-spacing: -.02em;
+			@media screen and (max-width: @break-mobile) {
+				font-size:1.6em;
+				font-weight: 600;
+			}
 		}
 		h3 {
 			font-weight:600;
@@ -498,18 +495,37 @@ body .ui-tooltip {
 			display: block;
 			width:1157px;
 			margin:55px auto 45px;
+			@media screen and (max-width: 1157px) {
+				width:auto;
+			}
+			video {
+				@media screen and (max-width: 1157px) {
+					display:none;
+				}
+			}
 			.screen {
 				display: block;
+				@media screen and (max-width: 1157px) {
+					position: static !important;
+					display:block !important;
+					margin:0 auto !important;
+				}
 			}
 			.iphone {
 				position: relative;
 				z-index: 1;
 				margin:-889px 0 0 0;
 			}
+			.ipad {
+				margin-left:179px;
+			}
 			figcaption {
 				color:@text-color-lt;
 				font-size: 12px;
 				margin-top: 10px;
+				@media screen and (max-width: 1157px) {
+					text-align: center;
+				}
 			}
 			&.inline {
 				text-align: center;
@@ -542,15 +558,13 @@ body .ui-tooltip {
 // Footer
 // =======================================================================
 
-footer, .push {
-	height:@footer-sticky;
-	}
 
 footer {
 	margin-top: 30px;
 	color: #a0a0a0;
-	padding: 15px;
+	padding: 40px 15px;
 	background: @bg-dark;
+	overflow: hidden;
 
 	a, a:visited {
 		border:none;
