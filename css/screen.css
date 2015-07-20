@@ -250,6 +250,12 @@ h5 {
     -webkit-transform: translateY(0);
   }
 }
+.container {
+  margin-bottom: 400px;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+}
 .row {
   max-width: 740px;
   clear: both;
@@ -362,8 +368,8 @@ header h1 {
   letter-spacing: -0.03em;
   margin-bottom: 35px;
   font-weight: 300;
-  animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
-  -webkit-animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
+  animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+  -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
 }
 @media screen and (max-width: 1157px) {
   header h1 {
@@ -393,8 +399,10 @@ header .intro .exp {
   color: #bebebe;
   opacity: 0;
   -moz-opacity: 0;
-  animation: fadeIn ease-in 1.2s 0.25s forwards, slideUp ease-in 0.7s 0.08s;
-  -webkit-animation: fadeIn ease-in 1.2s 0.25s forwards, slideUp ease-in 0.7s 0.08s;
+  animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 0.7s;
+  -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 0.7s;
+  animation-delay: .3s;
+  -webkit-animation-delay: .3;
 }
 header .intro h3 {
   margin-top: 40px;
@@ -756,6 +764,11 @@ footer {
   background: #222222;
   overflow: hidden;
   text-align: center;
+  height: 400px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
 }
 footer .btn {
   margin: 20px auto 100px;

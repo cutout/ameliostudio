@@ -148,6 +148,12 @@ h1, h2, h3, h4, h5 {
 // Grid & Structure
 // =======================================================================
 
+.container {
+	margin-bottom: @foot-reveal;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+}
 .row {
 	max-width: @content-width;
 	clear: both;
@@ -235,8 +241,8 @@ header {
 		letter-spacing: -.03em;
 		margin-bottom: 35px;
 		font-weight: 300;
-		animation:fadeIn ease-in 1.2s forwards, slideUp ease-in .7s;
-		-webkit-animation:fadeIn ease-in 1.2s forwards, slideUp ease-in .7s;
+		animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+		-webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
 		@media screen and (max-width: 1157px) {
 			font-size: 38px;
 		}
@@ -263,8 +269,10 @@ header {
 			color:#bebebe;
 			opacity:0;
 			-moz-opacity:0;
-			animation:fadeIn ease-in 1.2s .25s forwards, slideUp ease-in .7s .08s;
-			-webkit-animation:fadeIn ease-in 1.2s .25s forwards, slideUp ease-in .7s .08s;
+			animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .7s;
+		    -webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .7s;
+			animation-delay:.3s;
+			-webkit-animation-delay:.3;
 		}
 		
 		h3 {
@@ -621,6 +629,11 @@ footer {
 	background: @bg-dark;
 	overflow: hidden;
 	text-align: center;
+	height: @foot-reveal;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	bottom: 0;
 	.btn {
 		margin:20px auto 100px;
 	}
