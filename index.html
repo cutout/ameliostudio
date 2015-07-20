@@ -21,8 +21,44 @@
 <script src="//use.typekit.net/zli4viy.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 
+<style>
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(img/loader.gif) center no-repeat #fff;
+}
+</style>
+
+<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+
+
+
+
 </head>
 <body>
+
+	<div class="se-pre-con"></div>
+
+
+
+
+
 <section class="container">
 
 	<section class="main clearfix">
@@ -35,9 +71,9 @@
 
 			<div class="intro row">
 
-				<h1 class="narrow">Darren Hoyt is a product designer and web developer. He lives,  writes and <a href="http://soundcloud.com/harbormines" target="_blank">sometimes</a><sup><a href="http://soundcloud.com/harbormines" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000133447043-rbmtic-t200x200.jpg' class='cover' /> <h4>Harbor Mines</h4> <p class='date'>2014&ndash;Present</p>">1</a></sup> <a href="https://soundcloud.com/bucksandgallants" target="_blank">makes</a><sup><a href="https://soundcloud.com/bucksandgallants" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000028526216-wtqxic-t200x200.jpg' class='cover' /> <h4>Bucks and Gallants</h4> <p class='date'>2004&ndash;2009</p>">2</a></sup> <a href="https://soundcloud.com/cutouts" target="_blank">music</a><sup><a href="https://soundcloud.com/cutouts" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000140132471-gv7kcl-t200x200.jpg' class='cover' /> <h4>The CutOuts</h4> <p class='date'>2001&ndash;Present</p>">3</a></sup></a> in <a target="_blank" href="http://www.onthegrid.city/new-york/gowanus/">Gowanus</a>, Brooklyn.</h1>
+				<h1>Darren Hoyt is a product designer and web developer. He lives,  writes and <a href="http://soundcloud.com/harbormines" target="_blank">sometimes</a><sup><a href="http://soundcloud.com/harbormines" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000133447043-rbmtic-t200x200.jpg' class='cover' /> <h4>Harbor Mines</h4> <p class='date'>2014&ndash;Present</p>">1</a></sup> <a href="https://soundcloud.com/bucksandgallants" target="_blank">makes</a><sup><a href="https://soundcloud.com/bucksandgallants" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000028526216-wtqxic-t200x200.jpg' class='cover' /> <h4>Bucks and Gallants</h4> <p class='date'>2004&ndash;2009</p>">2</a></sup> <a href="https://soundcloud.com/cutouts" target="_blank">music</a><sup><a href="https://soundcloud.com/cutouts" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000140132471-gv7kcl-t200x200.jpg' class='cover' /> <h4>The CutOuts</h4> <p class='date'>2001&ndash;Present</p>">3</a></sup></a> in <a target="_blank" href="http://www.onthegrid.city/new-york/gowanus/">Gowanus</a>, Brooklyn.</h1>
 
-				<p class="narrow">With every project I try to connect my interests in music, art and journalism with the duties of a web designer who loves writing code and nonfiction equally. I began at <a href="https://www.weareconvoy.com/" target="_blank">Convoy</a><sup><a href="https://www.weareconvoy.com/" title="<p>Previously known as Category 4, started in 1999 in Charlottesville, VA.</p>" target="_blank">4</a></sup></a>, honed client-service skills for years, bent WordPress into weird shapes. <!--I've worked with clients like <a href="http://www.mheducation.com/">McGraw-Hill</a>, <a href="http://www.crutchfield.com/" target="_blank">Crutchfield</a> and <a href="http://virginia.edu" target="_blank">University of Virginia</a>.--> Later I took founding creative roles in products like <a href="https://www.readability.com/" target="_blank">Readability</a>, <a href="https://www.kindlingapp.com/">Kindling</a>, and currently <a href="http://live.beatport.com" target="_blank">Beatport Live</a>. If I'm researching, experimenting or building, I'm happy.</p>
+				<p class="exp">With every project I try to connect my interests in music, art and journalism with the duties of a web designer who loves writing code and nonfiction equally. I began at <a href="https://www.weareconvoy.com/" target="_blank">Convoy</a><sup><a href="https://www.weareconvoy.com/" title="<p>Previously known as Category 4. Started in 1999 in Charlottesville, VA.</p>" target="_blank">4</a></sup></a>, honed client-service skills for years, bent WordPress into weird shapes. <!--I've worked with clients like <a href="http://www.mheducation.com/">McGraw-Hill</a>, <a href="http://www.crutchfield.com/" target="_blank">Crutchfield</a> and <a href="http://virginia.edu" target="_blank">University of Virginia</a>.--> Later I took founding creative roles in products like <a href="https://www.readability.com/" target="_blank">Readability</a>, <a href="https://www.kindlingapp.com/">Kindling</a>, and currently <a href="http://live.beatport.com" target="_blank">Beatport Live</a>. If I'm researching, experimenting or building, I'm happy.</p>
 			</div>
 
 				<section class="more row" style="display:none">
@@ -143,11 +179,27 @@
 			</section><!-- more -->
 
 
-				<div class="more-wrap narrow">
+				<!--<div class="more-wrap narrow">
 					<a class="readmore expand btn">Timeline+</a>
-				</div>
+				</div>-->
 
 	</header>
+
+	<!--<section class="hdr-case" style="background:#efefef;padding:8% 0 3%;">
+		<div class="row">
+			<!--<h3 style="text-transform: uppercase;
+  color: #333;
+  font-size: 10.5px;">Featured</h3>
+			<h2 style="font-size:2.2em;font-weight: 300;
+  
+  margin-bottom: 0;">Case Studies</h2>
+
+			<hr style="width:50px; text-align:left; margin:auto; margin-bottom:8px; display:inline-block;"  />
+			
+			<p style="color:#6F6F6F">Dinamo utvikler strategier, ideer og løsninger som skaper begeistring, engasjement og resultater – i betalte, fortjente og egne medier. Enten det er digitalt eller analogt.</p>
+		</div>
+	</section>
+-->
 
 	<section class="portfolio">
 		<div class="project first">
@@ -227,11 +279,12 @@
 						<figcaption>Marketing and download page, Beatport Live for OSX</figcaption>
 					</figure>
 
-					<p>As site traffic rose, the live streams were embedded everywhere from <a target="_blank" href="http://www.billboard.com/">Billboard</a> to <a target="_blank" href="http://www.dancingastronaut.com/">Dancing Astronaut</a> and simultaneously broadcast with <a target="_blank" href="http://www.twitch.tv/">Twitch</a>. I designed ad assets to cross-promote Beatport Live with Beatport News and other electronic music sites:</p>
+					<!--<p>As site traffic rose, the live streams were embedded everywhere from <a target="_blank" href="http://www.billboard.com/">Billboard</a> to <a target="_blank" href="http://www.dancingastronaut.com/">Dancing Astronaut</a> and simultaneously broadcast with <a target="_blank" href="http://www.twitch.tv/">Twitch</a>. I designed ad assets to cross-promote Beatport Live with Beatport News and other electronic music sites:</p>
 
 					<figure class="inline">
 						<img src="img/screen-bpl-ad-exp.png" class="screen" /> <img src="img/screen-bpl-ad-watch.png" class="screen" /> <img src="img/screen-bpl-ad-want.png" class="screen" />
 					</figure>
+				-->
 				</div>
 			</div><!--/end project-->
 
@@ -330,9 +383,10 @@
 </section><!--/container-->
 
 <footer role="contentinfo">
-
-	<p class="copyright"> &#169; 2015  Darren Hoyt, All Rights Reserved</p> 
+	
 	<a class="btn" href="http://twitter.com/darrenhoyt" target="_blank">Follow on Twitter</a>
+	<p class="copyright"> &#169; 2015  Darren Hoyt, All Rights Reserved</p> 
+	
 	
 </footer>
 

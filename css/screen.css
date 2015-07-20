@@ -200,12 +200,22 @@ h5 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-opacity: 1;
   }
 }
 @keyframes fill {
@@ -214,6 +224,30 @@ h5 {
   }
   to {
     background-position: 0 0;
+  }
+}
+@-webkit-keyframes fill {
+  from {
+    background-position: 0 -100%;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
   }
 }
 .row {
@@ -310,12 +344,26 @@ header .hello {
     margin-bottom: 30px;
   }
 }
+header a,
+header a:visited {
+  color: #568aa1;
+  border-bottom: 1px solid transparent;
+}
+header a:hover,
+header a:visited:hover,
+header a:active,
+header a:visited:active {
+  color: #fff;
+  border-color: #999;
+}
 header h1 {
   font-size: 46px;
   line-height: 1.14;
   letter-spacing: -0.03em;
   margin-bottom: 35px;
   font-weight: 300;
+  animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
+  -webkit-animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
 }
 @media screen and (max-width: 1157px) {
   header h1 {
@@ -332,18 +380,6 @@ header h1 sup {
   font-size: 35%;
   font-weight: 400;
 }
-header a,
-header a:visited {
-  color: #568aa1;
-  border-bottom: 1px solid transparent;
-}
-header a:hover,
-header a:visited:hover,
-header a:active,
-header a:visited:active {
-  color: #fff;
-  border-color: #999;
-}
 header .expand {
   cursor: pointer;
 }
@@ -353,8 +389,12 @@ header .more {
 header .more.row {
   max-width: 1280px;
 }
-header .intro p {
+header .intro .exp {
   color: #bebebe;
+  opacity: 0;
+  -moz-opacity: 0;
+  animation: fadeIn ease-in 1.2s 0.25s forwards, slideUp ease-in 0.7s 0.08s;
+  -webkit-animation: fadeIn ease-in 1.2s 0.25s forwards, slideUp ease-in 0.7s 0.08s;
 }
 header .intro h3 {
   margin-top: 40px;
@@ -397,13 +437,6 @@ header hr {
   width: 60px;
   background: #fff;
   display: block;
-}
-header .row {
-  -webkit-animation: fadein 2.5s;
-  -moz-animation: fadein 2.5s;
-  -ms-animation: fadein 2.5s;
-  -o-animation: fadein 2.5s;
-  animation: fadein 2.5s;
 }
 header .cd-container {
   /*.cd-timeline-content::before {
@@ -451,7 +484,7 @@ header .cd-container:before {
   box-shadow: none;
   -webkit-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
-  padding: 14px;
+  padding: 8px;
   overflow: hidden;
   border-radius: 0;
   background: rgba(245, 245, 245, 0.92);
@@ -461,27 +494,27 @@ header .cd-container:before {
 .ui-tooltip p {
   font-size: 13px;
   text-align: left;
-  margin: 0;
+  margin: 4px 12px;
 }
 .ui-tooltip .cover {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto 6px;
   display: block;
 }
 .ui-tooltip h4 {
   margin-bottom: 3px;
-  font-size: 14px;
+  font-size: 13px;
 }
 .ui-tooltip p.date {
-  margin: -3px 0 5px;
+  margin: -4px 0 3px;
   font-size: 12px;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: .045em;
   text-rendering: optimizeLegibility;
   font-weight: 600;
-  font-size: 10.5px;
+  font-size: 10px;
   color: #767676;
   font-weight: 500 !important;
   text-align: center;
@@ -700,18 +733,33 @@ body .ui-tooltip {
   -webkit-mask-size: cover;
   mask-size: cover;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, #ffffff 50%, #808080 50%);
-  animation: fill 3.4s ;
+  background-image: linear-gradient(to bottom, #ffffff 50%, #666666 50%);
+  animation: fill 2s;
+  -webkit-animation: fill 2s;
   margin: 0 auto 35px;
   display: block;
 }
+@-moz-document url-prefix() {
+  .logo {
+    height: 50px;
+    background-image: url(../img/code-fork.svg);
+    animation: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    mask: none;
+    -webkit-mask: none;
+  }
+}
 footer {
   color: #a0a0a0;
-  padding: 70px 15px 100px;
+  padding: 70px 15px 12px;
   background: #222222;
   overflow: hidden;
   text-align: center;
 }
 footer .btn {
-  margin-top: 20px;
+  margin: 20px auto 100px;
+}
+footer .copyright {
+  font-size: 12.5px;
 }
