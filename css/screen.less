@@ -72,9 +72,13 @@ a:hover, :focus, li:hover, img:hover, input:hover {
 	}
 
 p {
-	margin: @vert-rhythm;
+	margin: 15px 0 -15px;
 	line-height:@leading;
+	text-indent: 1.5em;
+	&.flush {
+		text-indent: 0
 	}
+}
 
 hr {
 	display: block;
@@ -144,6 +148,7 @@ h1, h2, h3, h4, h5 {
 
 
 
+
 // =======================================================================
 // Grid & Structure
 // =======================================================================
@@ -208,7 +213,9 @@ header {
 		padding:30px 0;
 	}
 	.btn {
-		margin-top:60px;
+		margin-top:70px;
+		animation:fadeIn ease-in 1.5s forwards;
+	    -webkit-animation:fadeIn ease-in 1.5s forwards;
 	}
 	sup a:hover, sup a:active {
 		border:none;
@@ -236,10 +243,10 @@ header {
 		}
 	}	
 	h1 {
-		font-size: 46px;
-		line-height: 1.14;
+		font-size: 41px;
+		line-height: 1.25;
 		letter-spacing: -.03em;
-		margin-bottom: 35px;
+		margin-bottom: 25px;
 		font-weight: 300;
 		animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
 		-webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
@@ -269,10 +276,10 @@ header {
 			color:#bebebe;
 			opacity:0;
 			-moz-opacity:0;
-			animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .7s;
-		    -webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .7s;
-			animation-delay:.3s;
-			-webkit-animation-delay:.3;
+			animation:fadeIn ease-in 1.2s forwards, slideUp ease-in .7s;
+		    -webkit-animation:fadeIn ease-in 1.2s forwards, slideUp ease-in .7s;
+			animation-delay:.4s;
+			-webkit-animation-delay:.4;
 		}
 		
 		h3 {
@@ -301,10 +308,7 @@ header {
 				&:hover, &:active {
 					color:#fff;
 				}
-			}
-			&.flush {
-				text-indent: 0
-			}
+			}			
 		}
 
 	hr {
@@ -351,6 +355,7 @@ header .cd-container {
 		border-right:7px solid @bg-medium;
 	}*/
 }
+
 
 
 .left {
@@ -507,6 +512,7 @@ body .ui-tooltip {
 			font-size: 14px;
 			font-weight: 600;
 			line-height: 1.4em;
+			text-indent: 0;
 		}
 	}
 	.story {
@@ -598,8 +604,8 @@ body .ui-tooltip {
 	mask-size: cover;
 	background-size: 100% 200%;
 	background-image: linear-gradient(to bottom, #FFF 50%, #666 50%);
-	animation:fill 2s;
-	-webkit-animation:fill 2s;
+	animation:fill 2.6s 1s, fadeIn 5s;
+	-webkit-animation:fill 2.6s 1s, fadeIn 5s;
 	margin: 0 auto 35px;
 	display: block;
 }
@@ -634,14 +640,21 @@ footer {
 	width: 100%;
 	z-index: 1;
 	bottom: 0;
-	.btn {
-		margin:20px auto 100px;
+	.col {
+		width:33%;
+		position: relative;
+		float: left;
+		text-align: left;
+		h5 {
+			color:@text-color-lt;
+			.tiny-label;
+			display: none;
+		}
 	}
-	.copyright {
-		font-size:12.5px;
-		position: absolute;
-		bottom:12px;
-		width:100%
+	p {
+		margin:10px 0 -8px;
+		text-indent: 0;
+		font-size:14px;
 	}
 }
 	
