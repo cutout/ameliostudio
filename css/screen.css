@@ -140,6 +140,7 @@ object {
   display: block;
 }
 body {
+  background: #222222;
   color: #151515;
   min-width: 740px;
   -ms-text-size-adjust: 100%;
@@ -254,11 +255,48 @@ h5 {
     -webkit-transform: translateY(0);
   }
 }
+@keyframes logoUp {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+}
 .container {
   margin-bottom: 400px;
   position: absolute;
-  z-index: 99;
+  z-index: 2;
   width: 100%;
+}
+.logo {
+  width: 31px;
+  height: 48px;
+  -webkit-mask: url(../img/code-fork.svg) no-repeat 50% 50%;
+  mask: url(../img/code-fork.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #ffffff 50%, #666666 50%);
+  animation: fill 2.6s 1s, fadeIn 2.5s;
+  -webkit-animation: fill 2.6s 1s, fadeIn 2.5s;
+  position: absolute;
+  z-index: 5;
+}
+@-moz-document url-prefix() {
+  .logo {
+    height: 50px;
+    background-image: url(../img/code-fork.svg);
+    animation: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    mask: none;
+    -webkit-mask: none;
+  }
 }
 .row {
   max-width: 740px;
@@ -270,31 +308,6 @@ h5 {
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-.row .col-content {
-  width: 65.4%;
-  float: left;
-}
-.row .col-sidebar {
-  width: 28.75%;
-  float: right;
-}
-.row .full-width {
-  width: auto;
-}
-.row .onecol,
-.row .twocol,
-.row .threecol,
-.row .fourcol,
-.row .fivecol,
-.row .sixcol,
-.row .sevencol,
-.row .eightcol,
-.row .ninecol,
-.row .tencol,
-.row .elevencol {
-  float: left;
-  min-height: 1px;
 }
 a.btn {
   display: block;
@@ -321,7 +334,7 @@ a.btn:active {
   background-image: none;
 }
 header {
-  padding: 12% 0 10%;
+  padding: 1px 1px 10%;
   color: #dde1e5;
   font-weight: 100;
   background: #222222;
@@ -340,22 +353,6 @@ header sup a:hover,
 header sup a:active {
   border: none;
 }
-header .hello {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-weight: 300;
-  letter-spacing: .01em;
-  font-weight: 100;
-}
-@media screen and (max-width: 600px) {
-  header .hello {
-    position: static;
-    display: block;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-}
 header a,
 header a:visited {
   color: #5f93ae;
@@ -368,30 +365,6 @@ header a:visited:active {
   color: #fff;
   border-color: #999;
 }
-header h1 {
-  font-size: 41px;
-  line-height: 1.25;
-  letter-spacing: -0.03em;
-  margin-bottom: 25px;
-  font-weight: 300;
-  animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
-  -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
-}
-@media screen and (max-width: 1157px) {
-  header h1 {
-    font-size: 38px;
-  }
-}
-@media screen and (max-width: 600px) {
-  header h1 {
-    font-size: 28px;
-  }
-}
-header h1 sup {
-  top: -1em;
-  font-size: 35%;
-  font-weight: 400;
-}
 header .expand {
   cursor: pointer;
 }
@@ -401,17 +374,33 @@ header .more {
 header .more.row {
   max-width: 1280px;
 }
-header .logo {
-  margin-bottom: 35px;
+header .intro {
+  margin-top: 14%;
+}
+header .intro h1 {
+  font-size: 41px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+@media screen and (max-width: 1157px) {
+  header .intro h1 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .intro h1 {
+    font-size: 28px;
+  }
+}
+header .intro h1 sup {
+  top: -1em;
+  font-size: 35%;
+  font-weight: 400;
 }
 header .intro .exp {
   color: #bebebe;
-  opacity: 0;
-  -moz-opacity: 0;
-  animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
-  -webkit-animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
-  animation-delay: .4s;
-  -webkit-animation-delay: .4;
 }
 header .intro h3 {
   margin-top: 40px;
@@ -451,18 +440,6 @@ header hr {
   width: 60px;
   background: #fff;
   display: block;
-}
-.loading header .intro {
-  display: none;
-}
-.loading.loaded .intro {
-  display: block;
-}
-header .cd-container {
-  /*.cd-timeline-content::before {
-		border-right:7px solid @bg-medium;
-	}*/
-
 }
 header .cd-container p {
   font-weight: 400;
@@ -515,6 +492,7 @@ header .cd-container:before {
   font-size: 13px;
   text-align: left;
   margin: 4px 12px;
+  text-indent: 0;
 }
 .ui-tooltip .cover {
   width: 180px;
@@ -541,6 +519,47 @@ header .cd-container:before {
 }
 body .ui-tooltip {
   border: none;
+}
+.preload {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: #222222;
+}
+.loading .logo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading .intro {
+  visibility: hidden;
+}
+.loading.loaded .intro {
+  visibility: visible;
+}
+.loading.loaded .intro h1 {
+  opacity: 0;
+  -moz-opacity: 0;
+  animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+  -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+}
+.loading.loaded .intro .exp {
+  opacity: 0;
+  -moz-opacity: 0;
+  animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
+  -webkit-animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
+  animation-delay: .4s;
+  -webkit-animation-delay: .4;
+}
+.loading.loaded .logo {
+  animation: logoUp 1s;
+  -webkit-animation: logoUp 1s;
+}
+.loading.loaded .preload {
+  display: none;
 }
 /*Misc*/
 .portfolio {
@@ -722,31 +741,6 @@ body .ui-tooltip {
 .portfolio .story figure.inline img {
   display: inline;
   margin: 0 10px 12px;
-}
-.logo {
-  width: 31px;
-  height: 48px;
-  -webkit-mask: url(../img/code-fork.svg) no-repeat 50% 50%;
-  mask: url(../img/code-fork.svg) no-repeat 50% 50%;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, #ffffff 50%, #666666 50%);
-  animation: fill 2.6s 1s, fadeIn 5s;
-  -webkit-animation: fill 2.6s 1s, fadeIn 5s;
-  margin: 0 auto;
-  display: block;
-}
-@-moz-document url-prefix() {
-  .logo {
-    height: 50px;
-    background-image: url(../img/code-fork.svg);
-    animation: none;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    mask: none;
-    -webkit-mask: none;
-  }
 }
 footer {
   color: #a0a0a0;

@@ -21,13 +21,18 @@
 <script>
 	$(function(){
 		setTimeout(function(){$("body").addClass("loading")},200),
-		setTimeout(function(){$("body").addClass("loaded")},2200),
+		setTimeout(function(){$("body").addClass("loaded")},2800),
 		setTimeout(function(){$("body").addClass("initialized")},3600)
 	})
 </script>
 
+
 </head>
 <body>
+
+<div class="preload"></div>
+
+<div class="logo"></div>	
 
 <section class="container">
 
@@ -35,8 +40,6 @@
 		
 		<header class="masthead clearfix" role="banner">
 			
-		    <div class="logo"></div>
-
 			<div class="intro row">
 
 				<h1>Darren Hoyt is a product designer and web developer. He lives,  writes and <a href="http://soundcloud.com/harbormines" target="_blank">sometimes</a><sup><a href="http://soundcloud.com/harbormines" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000133447043-rbmtic-t200x200.jpg' class='cover' /> <h4>Harbor Mines</h4> <p class='date'>2014&ndash;Present</p>">1</a></sup> <a href="https://soundcloud.com/bucksandgallants" target="_blank">makes</a><sup><a href="https://soundcloud.com/bucksandgallants" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000028526216-wtqxic-t200x200.jpg' class='cover' /> <h4>Bucks and Gallants</h4> <p class='date'>2004&ndash;2009</p>">2</a></sup> <a href="https://soundcloud.com/cutouts" target="_blank">music</a><sup><a href="https://soundcloud.com/cutouts" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000140132471-gv7kcl-t200x200.jpg' class='cover' /> <h4>The CutOuts</h4> <p class='date'>2001&ndash;Present</p>">3</a></sup></a> in <a target="_blank" href="http://www.onthegrid.city/new-york/gowanus/">Gowanus</a>, Brooklyn.</h1>
@@ -88,7 +91,7 @@
     margin-right: 112px;
     width: 300px;
     margin-bottom: 20px;
-">asdfasdf asfd asd fasdf asdf asdfasdf asfd asd fasdf asdf  asdfasdf asfd asd fasdf asdf  asdfasdf asfd asd fasdf asdf </blockquote>
+">&bull; Press Release Billboard</blockquote>
 
 					<p>In January 2015, I came on board to create a distinctive theme and overall design language for the new product, consistent across streaming channel pages, branded events, DJ dashboards, ads, and a Mac app for OSX. My first challenge was to design and code the web-based channel pages for artists and festivals and incoporate the colors and  frenetic feel of a live event:</p>
 
@@ -114,9 +117,9 @@
 
 					<figure>
 						<video width="522" autoplay loop class="pov-dj">
-						  <source src="img/video-dj.mp4" type="video/mp4">
-						  <source src="mov_bbb.ogg" type="video/ogg">
-						  Your browser does not support HTML5 video.
+							<source src="img/video-dj.webm" type="video/webm"></source>
+						 	<source src="img/video-dj.mp4" type="video/mp4"></source>
+						 	 Your browser does not support HTML5 video.
 						</video>
 						<img src="img/screen-bpl-osx-streams.png" class="screen" />
 						<figcaption>Control panel window, Beatport Live for OSX</figcaption>
