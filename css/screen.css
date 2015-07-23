@@ -262,9 +262,7 @@ h5 {
     transform: translate(-50%, -50%);
   }
   100% {
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -20%);
+    top: 15% ;
   }
 }
 .container {
@@ -557,6 +555,7 @@ body .ui-tooltip {
 .loading.loaded .logo {
   animation: logoUp 1s;
   -webkit-animation: logoUp 1s;
+  top: 15%;
 }
 .loading.loaded .preload {
   display: none;
@@ -774,4 +773,7 @@ footer p {
   margin: 10px 0 -8px;
   text-indent: 0;
   font-size: 14px;
+}
+footer p strong {
+  color: #f0f0f0;
 }
