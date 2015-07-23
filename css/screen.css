@@ -455,7 +455,7 @@ header hr {
 .loading header .intro {
   display: none;
 }
-.loading header.loaded .intro {
+.loading.loaded .intro {
   display: block;
 }
 header .cd-container {
