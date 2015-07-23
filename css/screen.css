@@ -401,6 +401,9 @@ header .more {
 header .more.row {
   max-width: 1280px;
 }
+header .logo {
+  margin-bottom: 35px;
+}
 header .intro .exp {
   color: #bebebe;
   opacity: 0;
@@ -447,6 +450,12 @@ header hr {
   color: #fff;
   width: 60px;
   background: #fff;
+  display: block;
+}
+.loading .intro {
+  display: none;
+}
+.loading.loaded .intro {
   display: block;
 }
 header .cd-container {
@@ -532,29 +541,6 @@ header .cd-container:before {
 }
 body .ui-tooltip {
   border: none;
-}
-/*Social*/
-.social {
-  text-align: center;
-}
-.social li {
-  display: inline;
-  margin: 0 3px;
-}
-.social a,
-.social a:visited {
-  border: 3px solid #503941;
-  -webkit-border-radius: 100em;
-  -moz-border-radius: 100em;
-  border-radius: 100em;
-  width: 28px;
-  height: 28px;
-  text-align: center;
-  display: inline-block;
-}
-.social a:hover,
-.social a:active {
-  border-color: #927780;
 }
 /*Misc*/
 .portfolio {
@@ -748,7 +734,7 @@ body .ui-tooltip {
   background-image: linear-gradient(to bottom, #ffffff 50%, #666666 50%);
   animation: fill 2.6s 1s, fadeIn 5s;
   -webkit-animation: fill 2.6s 1s, fadeIn 5s;
-  margin: 0 auto 35px;
+  margin: 0 auto;
   display: block;
 }
 @-moz-document url-prefix() {
