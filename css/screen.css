@@ -452,10 +452,10 @@ header hr {
   background: #fff;
   display: block;
 }
-.loading .intro {
+.loading header .intro {
   display: none;
 }
-.loading.loaded .intro {
+.loading header.loaded .intro {
   display: block;
 }
 header .cd-container {
