@@ -150,14 +150,20 @@ h1, h2, h3, h4, h5 {
 @keyframes logoUp {
     0% {
 		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
     }
     100% {
-		top: 15% ;
+		top: @logo-position
     }
 }
 
+@-webkit-keyframes logoUp {
+    0% {
+		top: 50%;
+    }
+    100% {
+		top: @logo-position
+    }
+}
 
 
 
@@ -168,7 +174,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	margin-bottom: @foot-reveal;
-  position: absolute;
+  position: relative;
   z-index: 2;
   width: 100%;
 }
@@ -227,6 +233,17 @@ a.btn {
 	}
 }  
 
+header, footer {
+	a, a:visited {
+		color:@highlight;
+		border-bottom:1px solid transparent;
+		&:hover, &:active {
+			color:#fff;
+			border-color:#999;
+		}
+	}	
+}
+
 header {
 	padding:1px 1px 10%;
 	color:@reversed;
@@ -236,23 +253,10 @@ header {
 		padding:30px 0;
 	}
 	.btn {
-		margin-top:70px;
-		animation:fadeIn ease-in 1.5s forwards;
-	    -webkit-animation:fadeIn ease-in 1.5s forwards;
+		margin-top:60px;
 	}
 	sup a:hover, sup a:active {
 		border:none;
-	}
-	a, a:visited {
-		color:@highlight;
-		border-bottom:1px solid transparent;
-		&:hover, &:active {
-			color:#fff;
-			border-color:#999;
-		}
-	}	
-	.expand {
-		cursor: pointer;
 	}
 	.more {
 		padding-bottom: 20px;
@@ -261,7 +265,7 @@ header {
 		}
 	}
 	.intro {
-		margin-top:14%;
+		margin-top:230px;
 		h1 {
 			font-size: 41px;
 			line-height: 1.25;
@@ -271,8 +275,11 @@ header {
 			@media screen and (max-width: 1157px) {
 				font-size: 38px;
 			}
+			@media screen and (max-width: 800px) {
+				font-size: 32px;
+			}			
 			@media screen and (max-width: @break-mobile) {
-				font-size: 28px;
+				font-size: 26px;
 			}
 			sup {
 				top:-1em;
@@ -283,18 +290,11 @@ header {
 		.exp {
 			color:#bebebe;
 		}
-		
 		h3 {
 			margin-top: 40px;
 			margin-bottom: -7px;
 		}
-		
-		blockquote {
-			font-size: 1.8em;
-			margin: 45px 0;
-			text-align:justify;
-			text-align: center;
-		}
+
 	}
 	p {
 		font-size:24px;
@@ -449,11 +449,19 @@ body .ui-tooltip {
 				animation-delay:.4s;
 				-webkit-animation-delay:.4;
 			}
+			.btn {
+				opacity:0;
+				-moz-opacity:0;
+				animation:fadeIn ease-in 1.5s forwards;
+			    -webkit-animation:fadeIn ease-in 1.5s forwards;
+			    animation-delay:.4s;
+				-webkit-animation-delay:.4;
+			}
 		}
 		.logo {
 			animation:logoUp 1s;
 			-webkit-animation:logoUp 1s;
-			top:15%;
+			top:@logo-position;
 		}
 		.preload {
 			display: none;
@@ -484,7 +492,7 @@ body .ui-tooltip {
 		margin:0 auto;
 	}
 	.project {
-		border-bottom: 1px solid #c8c8c8;
+		border-bottom: 1px solid @border-lt;
 		padding:5% 0 7.5%;
 		overflow: hidden;
 		&.first .project-icon {
@@ -551,6 +559,31 @@ body .ui-tooltip {
 			}
 			@media screen and (max-width: @break-mobile) {
 				margin-left:0;
+			}
+		}
+		.press {
+			float:right;
+			width:200px;
+			margin: 35px 160px 25px 25px;
+			border-left:1px solid @border-lt;
+			padding-left:20px;
+			p,h4 {
+				text-indent: 0;
+				margin:0;
+			}
+			p {
+				font-size: 14px;
+				margin:2px 0;
+				font-weight: 600;
+				line-height: 1.3
+			}
+			.source {
+				font-size: 10.5px;
+				margin-bottom: 12px;
+			}
+			a, a:visited {
+				border:none;
+				color:@text-color
 			}
 		}
 		p {

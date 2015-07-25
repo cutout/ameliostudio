@@ -258,16 +258,22 @@ h5 {
 @keyframes logoUp {
   0% {
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   100% {
-    top: 15% ;
+    top: 160px;
+  }
+}
+@-webkit-keyframes logoUp {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 160px;
   }
 }
 .container {
-  margin-bottom: 400px;
-  position: absolute;
+  margin-bottom: 300px;
+  position: relative;
   z-index: 2;
   width: 100%;
 }
@@ -331,6 +337,24 @@ a.btn:active {
   border-color: #b2b2b2;
   background-image: none;
 }
+header a,
+footer a,
+header a:visited,
+footer a:visited {
+  color: #5f93ae;
+  border-bottom: 1px solid transparent;
+}
+header a:hover,
+footer a:hover,
+header a:visited:hover,
+footer a:visited:hover,
+header a:active,
+footer a:active,
+header a:visited:active,
+footer a:visited:active {
+  color: #fff;
+  border-color: #999;
+}
 header {
   padding: 1px 1px 10%;
   color: #dde1e5;
@@ -343,28 +367,11 @@ header {
   }
 }
 header .btn {
-  margin-top: 70px;
-  animation: fadeIn ease-in 1.5s forwards;
-  -webkit-animation: fadeIn ease-in 1.5s forwards;
+  margin-top: 60px;
 }
 header sup a:hover,
 header sup a:active {
   border: none;
-}
-header a,
-header a:visited {
-  color: #5f93ae;
-  border-bottom: 1px solid transparent;
-}
-header a:hover,
-header a:visited:hover,
-header a:active,
-header a:visited:active {
-  color: #fff;
-  border-color: #999;
-}
-header .expand {
-  cursor: pointer;
 }
 header .more {
   padding-bottom: 20px;
@@ -373,7 +380,7 @@ header .more.row {
   max-width: 1280px;
 }
 header .intro {
-  margin-top: 14%;
+  margin-top: 230px;
 }
 header .intro h1 {
   font-size: 41px;
@@ -387,9 +394,14 @@ header .intro h1 {
     font-size: 38px;
   }
 }
+@media screen and (max-width: 800px) {
+  header .intro h1 {
+    font-size: 32px;
+  }
+}
 @media screen and (max-width: 600px) {
   header .intro h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 header .intro h1 sup {
@@ -403,12 +415,6 @@ header .intro .exp {
 header .intro h3 {
   margin-top: 40px;
   margin-bottom: -7px;
-}
-header .intro blockquote {
-  font-size: 1.8em;
-  margin: 45px 0;
-  text-align: justify;
-  text-align: center;
 }
 header p {
   font-size: 24px;
@@ -552,10 +558,18 @@ body .ui-tooltip {
   animation-delay: .4s;
   -webkit-animation-delay: .4;
 }
+.loading.loaded .intro .btn {
+  opacity: 0;
+  -moz-opacity: 0;
+  animation: fadeIn ease-in 1.5s forwards;
+  -webkit-animation: fadeIn ease-in 1.5s forwards;
+  animation-delay: .4s;
+  -webkit-animation-delay: .4;
+}
 .loading.loaded .logo {
   animation: logoUp 1s;
   -webkit-animation: logoUp 1s;
-  top: 15%;
+  top: 160px;
 }
 .loading.loaded .preload {
   display: none;
@@ -668,6 +682,33 @@ body .ui-tooltip {
     margin-left: 0;
   }
 }
+.portfolio .story .press {
+  float: right;
+  width: 200px;
+  margin: 35px 160px 25px 25px;
+  border-left: 1px solid #c8c8c8;
+  padding-left: 20px;
+}
+.portfolio .story .press p,
+.portfolio .story .press h4 {
+  text-indent: 0;
+  margin: 0;
+}
+.portfolio .story .press p {
+  font-size: 14px;
+  margin: 2px 0;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.portfolio .story .press .source {
+  font-size: 10.5px;
+  margin-bottom: 12px;
+}
+.portfolio .story .press a,
+.portfolio .story .press a:visited {
+  border: none;
+  color: #151515;
+}
 .portfolio .story p {
   font-size: 17px;
 }
@@ -747,7 +788,7 @@ footer {
   background: #222222;
   overflow: hidden;
   text-align: center;
-  height: 400px;
+  height: 300px;
   position: fixed;
   width: 100%;
   z-index: 1;
