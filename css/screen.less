@@ -514,7 +514,7 @@ body .ui-tooltip {
 	video {
 		position:absolute;
 		&.vid-festival {
-				margin:319px 0 0 389px;
+				margin:319px 0 0 390px;
 			}
 		&.pov-dj {
 			margin:78px 0 0 605px
@@ -583,7 +583,10 @@ body .ui-tooltip {
 			}
 			a, a:visited {
 				border:none;
-				color:@text-color
+				color:@text-color;
+				&:hover, &:active {
+					background:#efefef;
+				}
 			}
 		}
 		p {

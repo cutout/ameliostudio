@@ -613,7 +613,7 @@ body .ui-tooltip {
   position: absolute;
 }
 .portfolio video.vid-festival {
-  margin: 319px 0 0 389px;
+  margin: 319px 0 0 390px;
 }
 .portfolio video.pov-dj {
   margin: 78px 0 0 605px;
@@ -708,6 +708,12 @@ body .ui-tooltip {
 .portfolio .story .press a:visited {
   border: none;
   color: #151515;
+}
+.portfolio .story .press a:hover,
+.portfolio .story .press a:visited:hover,
+.portfolio .story .press a:active,
+.portfolio .story .press a:visited:active {
+  background: #efefef;
 }
 .portfolio .story p {
   font-size: 17px;
