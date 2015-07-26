@@ -255,22 +255,6 @@ h5 {
     -webkit-transform: translateY(0);
   }
 }
-@keyframes logoUp {
-  0% {
-    top: 50%;
-  }
-  100% {
-    top: 160px;
-  }
-}
-@-webkit-keyframes logoUp {
-  0% {
-    top: 50%;
-  }
-  100% {
-    top: 160px;
-  }
-}
 .container {
   margin-bottom: 300px;
   position: relative;
@@ -290,6 +274,9 @@ h5 {
   -webkit-animation: fill 2.6s 1s, fadeIn 2.5s;
   position: absolute;
   z-index: 5;
+  top: 135px;
+  left: 50%;
+  margin-left: -15px;
 }
 @-moz-document url-prefix() {
   .logo {
@@ -366,18 +353,9 @@ header {
     padding: 30px 0;
   }
 }
-header .btn {
-  margin-top: 60px;
-}
 header sup a:hover,
 header sup a:active {
   border: none;
-}
-header .more {
-  padding-bottom: 20px;
-}
-header .more.row {
-  max-width: 1280px;
 }
 header .intro {
   margin-top: 230px;
@@ -388,6 +366,10 @@ header .intro h1 {
   letter-spacing: -0.03em;
   margin-bottom: 25px;
   font-weight: 300;
+  opacity: 0;
+  -moz-opacity: 0;
+  animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+  -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
 }
 @media screen and (max-width: 1157px) {
   header .intro h1 {
@@ -411,6 +393,21 @@ header .intro h1 sup {
 }
 header .intro .exp {
   color: #bebebe;
+  opacity: 0;
+  -moz-opacity: 0;
+  animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
+  -webkit-animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
+  animation-delay: .4s;
+  -webkit-animation-delay: .4;
+}
+header .intro .btn {
+  opacity: 0;
+  -moz-opacity: 0;
+  animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 0.6s;
+  -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 0.6s;
+  animation-delay: .8s;
+  -webkit-animation-delay: .8s;
+  margin-top: 50px;
 }
 header .intro h3 {
   margin-top: 40px;
@@ -523,56 +520,6 @@ header .cd-container:before {
 }
 body .ui-tooltip {
   border: none;
-}
-.preload {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  background: #222222;
-}
-.loading .logo {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.loading .intro {
-  visibility: hidden;
-}
-.loading.loaded .intro {
-  visibility: visible;
-}
-.loading.loaded .intro h1 {
-  opacity: 0;
-  -moz-opacity: 0;
-  animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
-  -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
-}
-.loading.loaded .intro .exp {
-  opacity: 0;
-  -moz-opacity: 0;
-  animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
-  -webkit-animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.7s;
-  animation-delay: .4s;
-  -webkit-animation-delay: .4;
-}
-.loading.loaded .intro .btn {
-  opacity: 0;
-  -moz-opacity: 0;
-  animation: fadeIn ease-in 1.5s forwards;
-  -webkit-animation: fadeIn ease-in 1.5s forwards;
-  animation-delay: .4s;
-  -webkit-animation-delay: .4;
-}
-.loading.loaded .logo {
-  animation: logoUp 1s;
-  -webkit-animation: logoUp 1s;
-  top: 160px;
-}
-.loading.loaded .preload {
-  display: none;
 }
 /*Misc*/
 .portfolio {
