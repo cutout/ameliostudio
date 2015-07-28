@@ -226,17 +226,21 @@ h5 {
 @keyframes fill {
   from {
     background-position: 0 -100%;
+    visibility: hidden;
   }
   to {
     background-position: 0 0;
+    visibility: visible;
   }
 }
 @-webkit-keyframes fill {
   from {
     background-position: 0 -100%;
+    visibility: hidden;
   }
   to {
     background-position: 0 0;
+    visibility: visible;
   }
 }
 @keyframes slideUp {
@@ -262,21 +266,23 @@ h5 {
   width: 100%;
 }
 .logo {
-  width: 31px;
-  height: 48px;
-  -webkit-mask: url(../img/code-fork.svg) no-repeat 50% 50%;
-  mask: url(../img/code-fork.svg) no-repeat 50% 50%;
+  width: 52px;
+  height: 63px;
+  -webkit-mask: url(../img/logo-dh.svg) no-repeat 50% 50%;
+  mask: url(../img/logo-dh.svg) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, #ffffff 50%, #666666 50%);
-  animation: fill 2.6s 1s, fadeIn 2.5s;
-  -webkit-animation: fill 2.6s 1s, fadeIn 2.5s;
+  background-image: linear-gradient(to bottom, #eeeeee 50%, #666666 50%);
+}
+.logo.mark {
+  animation: fill 3s, fadeIn ease-in 2s forwards, slideUp ease-in 1s;
+  -webkit-animation: fill 3s, fadeIn ease-in 2s forwards, slideUp ease-in 1s;
   position: absolute;
   z-index: 5;
-  top: 135px;
+  top: 115px;
   left: 50%;
-  margin-left: -15px;
+  margin-left: -26px;
 }
 @-moz-document url-prefix() {
   .logo {
@@ -318,11 +324,15 @@ a.btn {
   border-radius: 2px;
   color: inherit;
 }
-a.btn:hover,
+a.btn:hover {
+  background: #416a80;
+  border-color: #416a80;
+  font-weight: 800;
+}
 a.btn:active {
-  color: #fff;
-  border-color: #b2b2b2;
-  background-image: none;
+  padding: 14px 0 12px;
+  background: #385c6f;
+  border-color: #385c6f;
 }
 header a,
 footer a,
@@ -343,7 +353,7 @@ footer a:visited:active {
   border-color: #999;
 }
 header {
-  padding: 1px 1px 10%;
+  padding: 1px 0 100px;
   color: #dde1e5;
   font-weight: 100;
   background: #222222;
@@ -358,7 +368,7 @@ header sup a:active {
   border: none;
 }
 header .intro {
-  margin-top: 230px;
+  margin-top: 220px;
 }
 header .intro h1 {
   font-size: 41px;
@@ -407,7 +417,7 @@ header .intro .btn {
   -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 0.6s;
   animation-delay: .8s;
   -webkit-animation-delay: .8s;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 header .intro h3 {
   margin-top: 40px;
@@ -581,6 +591,7 @@ body .ui-tooltip {
   text-rendering: optimizeLegibility;
   font-weight: 600;
   color: #767676;
+  font-weight: 700;
 }
 .portfolio aside {
   position: absolute;
@@ -746,6 +757,10 @@ footer {
   width: 100%;
   z-index: 1;
   bottom: 0;
+}
+footer .logo {
+  display: block;
+  margin: 0 auto 50px;
 }
 footer .col {
   width: 33%;

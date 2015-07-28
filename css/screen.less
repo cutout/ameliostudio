@@ -120,13 +120,13 @@ h1, h2, h3, h4, h5 {
 }
 
 @keyframes fill {
-	from { background-position: 0 -100%;}
-	to {background-position: 0 0}
+from { background-position: 0 -100%;visibility: hidden;}
+	to {background-position: 0 0; visibility: visible}
 }
 
 @-webkit-keyframes fill {
-	from { background-position: 0 -100%;}
-	to {background-position: 0 0}
+	from { background-position: 0 -100%;visibility: hidden;}
+	to {background-position: 0 0; visibility: visible}
 }
 
 @keyframes slideUp {
@@ -162,21 +162,23 @@ h1, h2, h3, h4, h5 {
 }
 	
 .logo {
-	width: 31px;
-	height: 48px;
-	-webkit-mask: url(../img/code-fork.svg) no-repeat 50% 50%;
-	mask: url(../img/code-fork.svg) no-repeat 50% 50%;
+	width: 52px;
+	height: 63px;
+	-webkit-mask: url(../img/logo-dh.svg) no-repeat 50% 50%;
+	mask: url(../img/logo-dh.svg) no-repeat 50% 50%;
 	-webkit-mask-size: cover;
 	mask-size: cover;
 	background-size: 100% 200%;
-	background-image: linear-gradient(to bottom, #FFF 50%, #666 50%);
-	animation:fill 2.6s 1s, fadeIn 2.5s;
-	-webkit-animation:fill 2.6s 1s, fadeIn 2.5s;
-	position: absolute;
-	z-index: 5;
-	top:135px;
-	left:50%;
-	margin-left: -15px;
+	background-image: linear-gradient(to bottom, #eee 50%, #666 50%);
+	&.mark {
+		animation:fill 3s, fadeIn ease-in 2s forwards, slideUp ease-in 1s;
+	    -webkit-animation:fill 3s, fadeIn ease-in 2s forwards, slideUp ease-in 1s;
+	    position: absolute;
+		z-index: 5;
+		top:115px;
+		left:50%;
+		margin-left: -26px;	
+	}
 }
 
 @-moz-document url-prefix() {
@@ -211,10 +213,15 @@ a.btn {
 	width: 260px;
 	.rounded(2px);
 	color:inherit;
-	&:hover, &:active {
-		color:#fff;
-		border-color:#b2b2b2;
-		background-image:none;
+	&:hover {
+		background: darken(@highlight,15%);
+		border-color: darken(@highlight,15%);
+		font-weight: 800
+	}
+	&:active {
+		padding:14px 0 12px;
+		background: darken(@highlight,20%);
+		border-color: darken(@highlight,20%);
 	}
 }  
 
@@ -230,7 +237,7 @@ header, footer {
 }
 
 header {
-	padding:1px 1px 10%;
+	padding:1px 0 100px;
 	color:@reversed;
 	font-weight: 100;
 	background:@bg-dark;
@@ -241,7 +248,7 @@ header {
 		border:none;
 	}
 	.intro {
-		margin-top:230px;
+		margin-top:220px;
 		h1 {
 			font-size: 41px;
 			line-height: 1.25;
@@ -283,7 +290,7 @@ header {
 		    -webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .6s;
 		    animation-delay:.8s;
 			-webkit-animation-delay:.8s;
-			margin-top:50px;
+			margin-top:70px;
 		}
 		h3 {
 			margin-top: 40px;
@@ -464,6 +471,7 @@ body .ui-tooltip {
 	h4 {
 		.tiny-label;
 		color:@text-color-lt;
+		font-weight: 700;
 		}
 	aside {
 		position: absolute;
@@ -611,6 +619,10 @@ footer {
 	width: 100%;
 	z-index: 1;
 	bottom: 0;
+	.logo {
+		display: block;
+		margin:0 auto 50px;
+	}
 	.col {
 		width:33%;
 		position: relative;
