@@ -88,7 +88,7 @@
 						  <source src="img/video-mysteryland.webm" type="video/webm">
 						  Your browser does not support HTML5 video.
 						</video>
-						
+
 						<img src="img/screen-bpl-ipad.png" height="1388" class="ipad screen" />
 						<img src="img/screen-bpl-iphone.png" height="887" class="iphone screen" />
 						<figcaption>Festival channel page, Beatport Live for web</figcaption>
@@ -97,7 +97,6 @@
 					<p class="flush">While working with other developers to build out artist and event pages, I also started sketching designs for the OSX app. Using native audio and video sources, the app lets DJs stream their live shows, queue upcoming events, and track stats in real time. I worked closely with a Mac developer to design and build something consistent with our web products and still feel native:
 
 					<figure>
-						<!--<img id="zoom_01" src="img/screen-bpl-osx-login.png" data-zoom-image="img/screen-bpl-osx-login-zoom.png" />-->
 						<img src="img/screen-bpl-osx-login.png" class="screen" height="663" alt="" />
 						<figcaption>Login screen, Beatport Live for OSX</figcaption>
 					</figure>
@@ -108,6 +107,7 @@
 						 	<source src="img/video-dj.mp4" type="video/mp4">
 						 	<source src="img/video-dj.webm" type="video/mp4">
 						</video>
+						<div class="status"><span class="live"></span>Live</div>
 						<img src="img/screen-bpl-osx-streams.png" class="screen" />
 						<figcaption>Control panel window, Beatport Live for OSX</figcaption>
 					</figure>
@@ -248,8 +248,6 @@
 		</section>	
 </footer>
 
-
-
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   
   <script>
@@ -266,6 +264,11 @@
         }
       }
     });
+  });
+  </script>
+  <script>
+  $(window).scroll(function(){
+    $(".intro").css("opacity", 1 - $(window).scrollTop() / 550);
   });
   </script>
 </body>
