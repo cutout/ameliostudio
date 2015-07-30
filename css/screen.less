@@ -292,9 +292,21 @@ header {
 			}
 			.left {
 				margin-right: 10px;
+				opacity:0;
+				-moz-opacity:0;
+				animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+			    -webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+			    animation-delay:.5s;
+				-webkit-animation-delay:.5s;
 			}
 			.right {
 				margin-left:10px;
+				opacity:0;
+				-moz-opacity:0;
+				animation:fadeIn ease-in 1.3s forwards, slideUp ease-in .6s;
+			    -webkit-animation:fadeIn ease-in 1.3s forwards, slideUp ease-in .6s;
+			    animation-delay:1s;
+				-webkit-animation-delay:1s;			
 			}
 			.cols {
 				overflow: hidden;
@@ -321,12 +333,6 @@ header {
 		}
 	}
 	.touch-base {
-	opacity:0;
-	-moz-opacity:0;
-	animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .6s;
-    -webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .6s;
-    animation-delay:.8s;
-	-webkit-animation-delay:.8s;
 	margin-left: 10px;
 	.more-q {
 		clear: both;
