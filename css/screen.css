@@ -427,8 +427,8 @@ header .intro .exp .left {
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
   -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
-  animation-delay: .5s;
-  -webkit-animation-delay: .5s;
+  animation-delay: .4s;
+  -webkit-animation-delay: .4s;
 }
 header .intro .exp .right {
   margin-left: 10px;
