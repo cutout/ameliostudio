@@ -105,10 +105,10 @@ td {
   padding: 0;
 }
 ::selection {
-  background: #5f93ae;
+  background: #7db1cc;
 }
 ::-moz-selection {
-  background: #5f93ae;
+  background: #7db1cc;
 }
 *,
 *:before,
@@ -159,7 +159,7 @@ button {
 }
 a,
 a:visited {
-  color: #5f93ae;
+  color: #7db1cc;
   text-decoration: none;
 }
 a:hover,
@@ -323,20 +323,20 @@ a.btn {
   color: inherit;
 }
 a.btn:hover {
-  background: #416a80;
-  border-color: #416a80;
+  background: #4790b5;
+  border-color: #4790b5;
   font-weight: 800;
 }
 a.btn:active {
   padding: 14px 0 12px;
-  background: #385c6f;
-  border-color: #385c6f;
+  background: #4081a3;
+  border-color: #4081a3;
 }
 header a,
 footer a,
 header a:visited,
 footer a:visited {
-  color: #5f93ae;
+  color: #7db1cc;
   border-bottom: 2px solid transparent;
 }
 header a:hover,
@@ -556,7 +556,7 @@ body .ui-tooltip {
   border-bottom: 1px solid #bababa;
 }
 .portfolio a:hover {
-  color: #497891;
+  color: #589bbe;
   border-color: #999;
 }
 .portfolio .project-icon {
@@ -689,7 +689,7 @@ body .ui-tooltip {
 .portfolio .story .press a:visited:hover,
 .portfolio .story .press a:active,
 .portfolio .story .press a:visited:active {
-  color: #5f93ae;
+  color: #7db1cc;
 }
 .portfolio .story p {
   font-size: 17px;
@@ -756,10 +756,6 @@ body .ui-tooltip {
 }
 .portfolio .story figure .screen {
   display: block;
-  opacity: 0;
-  -moz-opacity: 0;
-  animation: fadeIn ease-in 1.2s forwards;
-  -webkit-animation: fadeIn ease-in 1.2s forwards;
 }
 @media screen and (max-width: 1157px) {
   .portfolio .story figure .screen {
