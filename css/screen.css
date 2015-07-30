@@ -20,6 +20,7 @@
 .tuning {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 }
 .background-cover {
   background-position-y: center;
@@ -202,6 +203,7 @@ h5 {
   font-family: 'adelle-sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 }
 @keyframes fadeIn {
   from {
@@ -435,6 +437,7 @@ header .intro .exp p {
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
   line-height: 1.4;
 }

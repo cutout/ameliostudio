@@ -20,6 +20,7 @@
 .tuning {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 }
 .background-cover {
   background-position-y: center;
