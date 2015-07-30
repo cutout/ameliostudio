@@ -276,8 +276,8 @@ h5 {
   background-image: linear-gradient(to bottom, #eeeeee 50%, #666666 50%);
 }
 .logo.mark {
-  animation: fill 3s, fadeIn ease-in 2s forwards, slideUp ease-in 1s;
-  -webkit-animation: fill 3s, fadeIn ease-in 2s forwards, slideUp ease-in 1s;
+  animation: fill 3s, fadeIn linear 2s forwards, slideUp ease-in 1s;
+  -webkit-animation: fill 3s, fadeIn linear 2s forwards, slideUp ease-in 1s;
   position: absolute;
   z-index: 5;
   top: 100px;
@@ -474,6 +474,8 @@ header .touch-base .more-q {
   text-align: center;
   font-size: 14px;
   margin: 60px 0 0 -20px;
+  font-weight: 300;
+  letter-spacing: .02em;
 }
 header .touch-base .btn {
   margin-top: 15px;
@@ -558,6 +560,21 @@ body .ui-tooltip {
   border: none;
 }
 /*Misc*/
+nav {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+nav li {
+  display: inline;
+  font-size: 12px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: auto;
+  letter-spacing: .075em;
+  text-rendering: optimizeLegibility;
+  font-weight: 600;
+  margin-left: 12px;
+}
 .portfolio {
   background: #fff;
 }
@@ -636,7 +653,7 @@ body .ui-tooltip {
   }
 }
 .portfolio aside p {
-  margin: 2px 0 15px;
+  margin: 2px 0 18px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.4em;
