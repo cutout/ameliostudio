@@ -173,7 +173,7 @@ from { background-position: 0 -100%;visibility: hidden;}
 	    -webkit-animation:fill 3s, fadeIn ease-in 2s forwards, slideUp ease-in 1s;
 	    position: absolute;
 		z-index: 5;
-		top:115px;
+		top:100px;
 		left:50%;
 		margin-left: -26px;	
 	}
@@ -226,7 +226,7 @@ a.btn {
 header, footer {
 	a, a:visited {
 		color:@highlight;
-		border-bottom:1px solid transparent;
+		border-bottom:2px solid transparent;
 		&:hover, &:active {
 			color:#fff;
 			border-color:#666;
@@ -237,26 +237,33 @@ header, footer {
 header {
 	padding:1px 0 100px;
 	color:@reversed;
-	font-weight: 100;
 	background:@bg-dark;
 	@media screen and (max-width: @break-mobile) {
 		padding:30px 0;
+	}
+	.hello {
+		position: absolute;
+		top:15px;
+		right:15px;
+		a {
+			color: #fff;
+		}
 	}
 	sup a:hover, sup a:active {
 		border:none;
 	}
 	.intro {
-		margin-top:210px;
+		margin-top:180px;
 		h1 {
 			font-size: 41px;
 			line-height: 1.25;
 			letter-spacing: -.03em;
-			margin-bottom: 35px;
+			margin-bottom: 25px;
 			font-weight: 300;
 			opacity:0;
 			-moz-opacity:0;
-			animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
-		    -webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+			animation:fadeIn ease-in 1.2s forwards, slideUp ease-in 1s;
+		    -webkit-animation:fadeIn ease-in 1.2s forwards, slideUp ease-in 1s;
 			@media screen and (max-width: 1157px) {
 				font-size: 38px;
 			}
@@ -278,7 +285,7 @@ header {
 			animation:fadeIn ease-in 1.2s forwards, slideUp ease-in .6s;
 		    -webkit-animation:fadeIn ease-in 1.2s forwards, slideUp ease-in .6s;
 			animation-delay:.5s;
-			-webkit-animation-delay:.5;
+			-webkit-animation-delay:.5s;
 			.left,.right {
 				width:48%;
 				padding-bottom: 20px;
@@ -291,11 +298,15 @@ header {
 			}
 			.cols {
 				overflow: hidden;
+				strong {
+					color:@reversed;
+				}
 			}
 			p {
-				font-size:18px;
+				font-size:20px;
 				.tuning;
 				font-weight: 300;
+				line-height: 1.4;
 				@media screen and (max-width: @break-mobile) {
 					font-size:17px;
 				}
@@ -306,30 +317,30 @@ header {
 						color:#fff;
 					}
 				}
-				&.more-q {
-					clear: both;
-					text-align:center;
-					font-size: 14px;
-					margin: 60px 0 0 -20px;
-				}			
 			}
 		}
-		.btn {
-			opacity:0;
-			-moz-opacity:0;
-			animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .6s;
-		    -webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .6s;
-		    animation-delay:.8s;
-			-webkit-animation-delay:.8s;
-			margin-top:15px;
+	}
+	.touch-base {
+	opacity:0;
+	-moz-opacity:0;
+	animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .6s;
+    -webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in .6s;
+    animation-delay:.8s;
+	-webkit-animation-delay:.8s;
+	margin-left: 10px;
+	.more-q {
+		clear: both;
+		text-align:center;
+		font-size: 14px;
+		margin: 60px 0 0 -20px;
+	}
+	.btn {
+		margin-top:15px;
 		}
-		h3 {
-			margin-top: 40px;
-			margin-bottom: -7px;
-		}
-
 	}
 }
+
+
 
 header .cd-container {
 	p {
@@ -444,8 +455,8 @@ body .ui-tooltip {
 		padding:5% 0 7.5%;
 		overflow: hidden;
 		&.first .project-icon {
-			margin-top:20px;
-			margin-bottom: 35px;
+			margin-top:10px;
+			margin-bottom: 10px;
 		}
 		&.second .project-icon {
 			margin-top:20px;
@@ -592,6 +603,10 @@ body .ui-tooltip {
 			}
 			.screen {
 				display: block;
+				opacity:0;
+			    -moz-opacity:0;
+				animation:fadeIn ease-in 1.2s forwards;
+		        -webkit-animation:fadeIn ease-in 1.2s forwards;
 				@media screen and (max-width: 1157px) {
 					position: static !important;
 					display:block !important;
@@ -647,6 +662,9 @@ footer {
 	.logo {
 		display: block;
 		margin:0 auto 50px;
+		@media screen and (max-width: @break-mobile) {
+			display: none;
+		}
 	}
 	.col {
 		width:33%;
@@ -657,6 +675,19 @@ footer {
 			color:@text-color-lt;
 			.tiny-label;
 			display: none;
+		}
+		&.center {
+			text-align: center;
+		}
+		&.right {
+			text-align: right;
+		}
+		@media screen and (max-width: @break-mobile) {
+			float:none;
+			width:100%;
+			position:static;
+			text-align: center !important;
+			margin-bottom: 30px;
 		}
 	}
 	p {

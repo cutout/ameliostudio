@@ -278,7 +278,7 @@ h5 {
   -webkit-animation: fill 3s, fadeIn ease-in 2s forwards, slideUp ease-in 1s;
   position: absolute;
   z-index: 5;
-  top: 115px;
+  top: 100px;
   left: 50%;
   margin-left: -26px;
 }
@@ -337,7 +337,7 @@ footer a,
 header a:visited,
 footer a:visited {
   color: #5f93ae;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 header a:hover,
 footer a:hover,
@@ -353,7 +353,6 @@ footer a:visited:active {
 header {
   padding: 1px 0 100px;
   color: #dde1e5;
-  font-weight: 100;
   background: #222222;
 }
 @media screen and (max-width: 600px) {
@@ -361,23 +360,31 @@ header {
     padding: 30px 0;
   }
 }
+header .hello {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+header .hello a {
+  color: #fff;
+}
 header sup a:hover,
 header sup a:active {
   border: none;
 }
 header .intro {
-  margin-top: 210px;
+  margin-top: 180px;
 }
 header .intro h1 {
   font-size: 41px;
   line-height: 1.25;
   letter-spacing: -0.03em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-weight: 300;
   opacity: 0;
   -moz-opacity: 0;
-  animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
-  -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+  animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 1s;
+  -webkit-animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 1s;
 }
 @media screen and (max-width: 1157px) {
   header .intro h1 {
@@ -405,7 +412,7 @@ header .intro .exp {
   animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.6s;
   -webkit-animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.6s;
   animation-delay: .5s;
-  -webkit-animation-delay: .5;
+  -webkit-animation-delay: .5s;
 }
 header .intro .exp .left,
 header .intro .exp .right {
@@ -421,11 +428,15 @@ header .intro .exp .right {
 header .intro .exp .cols {
   overflow: hidden;
 }
+header .intro .exp .cols strong {
+  color: #dde1e5;
+}
 header .intro .exp p {
-  font-size: 18px;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-weight: 300;
+  line-height: 1.4;
 }
 @media screen and (max-width: 600px) {
   header .intro .exp p {
@@ -440,24 +451,23 @@ header .intro .exp p sup a:hover,
 header .intro .exp p sup a:active {
   color: #fff;
 }
-header .intro .exp p.more-q {
-  clear: both;
-  text-align: center;
-  font-size: 14px;
-  margin: 60px 0 0 -20px;
-}
-header .intro .btn {
+header .touch-base {
   opacity: 0;
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 0.6s;
   -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 0.6s;
   animation-delay: .8s;
   -webkit-animation-delay: .8s;
-  margin-top: 15px;
+  margin-left: 10px;
 }
-header .intro h3 {
-  margin-top: 40px;
-  margin-bottom: -7px;
+header .touch-base .more-q {
+  clear: both;
+  text-align: center;
+  font-size: 14px;
+  margin: 60px 0 0 -20px;
+}
+header .touch-base .btn {
+  margin-top: 15px;
 }
 header .cd-container p {
   font-weight: 400;
@@ -559,8 +569,8 @@ body .ui-tooltip {
   overflow: hidden;
 }
 .portfolio .project.first .project-icon {
-  margin-top: 20px;
-  margin-bottom: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .portfolio .project.second .project-icon {
   margin-top: 20px;
@@ -746,6 +756,10 @@ body .ui-tooltip {
 }
 .portfolio .story figure .screen {
   display: block;
+  opacity: 0;
+  -moz-opacity: 0;
+  animation: fadeIn ease-in 1.2s forwards;
+  -webkit-animation: fadeIn ease-in 1.2s forwards;
 }
 @media screen and (max-width: 1157px) {
   .portfolio .story figure .screen {
@@ -795,6 +809,11 @@ footer .logo {
   display: block;
   margin: 0 auto 50px;
 }
+@media screen and (max-width: 600px) {
+  footer .logo {
+    display: none;
+  }
+}
 footer .col {
   width: 33%;
   position: relative;
@@ -810,6 +829,21 @@ footer .col h5 {
   text-rendering: optimizeLegibility;
   font-weight: 600;
   display: none;
+}
+footer .col.center {
+  text-align: center;
+}
+footer .col.right {
+  text-align: right;
+}
+@media screen and (max-width: 600px) {
+  footer .col {
+    float: none;
+    width: 100%;
+    position: static;
+    text-align: center !important;
+    margin-bottom: 30px;
+  }
 }
 footer p {
   margin: 10px 0 -8px;
