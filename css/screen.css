@@ -716,10 +716,14 @@ nav li {
   font-size: 17px;
 }
 .portfolio .story h2 {
-  font-size: 2.2em;
+  font-size: 2.5em;
   font-weight: 500;
   margin-top: -7px;
   letter-spacing: -0.02em;
+  font-family: 'freight-text-pro', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 }
 @media screen and (max-width: 600px) {
   .portfolio .story h2 {
@@ -732,7 +736,7 @@ nav li {
   font-size: 21px;
   margin-top: 10px;
   line-height: 1.3em;
-  color: #424242;
+  color: #767676;
   margin-bottom: 26px;
 }
 .portfolio .story figure {
