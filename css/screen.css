@@ -368,13 +368,13 @@ header .intro {
   margin-top: 180px;
 }
 header .intro h1 {
-  font-size: 44px;
+  font-size: 39px;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin-bottom: 25px;
   font-weight: 400;
   opacity: 0;
-  font-family: 'freight-text-pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'bookmania', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -720,7 +720,7 @@ nav li {
   font-weight: 500;
   margin-top: -7px;
   letter-spacing: -0.02em;
-  font-family: 'freight-text-pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'bookmania', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
