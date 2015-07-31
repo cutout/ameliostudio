@@ -200,7 +200,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'adelle-sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'adelle', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -378,11 +378,11 @@ header .intro {
   margin-top: 180px;
 }
 header .intro h1 {
-  font-size: 41px;
+  font-size: 40px;
   line-height: 1.25;
   letter-spacing: -0.03em;
   margin-bottom: 25px;
-  font-weight: 300;
+  font-weight: 100;
   opacity: 0;
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 1s;
@@ -534,8 +534,8 @@ header .cd-container:before {
   text-indent: 0;
 }
 .ui-tooltip .cover {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto 6px;
   display: block;
 }
@@ -551,6 +551,7 @@ header .cd-container:before {
   letter-spacing: .075em;
   text-rendering: optimizeLegibility;
   font-weight: 600;
+  text-transform: none;
   font-size: 10px;
   color: #767676;
   font-weight: 500 !important;
@@ -563,7 +564,7 @@ body .ui-tooltip {
 nav {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 25px;
 }
 nav li {
   display: inline;
