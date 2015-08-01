@@ -530,6 +530,7 @@ header .cd-container:before {
   background: rgba(245, 245, 245, 0.92);
   font-size: 12px;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.74902) 2px 2px 2px 0px;
 }
 .ui-tooltip p {
   font-size: 13px;
@@ -572,13 +573,11 @@ nav {
 }
 nav li {
   display: inline;
-  font-size: 12px;
-  text-transform: uppercase;
-  -webkit-font-smoothing: auto;
-  letter-spacing: .075em;
-  text-rendering: optimizeLegibility;
-  font-weight: 600;
   margin-left: 12px;
+}
+nav li a,
+nav li a:visited {
+  color: #999;
 }
 .portfolio {
   background: #fff;
