@@ -200,7 +200,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'adelle', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'adelle-sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -273,7 +273,7 @@ h5 {
   -webkit-mask-size: cover;
   mask-size: cover;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, #eeeeee 50%, #666666 50%);
+  background-image: linear-gradient(to bottom, #cecece 50%, #666666 50%);
 }
 .logo.mark {
   animation: fill 3s, fadeIn linear 2s forwards, slideUp ease-in 1s;
@@ -378,7 +378,7 @@ header .intro {
   margin-top: 180px;
 }
 header .intro h1 {
-  font-size: 40px;
+  font-size: 41.5px;
   line-height: 1.25;
   letter-spacing: -0.03em;
   margin-bottom: 25px;
@@ -706,6 +706,7 @@ nav li {
   font-size: 10.5px;
   margin-bottom: 12px;
   color: #767676;
+  letter-spacing: .025em;
 }
 .portfolio .story .press a,
 .portfolio .story .press a:visited {
@@ -738,7 +739,7 @@ nav li {
   font-size: 21px;
   margin-top: 10px;
   line-height: 1.3em;
-  color: #424242;
+  color: #5a5a5a;
   margin-bottom: 26px;
 }
 .portfolio .story figure {
