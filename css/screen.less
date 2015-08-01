@@ -169,11 +169,15 @@ from { background-position: 0 -100%;visibility: hidden;}
 	background-size: 100% 200%;
 	background-image: linear-gradient(to bottom, #cecece 50%, #666 50%);
 	&.mark {
-		animation:fill 3s, fadeIn linear 2s forwards, slideUp ease-in 1s;
-	    -webkit-animation:fill 3s, fadeIn linear 2s forwards, slideUp ease-in 1s;
+		opacity:0;
+		-moz-opacity:0;
+		animation:fill 3s, fadeIn linear 2.5s forwards;
+	    -webkit-animation:fill 3s, fadeIn linear 3s forwards;
+	    animation-delay: .3s;
+	    -webkit-animation-delay: .3s;
 	    position: absolute;
 		z-index: 5;
-		top:100px;
+		top:120px;
 		left:50%;
 		margin-left: -26px;	
 	}
@@ -253,7 +257,7 @@ header {
 		border:none;
 	}
 	.intro {
-		margin-top:180px;
+		margin-top:200px;
 		h1 {
 			font-size: 41.5px;
 			line-height: 1.25;
@@ -262,8 +266,8 @@ header {
 			font-weight: 100;
 			opacity:0;
 			-moz-opacity:0;
-			animation:fadeIn ease-in 1.2s forwards, slideUp ease-in 1s;
-		    -webkit-animation:fadeIn ease-in 1.2s forwards, slideUp ease-in 1s;
+			animation:fadeIn ease-in 1.2s forwards;
+		    -webkit-animation:fadeIn ease-in 1.2s forwards;
 			@media screen and (max-width: 1157px) {
 				font-size: 38px;
 			}
