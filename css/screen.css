@@ -574,7 +574,15 @@ nav {
   position: fixed;
   width: 100%;
   background: rgba(34, 34, 34, 0.94);
-  padding: 40px 40px 10px 0;
+  padding: 70px 40px 10px 0;
+  -webkit-transition: padding 0.5s;
+  -moz-transition: padding 0.5s;
+  -ms-transition: padding 0.5s;
+  -o-transition: padding 0.5s;
+  transition: padding 0.5s;
+}
+nav.smaller {
+  padding: 10px 40px 10px 0;
 }
 nav li {
   display: inline;

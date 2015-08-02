@@ -28,7 +28,7 @@
 
 	<section class="main clearfix">
 
-		<nav>
+		<nav class>
 			<ul>
 				<li><span>03</span> <a href="contact">Contact</a></li>
 				<li><span>02</span> <a href="#work">Work</a></li>
@@ -291,7 +291,7 @@
 
   <script>
   $(window).scroll(function(){
-    $(".intro").css("opacity", 1 - $(window).scrollTop() / 900);
+    $(".intro").css("opacity", 1 - $(window).scrollTop() / 800);
   });
   </script>
 <!--
@@ -320,5 +320,23 @@
   });
 });
   </script>
+<script src="js/classie.js"></script>
+  <script>
+  function init() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 300,
+            nav = document.querySelector("nav");
+        if (distanceY > shrinkOn) {
+            classie.add(nav,"smaller");
+        } else {
+            if (classie.has(nav,"smaller")) {
+                classie.remove(nav,"smaller");
+            }
+        }
+    });
+}
+window.onload = init();
+</script>
 </body>
 </html>
