@@ -380,6 +380,8 @@ header sup a:active {
 }
 header .intro {
   margin-top: 200px;
+  position: relative;
+  z-index: 100;
 }
 header .intro h1 {
   font-size: 40px;
@@ -573,16 +575,17 @@ body .ui-tooltip {
 nav {
   position: fixed;
   width: 100%;
-  background: rgba(34, 34, 34, 0.94);
   padding: 70px 40px 10px 0;
   -webkit-transition: padding 0.5s;
   -moz-transition: padding 0.5s;
   -ms-transition: padding 0.5s;
   -o-transition: padding 0.5s;
   transition: padding 0.5s;
+  z-index: 99;
 }
 nav.smaller {
   padding: 10px 40px 10px 0;
+  background: rgba(34, 34, 34, 0.96);
 }
 nav li {
   display: inline;
