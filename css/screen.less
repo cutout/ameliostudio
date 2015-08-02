@@ -239,7 +239,8 @@ header, footer {
 }
 
 header {
-	padding:1px 0 100px;
+	padding:1px 0 85px;
+	border-top:8px solid #404040;
 	color:@reversed;
 	background:@bg-dark;
 	@media screen and (max-width: @break-mobile) {
@@ -259,7 +260,7 @@ header {
 	.intro {
 		margin-top:200px;
 		h1 {
-			font-size: 41.5px;
+			font-size: 40px;
 			line-height: 1.25;
 			letter-spacing: -.03em;
 			margin-bottom: 25px;
@@ -280,6 +281,10 @@ header {
 			sup {
 				font-size: 35%;
 				font-weight: 400;
+			}
+			.name {
+				font-weight: 600;
+				color:#fff;
 			}
 		}
 		.exp {
@@ -322,7 +327,7 @@ header {
 				font-size:20px;
 				.tuning;
 				font-weight: 300;
-				line-height: 1.4;
+				line-height: 1.35;
 				@media screen and (max-width: @break-mobile) {
 					font-size:17px;
 				}
@@ -459,7 +464,10 @@ nav {
 		display: inline;
 		margin-left:12px;
 		a, a:visited {
-			color:#999;
+			color:#bfbfbf;
+		}
+		span {
+			color:#6B6B6B
 		}
 	}
 }

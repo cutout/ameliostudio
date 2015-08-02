@@ -357,7 +357,8 @@ footer a:visited:active {
   border-color: #666;
 }
 header {
-  padding: 1px 0 100px;
+  padding: 1px 0 85px;
+  border-top: 8px solid #404040;
   color: #dde1e5;
   background: #222222;
 }
@@ -382,7 +383,7 @@ header .intro {
   margin-top: 200px;
 }
 header .intro h1 {
-  font-size: 41.5px;
+  font-size: 40px;
   line-height: 1.25;
   letter-spacing: -0.03em;
   margin-bottom: 25px;
@@ -410,6 +411,10 @@ header .intro h1 {
 header .intro h1 sup {
   font-size: 35%;
   font-weight: 400;
+}
+header .intro h1 .name {
+  font-weight: 600;
+  color: #fff;
 }
 header .intro .exp {
   color: #bebebe;
@@ -455,7 +460,7 @@ header .intro .exp p {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 @media screen and (max-width: 600px) {
   header .intro .exp p {
@@ -577,7 +582,10 @@ nav li {
 }
 nav li a,
 nav li a:visited {
-  color: #999;
+  color: #bfbfbf;
+}
+nav li span {
+  color: #6b6b6b;
 }
 .portfolio {
   background: #fff;
