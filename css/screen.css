@@ -106,10 +106,10 @@ td {
   padding: 0;
 }
 ::selection {
-  background: #7db1cc;
+  background: #7da5cc;
 }
 ::-moz-selection {
-  background: #7db1cc;
+  background: #7da5cc;
 }
 *,
 *:before,
@@ -160,7 +160,7 @@ button {
 }
 a,
 a:visited {
-  color: #7db1cc;
+  color: #7da5cc;
   text-decoration: none;
 }
 a:hover,
@@ -329,20 +329,20 @@ a.btn {
   color: inherit;
 }
 a.btn:hover {
-  background: #4790b5;
-  border-color: #4790b5;
+  background: #477fb5;
+  border-color: #477fb5;
   font-weight: 800;
 }
 a.btn:active {
   padding: 14px 0 12px;
-  background: #4081a3;
-  border-color: #4081a3;
+  background: #4072a3;
+  border-color: #4072a3;
 }
 header a,
 footer a,
 header a:visited,
 footer a:visited {
-  color: #7db1cc;
+  color: #7da5cc;
   border-bottom: 2px solid transparent;
 }
 header a:hover,
@@ -586,7 +586,7 @@ nav li a:visited {
   border-bottom: 1px solid #bababa;
 }
 .portfolio a:hover {
-  color: #589bbe;
+  color: #588cbe;
   border-color: #999;
 }
 .portfolio .project-icon {
@@ -720,7 +720,7 @@ nav li a:visited {
 .portfolio .story .press a:visited:hover,
 .portfolio .story .press a:active,
 .portfolio .story .press a:visited:active {
-  color: #7db1cc;
+  color: #7da5cc;
 }
 .portfolio .story p {
   font-size: 17px;
@@ -806,6 +806,7 @@ nav li a:visited {
 .portfolio .story figure figcaption {
   color: #767676;
   font-size: 12px;
+  font-weight: 600;
   margin-top: 15px;
 }
 @media screen and (max-width: 1157px) {
