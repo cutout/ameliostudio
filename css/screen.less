@@ -240,7 +240,6 @@ header, footer {
 
 header {
 	padding:1px 0 85px;
-	border-top:8px solid #404040;
 	color:@reversed;
 	background:@bg-dark;
 	@media screen and (max-width: @break-mobile) {
@@ -457,12 +456,14 @@ body .ui-tooltip {
 /*Misc*/
 
 nav {
-	position: absolute;
-	top:15px;
-	right:25px;
+	position: fixed;
+	width:100%;
+	background:rgba(34,34,34,.94);
+	padding:40px 40px 10px 0;
 	li {
 		display: inline;
-		margin-left:12px;
+		margin-left:25px;
+		float:right;
 		a, a:visited {
 			color:#bfbfbf;
 		}

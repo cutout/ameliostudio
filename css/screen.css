@@ -358,7 +358,6 @@ footer a:visited:active {
 }
 header {
   padding: 1px 0 85px;
-  border-top: 8px solid #404040;
   color: #dde1e5;
   background: #222222;
 }
@@ -572,13 +571,15 @@ body .ui-tooltip {
 }
 /*Misc*/
 nav {
-  position: absolute;
-  top: 15px;
-  right: 25px;
+  position: fixed;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.94);
+  padding: 40px 40px 10px 0;
 }
 nav li {
   display: inline;
-  margin-left: 12px;
+  margin-left: 25px;
+  float: right;
 }
 nav li a,
 nav li a:visited {
