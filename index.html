@@ -14,13 +14,14 @@
 <link rel='stylesheet' id='print-css'  href='css/print.css' type='text/css' media='print' />
 
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=1.7.2'></script>
+<script src="js/jquery-ui.js"></script>
 
 <script src="//use.typekit.net/zli4viy.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
+
 </head>
 <body>
 
-<div class="preload"></div>
 
 <div class="logo mark"></div>	
 
@@ -30,7 +31,7 @@
 
 		<nav class>
 			<ul>
-				<li><span>03</span> <a href="contact">Contact</a></li>
+				<li><span>03</span> <a id="trigger-overlay">Contact</a></li>
 				<li><span>02</span> <a href="#work">Work</a></li>
 				<li><span>01</span> <a href="#about">About</a></li>
 			</ul>
@@ -106,7 +107,7 @@
 					<p>In January 2015, I came on board to create a distinctive theme and overall design language for the new product that would be consistent across many contexts: streaming channel pages, branded events, DJ dashboards, ads, and a Mac app for OSX. My first challenge was to design the web-based channel pages that would capture the frenetic feel of a live event:</p>
 
 					<figure>
-						<video width="561" autoplay loop class="vid-festival">
+						<video width="562" autoplay loop class="vid-festival">
 						  <source src="img/video-mysteryland.mp4" type="video/mp4">
 						  <source src="img/video-mysteryland.webm" type="video/webm">
 						  Your browser does not support HTML5 video.
@@ -270,8 +271,6 @@
 		</section>	
 </footer>
 
-  <script src="js/jquery-ui.js"></script>
-  
   <script>
   $(function() {
     $( document ).tooltip({
@@ -316,7 +315,7 @@
   function init() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 300,
+            shrinkOn = 450,
             nav = document.querySelector("nav");
         if (distanceY > shrinkOn) {
             classie.add(nav,"smaller");
@@ -329,5 +328,34 @@
 }
 window.onload = init();
 </script>
+
+<script src="js/modernizr.custom.js"></script>
+			
+<div class="overlay overlay-simplegenie">
+	<button type="button" class="overlay-close">Close</button>
+	<div class="contact-wrap">
+		<div id="wufoo-zjcmgv602equwu"></div>
+
+<script type="text/javascript">var zjcmgv602equwu;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'cutout',
+'formHash':'zjcmgv602equwu',
+'autoResize':true,
+'height':'497',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { zjcmgv602equwu = new WufooForm();zjcmgv602equwu.initialize(options);zjcmgv602equwu.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+
+	</div>
+</div>
+		<script src="js/classie.js"></script>
+		<script src="js/demo1.js"></script>
 </body>
 </html>

@@ -477,6 +477,7 @@ nav {
 		float:right;
 		a, a:visited {
 			color:#bfbfbf;
+			cursor: pointer;
 		}
 		span {
 			color:#6B6B6B
@@ -520,7 +521,7 @@ nav {
 	video {
 		position:absolute;
 		&.vid-festival {
-				margin:319px 0 0 390px;
+				margin:319px 0 0 389px;
 			}
 		&.pov-dj {
 			margin:78px 0 0 605px
@@ -582,7 +583,7 @@ nav {
 				font-size: 14px;
 				margin:2px 0;
 				font-weight: 600;
-				line-height: 1.3
+				line-height: 1.3;
 			}
 			.source {
 				font-size: 10.5px;
@@ -617,7 +618,8 @@ nav {
 			margin-top:10px;
 			line-height: 1.3em;
 			color:#5a5a5a;
-			margin-bottom: 26px
+			margin-bottom: 26px;
+			letter-spacing: -.01em;
 		}
 		figure {
 			display: block;
@@ -744,6 +746,71 @@ footer {
 		}
 	}
 }
-	
+
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.94);
+	z-index: 999;
+	.contact-wrap {
+		top:50%;
+		position: relative;
+  		transform: translateY(-50%);
+  		width:500px;
+  		margin:0 auto;
+  		h1 {
+  			display: none;
+  		}
+	}
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross-black.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+	cursor: pointer;
+}
+
+/* Effects */
+.overlay-simplegenie {
+	visibility: hidden;
+	-webkit-transform: translateY(60%) scale(0);
+	transform: translateY(60%) scale(0);
+	-webkit-transition: -webkit-transform 0.4s, visibility 0s 0.4s;
+	transition: transform 0.4s, visibility 0s 0.4s;
+}
+
+.overlay-simplegenie.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%) scale(1);
+	transform: translateY(0%) scale(1);
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}	
 	
 	
