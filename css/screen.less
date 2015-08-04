@@ -477,27 +477,8 @@ body .ui-tooltip {
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-		.intro {
-			visibility:hidden;
-		}
+		
 	&.loaded {
-		.intro {
-			visibility: visible;
-			h1 {
-				opacity:0;
-				-moz-opacity:0;
-				animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
-			    -webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
-			}
-			.exp {
-				opacity:0;
-				-moz-opacity:0;
-				animation:fadeIn ease-in 1.2s forwards, slideUp ease-in .7s;
-			    -webkit-animation:fadeIn ease-in 1.2s forwards, slideUp ease-in .7s;
-				animation-delay:.4s;
-				-webkit-animation-delay:.4;
-			}
-		}
 		.logo {
 			animation:logoUp 1s;
 			-webkit-animation:logoUp 1s;
@@ -527,8 +508,7 @@ nav {
 	li {
 		display: inline;
 		margin-left:25px;
-		font-size:13px;
-		text-transform: uppercase;
+		.tiny-label;
 		float:right;
 		a, a:visited {
 			color:#bfbfbf;
