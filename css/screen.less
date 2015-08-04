@@ -461,15 +461,15 @@ nav {
 	position: fixed;
 	width:100%;
 	padding:70px 40px 10px 0;
-	 -webkit-transition: padding 0.5s;
-    -moz-transition: padding 0.5s;
-    -ms-transition: padding 0.5s;
-    -o-transition: padding 0.5s;
-    transition: padding 0.5s;
+	 -webkit-transition: padding @nav-slide;
+    -moz-transition: padding @nav-slide;
+    -ms-transition: padding @nav-slide;
+    -o-transition: padding @nav-slide;
+    transition: padding @nav-slide;
     z-index: 99;
     &.smaller {
     	padding: 10px 40px 10px 0;
-    	background:rgba(34,34,34,.96);
+    	background:rgba(34,34,34,.93);
     }
 	li {
 		display: inline;
@@ -755,7 +755,7 @@ footer {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(255,255,255,0.94);
+	background: rgba(125,165,204,0.98);
 	z-index: 999;
 	.contact-wrap {
 		top:50%;

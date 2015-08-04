@@ -576,16 +576,16 @@ nav {
   position: fixed;
   width: 100%;
   padding: 70px 40px 10px 0;
-  -webkit-transition: padding 0.5s;
-  -moz-transition: padding 0.5s;
-  -ms-transition: padding 0.5s;
-  -o-transition: padding 0.5s;
-  transition: padding 0.5s;
+  -webkit-transition: padding 1s;
+  -moz-transition: padding 1s;
+  -ms-transition: padding 1s;
+  -o-transition: padding 1s;
+  transition: padding 1s;
   z-index: 99;
 }
 nav.smaller {
   padding: 10px 40px 10px 0;
-  background: rgba(34, 34, 34, 0.96);
+  background: rgba(34, 34, 34, 0.93);
 }
 nav li {
   display: inline;
@@ -910,7 +910,7 @@ footer p strong {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(125, 165, 204, 0.98);
   z-index: 999;
 }
 .overlay .contact-wrap {

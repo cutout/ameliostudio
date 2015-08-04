@@ -32,8 +32,8 @@
 		<nav class>
 			<ul>
 				<li><span>03</span> <a id="trigger-overlay">Contact</a></li>
-				<li><span>02</span> <a href="#work">Work</a></li>
-				<li><span>01</span> <a href="#about">About</a></li>
+				<li><span>02</span> <a href="#work">Work</a> / </li>
+				<li><span>01</span> <a href="#about">About</a> / </li>
 			</ul>
 		</nav>
 		
@@ -290,7 +290,7 @@
 
   <script>
   $(window).scroll(function(){
-    $(".intro").css("opacity", 1 - $(window).scrollTop() / 700);
+    $(".intro").css("opacity", 1 - $(window).scrollTop() / 600);
   });
   </script>
 
@@ -315,7 +315,7 @@
   function init() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 450,
+            shrinkOn = 200,
             nav = document.querySelector("nav");
         if (distanceY > shrinkOn) {
             classie.add(nav,"smaller");
