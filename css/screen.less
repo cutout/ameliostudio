@@ -457,6 +457,59 @@ body .ui-tooltip {
 
 /*Misc*/
 
+// =======================================================================
+// Preload
+// =======================================================================
+
+.preload {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background: @bg-dark;
+}	
+
+.loading {
+	.logo {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+		.intro {
+			visibility:hidden;
+		}
+	&.loaded {
+		.intro {
+			visibility: visible;
+			h1 {
+				opacity:0;
+				-moz-opacity:0;
+				animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+			    -webkit-animation:fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
+			}
+			.exp {
+				opacity:0;
+				-moz-opacity:0;
+				animation:fadeIn ease-in 1.2s forwards, slideUp ease-in .7s;
+			    -webkit-animation:fadeIn ease-in 1.2s forwards, slideUp ease-in .7s;
+				animation-delay:.4s;
+				-webkit-animation-delay:.4;
+			}
+		}
+		.logo {
+			animation:logoUp 1s;
+			-webkit-animation:logoUp 1s;
+		}
+		.preload {
+			display: none;
+		}
+	}
+}
+
+
+
 nav {
 	position: fixed;
 	width:100%;
@@ -468,19 +521,24 @@ nav {
     transition: padding @nav-slide;
     z-index: 99;
     &.smaller {
-    	padding: 10px 40px 10px 0;
+    	padding: 12px 40px 12px 0;
     	background:rgba(34,34,34,.93);
     }
 	li {
 		display: inline;
 		margin-left:25px;
+		font-size:13px;
+		text-transform: uppercase;
 		float:right;
 		a, a:visited {
 			color:#bfbfbf;
 			cursor: pointer;
 		}
 		span {
-			color:#6B6B6B
+			color:#6B6B6B;
+			&.sep {
+				padding:0 0 0 14px;
+			}
 		}
 	}
 }

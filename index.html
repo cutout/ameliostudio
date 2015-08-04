@@ -19,8 +19,19 @@
 <script src="//use.typekit.net/zli4viy.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 
+<script>
+	$(function(){
+		setTimeout(function(){$("body").addClass("loading")},200),
+		setTimeout(function(){$("body").addClass("loaded")},2200),
+		setTimeout(function(){$("body").addClass("loaded")},2800),
+		setTimeout(function(){$("body").addClass("initialized")},3600)
+	})
+</script>
+
 </head>
 <body>
+
+	<div class="preload"></div>
 
 
 <div class="logo mark"></div>	
@@ -32,8 +43,8 @@
 		<nav class>
 			<ul>
 				<li><span>03</span> <a id="trigger-overlay">Contact</a></li>
-				<li><span>02</span> <a href="#work">Work</a> / </li>
-				<li><span>01</span> <a href="#about">About</a> / </li>
+				<li><span>02</span> <a href="#work">Work</a> <span class="sep">/</span> </li>
+				<li><span>01</span> <a href="#about">About</a> <span class="sep">/</span> </li>
 			</ul>
 		</nav>
 		
@@ -51,13 +62,13 @@
 							<div class="left">
 								<p class="flush"><strong>I'm a UI/UX specialist</strong> focusing on projects that support humanities, music, travel and subcultures. I like <a href="#work">making web products</a> that educate, entertain or make life interesting.</p>
 								
-								<p>My process is a mix of disciplines learned in 15 years of working with development teams. If I'm researching, experimenting or building, I'm happy.</p>
+								<p>My process is a mix of disciplines learned in 15 years of working with development teams and exploring the psychology of users. If I'm researching, experimenting or building, I'm happy.</p>
 							</div> 
 							
 							<div class="right">
 								<p class="flush">I began at <a href="https://www.weareconvoy.com/" target="_blank">Convoy</a><sup><a href="https://www.weareconvoy.com/" title="<p>Previously known as Category 4. Started in 1999 in Charlottesville, VA.</p>" target="_blank">4</a></sup></a>, honed client-service skills, led a team, bent WordPress into weird shapes. Later I took founding creative roles in products like <a href="https://www.readability.com/" target="_blank">Readability</a>, <a href="https://www.kindlingapp.com/" target="_blank">Kindling</a>, and currently <a href="http://live.beatport.com" target="_blank">Beatport Live</a>.</p>
 
-								<p>I love tools and frameworks, but my main interest is the culture of the web itself and its impact on the world.<!-- and learning new ways to shape and  contribute to it.--></p>
+								<p>I love tools and frameworks, but my main interest is the culture of the web itself, its impact on the world.<!-- and learning new ways to shape and  contribute to it.--></p>
 							</div>
 						</div><!--/cols-->
 					</div><!--/exp-->
@@ -288,13 +299,13 @@
   });
   </script>
 
-  <script>
+<script>
   $(window).scroll(function(){
     $(".intro").css("opacity", 1 - $(window).scrollTop() / 600);
   });
-  </script>
+</script>
 
-  <script>
+<script>
   $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -309,13 +320,13 @@
     }
   });
 });
-  </script>
+</script>
 <script src="js/classie.js"></script>
   <script>
   function init() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 200,
+            shrinkOn = 50,
             nav = document.querySelector("nav");
         if (distanceY > shrinkOn) {
             classie.add(nav,"smaller");
