@@ -379,7 +379,7 @@ header sup a:active {
   border: none;
 }
 header .intro {
-  margin-top: 200px;
+  margin-top: 25%;
   position: relative;
   z-index: 100;
 }
@@ -587,12 +587,12 @@ body .ui-tooltip {
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
 }
-.loading .logo {
+.loading .logo.mark {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.loading.loaded .logo {
+.loading.loaded .logo.mark {
   animation: logoUp 1s;
   -webkit-animation: logoUp 1s;
 }
@@ -604,16 +604,22 @@ nav {
   position: fixed;
   width: 100%;
   padding: 70px 40px 10px 0;
-  -webkit-transition: padding 0.65s;
-  -moz-transition: padding 0.65s;
-  -ms-transition: padding 0.65s;
-  -o-transition: padding 0.65s;
-  transition: padding 0.65s;
+  -webkit-transition: all 0.65s;
+  -moz-transition: all 0.65s;
+  -ms-transition: all 0.65s;
+  -o-transition: all 0.65s;
+  transition: all 0.65s;
+  opacity: 0;
+  -moz-opacity: 0;
+  animation: fadeIn ease-in 1.2s forwards;
+  -webkit-animation: fadeIn ease-in 1.2s forwards;
+  animation-delay: 3.8s;
+  -webkit-animation-delay: 3.8s;
   z-index: 99;
 }
 nav.smaller {
   padding: 15px 40px 15px 0;
-  background: rgba(34, 34, 34, 0.93);
+  background: rgba(36, 36, 36, 0.94);
 }
 nav li {
   display: inline;
@@ -953,7 +959,7 @@ footer p strong {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(125, 165, 204, 0.98);
+  background: rgba(255, 255, 255, 0.96);
   z-index: 999;
 }
 .overlay .contact-wrap {

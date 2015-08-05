@@ -154,9 +154,9 @@ from { background-position: 0 -100%;visibility: hidden;}
 
 .container {
 	margin-bottom: @foot-reveal;
-  position: relative;
-  z-index: 2;
-  width: 100%;
+	position: relative;
+	z-index: 2;
+	width: 100%;
 }
 	
 .logo {
@@ -257,7 +257,7 @@ header {
 		border:none;
 	}
 	.intro {
-		margin-top:200px;
+		margin-top:25%;
 		position: relative;
 		z-index: 100;
 		h1 {
@@ -478,13 +478,13 @@ body .ui-tooltip {
 }	
 
 .loading {
-	.logo {
+	.logo.mark {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
 	&.loaded {
-		.logo {
+		.logo.mark {
 			animation:logoUp 1s;
 			-webkit-animation:logoUp 1s;
 		}
@@ -501,15 +501,21 @@ nav {
 	position: fixed;
 	width:100%;
 	padding:70px 40px 10px 0;
-	 -webkit-transition: padding @nav-slide;
-    -moz-transition: padding @nav-slide;
-    -ms-transition: padding @nav-slide;
-    -o-transition: padding @nav-slide;
-    transition: padding @nav-slide;
+	-webkit-transition: all @nav-slide;
+    -moz-transition: all @nav-slide;
+    -ms-transition: all @nav-slide;
+    -o-transition: all @nav-slide;
+    transition: all @nav-slide;
+    opacity:0;
+	-moz-opacity:0;
+	animation:fadeIn ease-in 1.2s forwards;
+    -webkit-animation:fadeIn ease-in 1.2s forwards;
+    animation-delay:3.8s;
+	-webkit-animation-delay:3.8s;
     z-index: 99;
     &.smaller {
     	padding: 15px 40px 15px 0;
-    	background:rgba(34,34,34,.93);
+    	background:rgba(36,36,36,.94);
     }
 	li {
 		display: inline;
@@ -802,7 +808,7 @@ footer {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(125,165,204,0.98);
+	background: rgba(255, 255, 255, 0.96);
 	z-index: 999;
 	.contact-wrap {
 		top:50%;
