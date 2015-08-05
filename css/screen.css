@@ -393,6 +393,8 @@ header .intro h1 {
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.2s forwards;
   -webkit-animation: fadeIn ease-in 1.2s forwards;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
 }
 @media screen and (max-width: 1157px) {
   header .intro h1 {
@@ -437,8 +439,8 @@ header .intro .exp .left {
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
   -webkit-animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
-  animation-delay: .4s;
-  -webkit-animation-delay: .4s;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
 }
 header .intro .exp .right {
   margin-left: 10px;
@@ -446,8 +448,8 @@ header .intro .exp .right {
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.3s forwards, slideUp ease-in 0.6s;
   -webkit-animation: fadeIn ease-in 1.3s forwards, slideUp ease-in 0.6s;
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
+  animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
 }
 header .intro .exp .cols {
   overflow: hidden;
@@ -580,6 +582,10 @@ body .ui-tooltip {
   height: 100%;
   z-index: 3;
   background: #222222;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .loading .logo {
   top: 50%;
@@ -591,7 +597,8 @@ body .ui-tooltip {
   -webkit-animation: logoUp 1s;
 }
 .loading.loaded .preload {
-  display: none;
+  opacity: 0;
+  z-index: 1;
 }
 nav {
   position: fixed;
@@ -605,7 +612,7 @@ nav {
   z-index: 99;
 }
 nav.smaller {
-  padding: 12px 40px 12px 0;
+  padding: 15px 40px 15px 0;
   background: rgba(34, 34, 34, 0.93);
 }
 nav li {
@@ -623,6 +630,12 @@ nav li a,
 nav li a:visited {
   color: #bfbfbf;
   cursor: pointer;
+}
+nav li a:hover,
+nav li a:visited:hover,
+nav li a:active,
+nav li a:visited:active {
+  color: #fff;
 }
 nav li span {
   color: #6B6B6B;

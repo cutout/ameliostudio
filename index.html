@@ -22,21 +22,19 @@
 <script>
 	$(function(){
 		setTimeout(function(){$("body").addClass("loading")},200),
-		setTimeout(function(){$("body").addClass("loaded")},2200),
-		setTimeout(function(){$("body").addClass("loaded")},2800),
-		setTimeout(function(){$("body").addClass("initialized")},3600)
+		setTimeout(function(){$("body").addClass("loaded")},3000)
 	})
 </script>
 
 </head>
 <body>
 
-	<div class="preload"></div>
+<div class="preload"></div>
 
 
 <div class="logo mark"></div>	
 
-<section class="container">
+<section class="container" id="top">
 
 	<section class="main clearfix">
 
@@ -55,7 +53,7 @@
 			
 			<div class="row">
 				<div class="intro">
-					<h1>Darren Hoyt is a product designer and web developer. He lives,  writes and <a href="http://soundcloud.com/harbormines" target="_blank">sometimes</a><sup><a href="http://soundcloud.com/harbormines" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000133447043-rbmtic-t200x200.jpg' class='cover' /> <h4>Harbor Mines</h4> <p class='date'>2014&ndash;Present</p>">1</a></sup> <a href="https://soundcloud.com/bucksandgallants" target="_blank">makes</a><sup><a href="https://soundcloud.com/bucksandgallants" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000028526216-wtqxic-t200x200.jpg' class='cover' /> <h4>Bucks and Gallants</h4> <p class='date'>2004&ndash;2009</p>">2</a></sup> <a href="https://soundcloud.com/cutouts" target="_blank">music</a><sup><a href="https://soundcloud.com/cutouts" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000140132471-gv7kcl-t200x200.jpg' class='cover' /> <h4>The CutOuts</h4> <p class='date'>2001&ndash;Present</p>">3</a></sup></a> in Brooklyn, New York.</h1>
+					<h1 id="about">Darren Hoyt is a product designer and web developer. He lives,  writes and <a href="http://soundcloud.com/harbormines" target="_blank">sometimes</a><sup><a href="http://soundcloud.com/harbormines" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000133447043-rbmtic-t200x200.jpg' class='cover' /> <h4>Harbor Mines</h4> <p class='date'>2014&ndash;Present</p>">1</a></sup> <a href="https://soundcloud.com/bucksandgallants" target="_blank">makes</a><sup><a href="https://soundcloud.com/bucksandgallants" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000028526216-wtqxic-t200x200.jpg' class='cover' /> <h4>Bucks and Gallants</h4> <p class='date'>2004&ndash;2009</p>">2</a></sup> <a href="https://soundcloud.com/cutouts" target="_blank">music</a><sup><a href="https://soundcloud.com/cutouts" target="_blank" title="<img src='https://i1.sndcdn.com/avatars-000140132471-gv7kcl-t200x200.jpg' class='cover' /> <h4>The CutOuts</h4> <p class='date'>2001&ndash;Present</p>">3</a></sup></a> in Brooklyn, New York.</h1>
 
 					<div class="exp">
 						<div class="cols">
@@ -266,7 +264,7 @@
 <footer role="contentinfo">
 
 	<section class="row">
-		<div class="logo"></div>
+		<a href="#top"><div class="logo"></div></a>
 		<div class="col">
 		<p><strong>&#169;2015, Darren Hoyt</strong></p>	
 		<p>All rights reserved</p>
