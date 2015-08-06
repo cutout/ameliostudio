@@ -257,7 +257,7 @@ header {
 		border:none;
 	}
 	.intro {
-		margin-top:25%;
+		margin-top:27%;
 		position: relative;
 		z-index: 100;
 		h1 {
@@ -301,6 +301,10 @@ header {
 			.left,.right {
 				width:48%;
 				padding-bottom: 20px;
+				@media screen and (max-width: @break-tablet) {
+					width:100%;
+					float:none;
+				}
 			}
 			.left {
 				margin-right: 10px;
@@ -540,10 +544,11 @@ nav {
 
 .portfolio {
 	background: #fff;
-	a {
+	a,a:visited {
 		border-bottom: 1px solid #bababa;
-		&:hover {
-			color:darken(@highlight,10%);
+		color:darken(@highlight,10%);
+		&:hover,&:active {
+			color:darken(@highlight,20%);
 			border-color:#999;
 		}
 	}
@@ -648,7 +653,7 @@ nav {
 				border:none;
 				color:@text-color;
 				&:hover, &:active {
-					color:@highlight
+					color:darken(@highlight,20%);
 				}
 			}
 		}

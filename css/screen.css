@@ -168,9 +168,9 @@ a:hover,
 li:hover,
 img:hover,
 input:hover {
-  -webkit-transition: all 0.15s linear;
-  -moz-transition: all 0.15s linear;
-  transition: all 0.15s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 p {
   margin: 15px 0 -15px;
@@ -379,7 +379,7 @@ header sup a:active {
   border: none;
 }
 header .intro {
-  margin-top: 25%;
+  margin-top: 27%;
   position: relative;
   z-index: 100;
 }
@@ -432,6 +432,13 @@ header .intro .exp .left,
 header .intro .exp .right {
   width: 48%;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  header .intro .exp .left,
+  header .intro .exp .right {
+    width: 100%;
+    float: none;
+  }
 }
 header .intro .exp .left {
   margin-right: 10px;
@@ -652,11 +659,16 @@ nav li span.sep {
 .portfolio {
   background: #fff;
 }
-.portfolio a {
+.portfolio a,
+.portfolio a:visited {
   border-bottom: 1px solid #bababa;
-}
-.portfolio a:hover {
   color: #588cbe;
+}
+.portfolio a:hover,
+.portfolio a:visited:hover,
+.portfolio a:active,
+.portfolio a:visited:active {
+  color: #4072a3;
   border-color: #999;
 }
 .portfolio .project-icon {
@@ -790,7 +802,7 @@ nav li span.sep {
 .portfolio .story .press a:visited:hover,
 .portfolio .story .press a:active,
 .portfolio .story .press a:visited:active {
-  color: #7da5cc;
+  color: #4072a3;
 }
 .portfolio .story p {
   font-size: 17px;
