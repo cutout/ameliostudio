@@ -624,10 +624,6 @@ nav {
   -webkit-animation-delay: 3.8s;
   z-index: 99;
 }
-nav.smaller {
-  padding: 15px 40px 15px 0;
-  background: rgba(36, 36, 36, 0.94);
-}
 nav li {
   display: inline;
   margin-left: 25px;
@@ -655,6 +651,19 @@ nav li span {
 }
 nav li span.sep {
   padding: 0 0 0 14px;
+}
+nav.smaller {
+  padding: 15px 40px 15px 0;
+}
+nav.smaller.with-bg {
+  background: rgba(255, 255, 255, 0.97);
+}
+nav.smaller.with-bg li a,
+nav.smaller.with-bg li a:visited {
+  color: #333;
+}
+nav.smaller.with-bg li span {
+  color: #a7a7a7;
 }
 .portfolio {
   background: #fff;

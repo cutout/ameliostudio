@@ -258,7 +258,7 @@
 						<figcaption>Mobile mockups</figcaption>
 					</figure>
 
-					<p class="flush"><strong>Results:</strong> over the course of a year, Readability went from a lab-based experiment to a successful platform that stayed #1 in the App Store for weeks, led to partnerships with Teehan + Lax, led innovation among time-shifted reading tools and inspired many similar apps.</p>
+					<p class="flush"><strong>Results:</strong> over the course of a year, Readability went from a lab-based experiment to a successful platform that stayed #1 in the App Store for weeks, led to partnerships with Teehan + Lax, led innovation among <a href="https://www.readability.com/articles/masu2fto" target="_blank">time-shifted reading tools</a> and inspired many similar apps.</p>
 				</div>
 			</div>
 			
@@ -325,7 +325,7 @@ $( document ).tooltip({
 });
 </script>
 <script src="js/classie.js"></script>
-  <script>
+<script>
   function init() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -342,6 +342,26 @@ $( document ).tooltip({
 }
 window.onload = init();
 </script>
+
+<script>
+  function init() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 750,
+            nav = document.querySelector("nav");
+        if (distanceY > shrinkOn) {
+            classie.add(nav,"with-bg");
+        } else {
+            if (classie.has(nav,"with-bg")) {
+                classie.remove(nav,"with-bg");
+            }
+        }
+    });
+}
+window.onload = init();
+</script>
+
+
 
 <script src="js/modernizr.custom.js"></script>
 			
