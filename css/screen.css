@@ -645,6 +645,7 @@ nav li a:visited:hover,
 nav li a:active,
 nav li a:visited:active {
   color: #fff;
+  text-decoration: underline;
 }
 nav li span {
   color: #6B6B6B;
@@ -661,6 +662,12 @@ nav.smaller.with-bg {
 nav.smaller.with-bg li a,
 nav.smaller.with-bg li a:visited {
   color: #333;
+}
+nav.smaller.with-bg li a:hover,
+nav.smaller.with-bg li a:visited:hover,
+nav.smaller.with-bg li a a:active,
+nav.smaller.with-bg li a:visited a:active {
+  color: #000;
 }
 nav.smaller.with-bg li span {
   color: #a7a7a7;
