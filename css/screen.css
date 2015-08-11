@@ -661,15 +661,14 @@ nav li span.sep {
 }
 .portfolio a,
 .portfolio a:visited {
-  border-bottom: 1px solid #bababa;
-  color: #588cbe;
+  color: #4377aa;
 }
 .portfolio a:hover,
 .portfolio a:visited:hover,
 .portfolio a:active,
 .portfolio a:visited:active {
-  color: #4072a3;
-  border-color: #999;
+  color: #396591;
+  border-bottom: 1px solid #bababa;
 }
 .portfolio .project-icon {
   display: block;
