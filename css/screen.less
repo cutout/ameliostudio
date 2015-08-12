@@ -484,11 +484,16 @@ nav {
     animation-delay:3.8s;
 	-webkit-animation-delay:3.8s;
     z-index: 999;
+    ul {
+    	float: right;
+    	@media screen and (max-width: @break-tablet) {
+    		float:none;
+    	}
+    }
     li {
 		display: inline;
 		margin-left:25px;
 		.tiny-label;
-		float:right;
 		a, a:visited {
 			color:#bfbfbf;
 			cursor: pointer;

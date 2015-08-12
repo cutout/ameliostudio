@@ -608,6 +608,14 @@ nav {
   -webkit-animation-delay: 3.8s;
   z-index: 999;
 }
+nav ul {
+  float: right;
+}
+@media screen and (max-width: 860px) {
+  nav ul {
+    float: none;
+  }
+}
 nav li {
   display: inline;
   margin-left: 25px;
@@ -617,7 +625,6 @@ nav li {
   letter-spacing: .075em;
   text-rendering: optimizeLegibility;
   font-weight: 600;
-  float: right;
 }
 nav li a,
 nav li a:visited {
