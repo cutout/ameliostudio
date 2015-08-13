@@ -353,19 +353,25 @@ a.btn:active {
 }
 header a,
 footer a,
+.msg-404 a,
 header a:visited,
-footer a:visited {
+footer a:visited,
+.msg-404 a:visited {
   color: #7da5cc;
   border-bottom: 2px solid transparent;
 }
 header a:hover,
 footer a:hover,
+.msg-404 a:hover,
 header a:visited:hover,
 footer a:visited:hover,
+.msg-404 a:visited:hover,
 header a:active,
 footer a:active,
+.msg-404 a:active,
 header a:visited:active,
-footer a:visited:active {
+footer a:visited:active,
+.msg-404 a:visited:active {
   color: #fff;
   border-color: #666;
 }
@@ -497,19 +503,29 @@ header .intro .exp p sup a:hover,
 header .intro .exp p sup a:active {
   color: #fff;
 }
-header .touch-base {
-  margin-left: 10px;
-}
-header .touch-base .more-q {
-  clear: both;
+.page-404 .msg-404 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #dde1e5;
+  z-index: 2;
   text-align: center;
-  font-size: 14px;
-  margin: 60px 0 0 -20px;
-  font-weight: 300;
-  letter-spacing: .02em;
 }
-header .touch-base .btn {
-  margin-top: 15px;
+.page-404 video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 100;
+  background-size: cover;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+  opacity: .4;
+  z-index: 1;
 }
 .left {
   float: left;

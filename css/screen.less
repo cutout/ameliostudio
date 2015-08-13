@@ -236,7 +236,7 @@ a.btn {
 	}
 }  
 
-header, footer {
+header, footer, .msg-404 {
 	a, a:visited {
 		color:@highlight;
 		border-bottom:2px solid transparent;
@@ -354,19 +354,32 @@ header {
 			}
 		}
 	}
-	.touch-base {
-		margin-left: 10px;
-		.more-q {
-			clear: both;
-			text-align:center;
-			font-size: 14px;
-			margin: 60px 0 0 -20px;
-			font-weight: 300;
-			letter-spacing: .02em;
-		}
-		.btn {
-			margin-top:15px;
-		}
+}
+
+.page-404 {
+	.msg-404 {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		color:@reversed;
+		z-index: 2;
+		text-align: center;
+	}
+	video {
+	    position: fixed;
+	    right: 0;
+	    bottom: 0;
+	    min-width: 100%;
+	    min-height: 100%;
+	    width: auto;
+	    height: auto;
+	    z-index: 100;
+	    background-size: cover;
+	    -webkit-transition: 1s opacity;
+	    transition: 1s opacity;
+	    opacity: .4;
+	    z-index: 1
 	}
 }
 
@@ -552,6 +565,7 @@ nav, nav.smaller {
     	}
     }
 }
+
 
 .portfolio {
 	background: #fff;
