@@ -11,20 +11,9 @@
 
 <link rel='stylesheet' id='style-css'  href='css/jquery-ui.css' type='text/css' media='all' />
 <link rel='stylesheet' id='style-css'  href='css/screen.css' type='text/css' media='all' />
-<link rel='stylesheet' id='print-css'  href='css/print.css' type='text/css' media='print' />
-
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=1.7.2'></script>
-<script src="js/jquery-ui.js"></script>
 
 <script src="//use.typekit.net/zli4viy.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
-
-<script>
-	$(function(){
-		setTimeout(function(){$("body").addClass("loading")},200),
-		setTimeout(function(){$("body").addClass("loaded")},3000)
-	})
-</script>
 
 </head>
 <body>
@@ -282,46 +271,11 @@
 		</section>	
 </footer>
 
-<script>
-$(function() {
-$( document ).tooltip({
-  items: "img, [data-geo], [title]",
-  content: function() {
-    var element = $( this );
-    if ( element.is( "[title]" ) ) {
-      return element.attr( "title" );
-    }
-    if ( element.is( "img" ) ) {
-      return element.attr( "alt" );
-    }
-  }
-});
-});
-</script>
-
-<script>
-  $(window).scroll(function(){
-    $(".intro").css("opacity", 1 - $(window).scrollTop() / 880);
-  });
-</script>
-
-<script>
-  $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=1.7.2'></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/functions.js"></script>
 <script src="js/classie.js"></script>
+
 <script>
   function init() {
     window.addEventListener('scroll', function(e){
@@ -358,22 +312,7 @@ window.onload = init();
 window.onload = init();
 </script>
 
-
-
 <script src="js/modernizr.custom.js"></script>
-			
-<!--<div class="overlay overlay-simplegenie">
-	<button type="button" class="overlay-close">Close</button>
-	<div class="contact-wrap">
-		
 
-		<p>Here's info about me</p>
-
-	</div>
-</div>
-
-		<script src="js/classie.js"></script>
-		<script src="js/demo1.js"></script>
-		-->
 </body>
 </html>
