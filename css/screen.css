@@ -985,6 +985,7 @@ footer {
   width: 100%;
   z-index: 1;
   bottom: 0;
+  display: none;
 }
 footer .logo {
   display: block;
