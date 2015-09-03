@@ -266,7 +266,7 @@ h5 {
   }
 }
 .container {
-  margin-bottom: 300px;
+  margin-bottom: 350px;
   position: relative;
   z-index: 2;
   width: 100%;
@@ -976,11 +976,11 @@ nav.smaller.with-bg li span {
 }
 footer {
   color: #a0a0a0;
-  padding: 70px 15px 12px;
+  padding: 70px 15px 52px;
   background: #222222;
   overflow: hidden;
   text-align: center;
-  height: 300px;
+  height: 350px;
   position: fixed;
   width: 100%;
   z-index: 1;
