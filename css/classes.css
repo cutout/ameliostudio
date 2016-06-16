@@ -1,10 +1,9 @@
 .tiny-label {
-  font-size: 12px;
+  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: .075em;
   text-rendering: optimizeLegibility;
-  font-weight: 600;
 }
 .box-sizing {
   -moz-box-sizing: border-box;

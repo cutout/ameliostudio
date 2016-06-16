@@ -23,8 +23,9 @@
 	@highlight:				#7DA5CC;
 
 // Typography //
-	@font-display:			'adelle-sans', 'Helvetica Neue',Arial, sans-serif;	
-	@font-body:				'adelle-sans', 'Helvetica Neue',Arial, sans-serif;	
+	@font-light:			'AdelleSans-Light', 'Helvetica Neue',Arial, sans-serif;	
+	@font-normal:			'AdelleSans-Regular', 'Helvetica Neue',Arial, sans-serif;	
+	@font-bold:				'AdelleSans-Bold', 'Helvetica Neue',Arial, sans-serif;	
  
 	
 // Grid & Structure //
@@ -68,12 +69,11 @@
 // =======================================================================
 	
 	.tiny-label {
-		font-size: 12px;
+		font: 12px @font-bold;
 		text-transform: uppercase;
 		-webkit-font-smoothing: auto;
 		letter-spacing: .075em;
 		text-rendering:optimizeLegibility;
-		font-weight: 600;
 	}
 
 	.bordered(@border-color) {

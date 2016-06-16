@@ -4,6 +4,7 @@
 TABLE OF CONTENTS
   
   HTML & Resets
+  Type
   Animations
   Grid & Structure
   Navigation
@@ -41,6 +42,10 @@ sup, sub {
    padding-left:1px
 }
 
+strong {
+	font-family: @font-bold;
+}
+
 article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object {
 	display:block
 	}
@@ -58,7 +63,7 @@ body {
 }
 
 body, input, textarea, select, button {
-	font-family: @font-body;
+	font-family: @font-normal;
 	}
 
 a, a:visited {
@@ -100,9 +105,43 @@ img {
 	}
 
 h1, h2, h3, h4, h5 {
-	font-family: @font-display;
-	.tuning
+	.tuning;
 	}
+
+
+// =======================================================================
+// Type
+// =======================================================================	
+
+@font-face {
+  font-family: 'AdelleSans-Light';
+  src: url('../fonts/AdelleSans-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/AdelleSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/AdelleSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/AdelleSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/AdelleSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/AdelleSans-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AdelleSans-Regular';
+  src: url('../fonts/AdelleSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/AdelleSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/AdelleSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/AdelleSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/AdelleSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/AdelleSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AdelleSans-Bold';
+  src: url('../fonts/AdelleSans-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/AdelleSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/AdelleSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/AdelleSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/AdelleSans-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/AdelleSans-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
 
 
@@ -251,6 +290,7 @@ header {
 	padding:1px 0 85px;
 	color:@reversed;
 	background:@bg-dark;
+	font-family:@font-light;
 	@media screen and (max-width: @break-mobile) {
 		padding:30px 0;
 	}
@@ -599,9 +639,6 @@ nav, nav.smaller {
 				margin-bottom: 15px;
 			}
 		}
-		.results strong {
-			font-weight: 800;
-		}
 	}
 	video {
 		position:absolute;
@@ -621,7 +658,6 @@ nav, nav.smaller {
 	h4 {
 		.tiny-label;
 		color:@text-color-lt;
-		font-weight: 700;
 		}
 	aside {
 		position: absolute;
@@ -696,8 +732,6 @@ nav, nav.smaller {
 		}
 		h2 {
 			font-size: 2.2em;
-			font-weight: 500;
-			margin-top: -7px;
 			letter-spacing: -.02em;
 			@media screen and (max-width: @break-mobile) {
 				font-size:1.6em;
@@ -799,6 +833,10 @@ footer {
 	z-index: 1;
 	bottom: 0;
 	display: none;
+	@media screen and (max-width: @break-mobile) {
+		padding-top:50px;
+		opacity:1 !important;
+	}
 	.logo {
 		display: block;
 		margin:0 auto 50px;
@@ -837,7 +875,6 @@ footer {
 		font-size:14px;
 		strong {
 			color:#f0f0f0;
-			font-weight: 600;
 		}
 	}
 }
