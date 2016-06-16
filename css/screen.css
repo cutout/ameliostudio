@@ -1,10 +1,9 @@
 .tiny-label {
-  font-size: 12px;
+  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: .075em;
   text-rendering: optimizeLegibility;
-  font-weight: 600;
 }
 .box-sizing {
   -moz-box-sizing: border-box;
@@ -36,6 +35,7 @@
 TABLE OF CONTENTS
   
   HTML & Resets
+  Type
   Animations
   Grid & Structure
   Navigation
@@ -124,6 +124,9 @@ sub {
   font-size: 60%;
   padding-left: 1px;
 }
+strong {
+  font-family: 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
+}
 article,
 aside,
 figure,
@@ -156,7 +159,7 @@ input,
 textarea,
 select,
 button {
-  font-family: 'adelle-sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'AdelleSans-Regular', 'Helvetica Neue', Arial, sans-serif;
 }
 a,
 a:visited {
@@ -206,10 +209,39 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'adelle-sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'AdelleSans-Light';
+  src: url('../fonts/AdelleSans-Light.eot');
+  src: url('../fonts/AdelleSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../fonts/AdelleSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
+   url('../fonts/AdelleSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
+   url('../fonts/AdelleSans-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../fonts/AdelleSans-Light.svg#svgFontName') format('svg');/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'AdelleSans-Regular';
+  src: url('../fonts/AdelleSans-Regular.eot');
+  src: url('../fonts/AdelleSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../fonts/AdelleSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+   url('../fonts/AdelleSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+   url('../fonts/AdelleSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../fonts/AdelleSans-Regular.svg#svgFontName') format('svg');/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'AdelleSans-Bold';
+  src: url('../fonts/AdelleSans-Bold.eot');
+  src: url('../fonts/AdelleSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../fonts/AdelleSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+   url('../fonts/AdelleSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+   url('../fonts/AdelleSans-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../fonts/AdelleSans-Bold.svg#svgFontName') format('svg');/* IE9 Compat Modes */
+  /* Legacy iOS */
 }
 @keyframes fadeIn {
   from {
@@ -325,12 +357,11 @@ h5 {
 }
 a.btn {
   display: block;
-  font-size: 12px;
+  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: .075em;
   text-rendering: optimizeLegibility;
-  font-weight: 600;
   margin: 0 auto;
   border: 2px solid #5c5c5c;
   text-align: center;
@@ -379,6 +410,7 @@ header {
   padding: 1px 0 85px;
   color: #dde1e5;
   background: #222222;
+  font-family: 'AdelleSans-Light', 'Helvetica Neue', Arial, sans-serif;
 }
 @media screen and (max-width: 600px) {
   header {
@@ -565,12 +597,11 @@ header .intro .exp p sup a:active {
 }
 .ui-tooltip p.date {
   margin: -4px 0 3px;
-  font-size: 12px;
+  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: .075em;
   text-rendering: optimizeLegibility;
-  font-weight: 600;
   text-transform: none;
   font-size: 10px;
   color: #767676;
@@ -635,12 +666,11 @@ nav ul {
 nav li {
   display: inline;
   margin-left: 25px;
-  font-size: 12px;
+  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: .075em;
   text-rendering: optimizeLegibility;
-  font-weight: 600;
 }
 nav li a,
 nav li a:visited {
@@ -751,9 +781,6 @@ nav.smaller.with-bg li span {
   margin-top: 45px;
   margin-bottom: 15px;
 }
-.portfolio .project .results strong {
-  font-weight: 800;
-}
 .portfolio video {
   position: absolute;
 }
@@ -772,14 +799,12 @@ nav.smaller.with-bg li span {
   }
 }
 .portfolio h4 {
-  font-size: 12px;
+  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: .075em;
   text-rendering: optimizeLegibility;
-  font-weight: 600;
   color: #767676;
-  font-weight: 700;
 }
 .portfolio aside {
   position: absolute;
@@ -879,8 +904,6 @@ nav.smaller.with-bg li span {
 }
 .portfolio .story h2 {
   font-size: 2.2em;
-  font-weight: 500;
-  margin-top: -7px;
   letter-spacing: -0.02em;
 }
 @media screen and (max-width: 600px) {
@@ -907,12 +930,11 @@ nav.smaller.with-bg li span {
   position: absolute;
   margin: 343px 0 0 620px;
   z-index: 999;
-  font-size: 12px;
+  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: .075em;
   text-rendering: optimizeLegibility;
-  font-weight: 600;
   color: #fff;
 }
 .portfolio .story figure .status .live {
@@ -987,6 +1009,12 @@ footer {
   bottom: 0;
   display: none;
 }
+@media screen and (max-width: 600px) {
+  footer {
+    padding-top: 50px;
+    opacity: 1 !important;
+  }
+}
 footer .logo {
   display: block;
   margin: 0 auto 50px;
@@ -1005,12 +1033,11 @@ footer .col {
 }
 footer .col h5 {
   color: #767676;
-  font-size: 12px;
+  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: .075em;
   text-rendering: optimizeLegibility;
-  font-weight: 600;
   display: none;
 }
 footer .col.center {
@@ -1035,7 +1062,6 @@ footer p {
 }
 footer p strong {
   color: #f0f0f0;
-  font-weight: 600;
 }
 /* 
 .overlay {
