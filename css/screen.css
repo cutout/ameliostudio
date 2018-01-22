@@ -2,7 +2,7 @@
   font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
-  letter-spacing: .075em;
+  letter-spacing: 0.075em;
   text-rendering: optimizeLegibility;
 }
 .box-sizing {
@@ -31,15 +31,15 @@
   -o-background-size: cover;
   background-size: cover;
 }
-/* 
+/*
 TABLE OF CONTENTS
-  
+
   HTML & Resets
   Type
   Animations
   Grid & Structure
   Navigation
-  Content Styles 
+  Content Styles
   Post Styles
   Form Elements
   Footer
@@ -216,31 +216,31 @@ h5 {
 @font-face {
   font-family: 'AdelleSans-Light';
   src: url('../fonts/AdelleSans-Light.eot');
-  src: url('../fonts/AdelleSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   url('../fonts/AdelleSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
-   url('../fonts/AdelleSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
-   url('../fonts/AdelleSans-Light.ttf') format('truetype'), /* Safari, Android, iOS */
-   url('../fonts/AdelleSans-Light.svg#svgFontName') format('svg');/* IE9 Compat Modes */
+  src: url('../fonts/AdelleSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AdelleSans-Light.woff2') format('woff2'),
+    url('../fonts/AdelleSans-Light.woff') format('woff'),
+    url('../fonts/AdelleSans-Light.ttf') format('truetype'),
+    url('../fonts/AdelleSans-Light.svg#svgFontName') format('svg'); /* IE9 Compat Modes */
   /* Legacy iOS */
 }
 @font-face {
   font-family: 'AdelleSans-Regular';
   src: url('../fonts/AdelleSans-Regular.eot');
-  src: url('../fonts/AdelleSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   url('../fonts/AdelleSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-   url('../fonts/AdelleSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-   url('../fonts/AdelleSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-   url('../fonts/AdelleSans-Regular.svg#svgFontName') format('svg');/* IE9 Compat Modes */
+  src: url('../fonts/AdelleSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AdelleSans-Regular.woff2') format('woff2'),
+    url('../fonts/AdelleSans-Regular.woff') format('woff'),
+    url('../fonts/AdelleSans-Regular.ttf') format('truetype'),
+    url('../fonts/AdelleSans-Regular.svg#svgFontName') format('svg'); /* IE9 Compat Modes */
   /* Legacy iOS */
 }
 @font-face {
   font-family: 'AdelleSans-Bold';
   src: url('../fonts/AdelleSans-Bold.eot');
-  src: url('../fonts/AdelleSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-   url('../fonts/AdelleSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-   url('../fonts/AdelleSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-   url('../fonts/AdelleSans-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-   url('../fonts/AdelleSans-Bold.svg#svgFontName') format('svg');/* IE9 Compat Modes */
+  src: url('../fonts/AdelleSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AdelleSans-Bold.woff2') format('woff2'),
+    url('../fonts/AdelleSans-Bold.woff') format('woff'),
+    url('../fonts/AdelleSans-Bold.ttf') format('truetype'),
+    url('../fonts/AdelleSans-Bold.svg#svgFontName') format('svg'); /* IE9 Compat Modes */
   /* Legacy iOS */
 }
 @keyframes fadeIn {
@@ -318,8 +318,8 @@ h5 {
   -moz-opacity: 0;
   animation: fill 3s, fadeIn linear 2.5s forwards;
   -webkit-animation: fill 3s, fadeIn linear 3s forwards;
-  animation-delay: .3s;
-  -webkit-animation-delay: .3s;
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
   position: absolute;
   z-index: 5;
   top: 120px;
@@ -360,7 +360,7 @@ a.btn {
   font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
-  letter-spacing: .075em;
+  letter-spacing: 0.075em;
   text-rendering: optimizeLegibility;
   margin: 0 auto;
   border: 2px solid #5c5c5c;
@@ -408,8 +408,8 @@ footer a:visited:active,
 }
 header {
   padding: 1px 0 85px;
-  color: #dde1e5;
-  background: #222222;
+  color: #d7dde6;
+  background: #21262b;
   font-family: 'AdelleSans-Light', 'Helvetica Neue', Arial, sans-serif;
 }
 @media screen and (max-width: 600px) {
@@ -468,13 +468,13 @@ header .intro h1 .name {
   color: #fff;
 }
 header .intro .exp {
-  color: #bebebe;
+  color: #bac1cc;
   opacity: 0;
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.6s;
   -webkit-animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.6s;
-  animation-delay: .5s;
-  -webkit-animation-delay: .5s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
 }
 header .intro .exp .left {
   margin-right: 10px;
@@ -520,7 +520,7 @@ header .intro .exp p {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
-  line-height: 1.35;
+  line-height: 1.45;
 }
 @media screen and (max-width: 600px) {
   header .intro .exp p {
@@ -556,7 +556,7 @@ header .intro .exp p sup a:active {
   background-size: cover;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
-  opacity: .4;
+  opacity: 0.4;
   z-index: 1;
 }
 .left {
@@ -600,11 +600,11 @@ header .intro .exp p sup a:active {
   font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
-  letter-spacing: .075em;
+  letter-spacing: 0.075em;
   text-rendering: optimizeLegibility;
   text-transform: none;
   font-size: 10px;
-  color: #767676;
+  color: #6b7682;
   font-weight: 500 !important;
   text-align: center;
 }
@@ -618,7 +618,7 @@ body .ui-tooltip {
   width: 100%;
   height: 100%;
   z-index: 3;
-  background: #222222;
+  background: #21262b;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
@@ -669,7 +669,7 @@ nav li {
   font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
-  letter-spacing: .075em;
+  letter-spacing: 0.075em;
   text-rendering: optimizeLegibility;
 }
 nav li a,
@@ -686,7 +686,7 @@ nav li a:visited:active {
   border-color: #666666;
 }
 nav li span {
-  color: #6B6B6B;
+  color: #7da5cc;
 }
 nav li span.sep {
   padding: 0 0 0 14px;
@@ -802,9 +802,10 @@ nav.smaller.with-bg li span {
   font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
-  letter-spacing: .075em;
+  letter-spacing: 0.075em;
   text-rendering: optimizeLegibility;
-  color: #767676;
+  color: #6b7682;
+  margin-bottom: 8px;
 }
 .portfolio aside {
   position: absolute;
@@ -826,7 +827,7 @@ nav.smaller.with-bg li span {
   margin: 2px 0 18px;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.4em;
+  line-height: 1.5em;
   text-indent: 0;
 }
 .portfolio .story p,
@@ -885,8 +886,8 @@ nav.smaller.with-bg li span {
 .portfolio .story .press .source {
   font-size: 10.5px;
   margin-bottom: 12px;
-  color: #767676;
-  letter-spacing: .025em;
+  color: #6b7682;
+  letter-spacing: 0.025em;
 }
 .portfolio .story .press a,
 .portfolio .story .press a:visited {
@@ -916,10 +917,9 @@ nav.smaller.with-bg li span {
   font-weight: 600;
   font-size: 21px;
   margin-top: 10px;
-  line-height: 1.3em;
-  color: #5a5a5a;
+  line-height: 1.5em;
+  color: #6b7682;
   margin-bottom: 26px;
-  letter-spacing: -0.01em;
 }
 .portfolio .story figure {
   display: block;
@@ -933,12 +933,12 @@ nav.smaller.with-bg li span {
   font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
-  letter-spacing: .075em;
+  letter-spacing: 0.075em;
   text-rendering: optimizeLegibility;
   color: #fff;
 }
 .portfolio .story figure .status .live {
-  background: #30FF00;
+  background: #30ff00;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -979,7 +979,7 @@ nav.smaller.with-bg li span {
   margin-left: 179px;
 }
 .portfolio .story figure figcaption {
-  color: #767676;
+  color: #6b7682;
   font-size: 12px;
   font-weight: 600;
   margin-top: 15px;
@@ -997,9 +997,9 @@ nav.smaller.with-bg li span {
   margin: 0 10px 12px;
 }
 footer {
-  color: #a0a0a0;
+  color: #d7dde6;
   padding: 70px 15px 52px;
-  background: #222222;
+  background: #21262b;
   overflow: hidden;
   text-align: center;
   height: 350px;
@@ -1018,7 +1018,7 @@ footer {
 footer .logo {
   display: block;
   margin: 0 auto 50px;
-  opacity: .65;
+  opacity: 0.65;
 }
 @media screen and (max-width: 600px) {
   footer .logo {
@@ -1032,11 +1032,11 @@ footer .col {
   text-align: left;
 }
 footer .col h5 {
-  color: #767676;
+  color: #6b7682;
   font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
-  letter-spacing: .075em;
+  letter-spacing: 0.075em;
   text-rendering: optimizeLegibility;
   display: none;
 }
@@ -1063,7 +1063,7 @@ footer p {
 footer p strong {
   color: #f0f0f0;
 }
-/* 
+/*
 .overlay {
 	position: fixed;
 	width: 100%;
@@ -1124,5 +1124,5 @@ footer p strong {
 	.overlay ul li {
 		min-height: 34px;
 	}
-}	
+}
 	*/
