@@ -20,10 +20,10 @@ $(function() {
   })
 })
 
-//Fade on scroll
-$(window).scroll(function() {
-  $('.intro').css('opacity', 1 - $(window).scrollTop() / 880)
-})
+// //Fade on scroll
+// $(window).scroll(function() {
+//   $('.intro').css('opacity', 1 - $(window).scrollTop() / 880)
+// })
 
 //Smooth scroll to top
 $(function() {
