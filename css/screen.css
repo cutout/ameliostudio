@@ -142,7 +142,7 @@ object {
   display: block;
 }
 body {
-  background: #222222;
+  background: #fff;
   color: #151515;
   min-width: 740px;
   -ms-text-size-adjust: 100%;
@@ -409,7 +409,7 @@ footer a:visited:active,
 header {
   padding: 1px 0 85px;
   color: #d7dde6;
-  background: #21262b;
+  background: #171718;
   font-family: 'AdelleSans-Light', 'Helvetica Neue', Arial, sans-serif;
 }
 @media screen and (max-width: 600px) {
