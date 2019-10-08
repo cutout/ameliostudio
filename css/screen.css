@@ -693,6 +693,20 @@ nav li a:visited:active {
   color: #181b22;
   border-color: #181b22;
 }
+nav li a.nav-contact, nav li a.nav-contact:visited {
+  border:2px solid #0098c0;
+  border-radius: 4px;
+  padding: 13px 12px 7px 12px;
+  color: #fff;
+  color:#00acd9 !important;
+  border:2px solid #00acd9 !important;
+
+}
+nav li a.nav-contact:hover, nav li a.nav-contact:active {
+  color:#007b9b !important;
+  border-color:#007b9b !important;
+}
+
 nav li span {
   color: #181b22;
   opacity: 0.3;
@@ -702,7 +716,7 @@ nav li span.sep {
   padding: 0 0 0 14px;
 }
 nav.smaller {
-  padding: 15px 40px 15px 0;
+  padding: 20px 40px 15px 0;
   background: rgba(244, 244, 248, 0.93);
   backdrop-filter: blur(3px);
 }
