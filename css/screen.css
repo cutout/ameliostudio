@@ -412,7 +412,7 @@ footer a:active, footer a:hover {
 header {
   padding: 1px 0 160px;
   color: #181b22;
-  background: #f4f4f8;
+  background: #f9f9fa;
 }
 @media screen and (max-width: 600px) {
   header {
@@ -717,7 +717,7 @@ nav li span.sep {
 }
 nav.smaller {
   padding: 20px 40px 15px 0;
-  background: rgba(244, 244, 248, 0.93);
+  background: rgba(249, 249, 250, 0.93);
   backdrop-filter: blur(3px);
 }
 nav.smaller.with-bg {
