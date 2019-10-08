@@ -1,5 +1,5 @@
 .tiny-label {
-  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
+  font: 12px 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: 0.075em;
@@ -124,8 +124,8 @@ sub {
   font-size: 60%;
   padding-left: 1px;
 }
-strong {
-  font-family: 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
+strong, nav a {
+  font-family: 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
 }
 article,
 aside,
@@ -143,7 +143,7 @@ object {
 }
 body {
   background: #fff;
-  color: #151515;
+  color: #181b22;
   min-width: 740px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -159,11 +159,11 @@ input,
 textarea,
 select,
 button {
-  font-family: 'AdelleSans-Regular', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Calibre-Regular', 'Helvetica Neue', Arial, sans-serif;
 }
 a,
 a:visited {
-  color: #7da5cc;
+  color: #4e8dca;
   text-decoration: none;
 }
 a:hover,
@@ -176,8 +176,8 @@ input:hover {
   transition: all 0.2s linear;
 }
 p {
-  margin: 15px 0 -15px;
-  line-height: 150%;
+  margin: 16px 0 -16px;
+  line-height: 1.45;
   text-indent: 1.5em;
 }
 p.flush {
@@ -212,6 +212,7 @@ h5 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: normal
 }
 @font-face {
   font-family: 'AdelleSans-Light';
@@ -224,23 +225,23 @@ h5 {
   /* Legacy iOS */
 }
 @font-face {
-  font-family: 'AdelleSans-Regular';
-  src: url('../fonts/AdelleSans-Regular.eot');
-  src: url('../fonts/AdelleSans-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/AdelleSans-Regular.woff2') format('woff2'),
-    url('../fonts/AdelleSans-Regular.woff') format('woff'),
-    url('../fonts/AdelleSans-Regular.ttf') format('truetype'),
-    url('../fonts/AdelleSans-Regular.svg#svgFontName') format('svg'); /* IE9 Compat Modes */
+  font-family: 'Calibre-Regular';
+  src: url('../fonts/Calibre-Regular.eot');
+  src: url('../fonts/Calibre-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Calibre-Regular.woff2') format('woff2'),
+    url('../fonts/Calibre-Regular.woff') format('woff'),
+    url('../fonts/Calibre-Regular.ttf') format('truetype'),
+    url('../fonts/Calibre-Regular.svg#svgFontName') format('svg'); /* IE9 Compat Modes */
   /* Legacy iOS */
 }
 @font-face {
-  font-family: 'AdelleSans-Bold';
-  src: url('../fonts/AdelleSans-Bold.eot');
-  src: url('../fonts/AdelleSans-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/AdelleSans-Bold.woff2') format('woff2'),
-    url('../fonts/AdelleSans-Bold.woff') format('woff'),
-    url('../fonts/AdelleSans-Bold.ttf') format('truetype'),
-    url('../fonts/AdelleSans-Bold.svg#svgFontName') format('svg'); /* IE9 Compat Modes */
+  font-family: 'Calibre-Bold';
+  src: url('../fonts/Calibre-Bold.eot');
+  src: url('../fonts/Calibre-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Calibre-Bold.woff2') format('woff2'),
+    url('../fonts/Calibre-Bold.woff') format('woff'),
+    url('../fonts/Calibre-Bold.ttf') format('truetype'),
+    url('../fonts/Calibre-Bold.svg#svgFontName') format('svg'); /* IE9 Compat Modes */
   /* Legacy iOS */
 }
 @keyframes fadeIn {
@@ -337,7 +338,7 @@ h5 {
   }
 }
 .row {
-  max-width: 740px;
+  max-width: 960px;
   clear: both;
   margin: 0 auto;
 }
@@ -357,7 +358,7 @@ h5 {
 }
 a.btn {
   display: block;
-  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
+  font: 12px 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: 0.075em;
@@ -388,29 +389,30 @@ footer a,
 header a:visited,
 footer a:visited,
 .msg-404 a:visited {
-  color: #7da5cc;
+  color: #00acd9;
   border-bottom: 2px solid transparent;
 }
 header a:hover,
-footer a:hover,
 .msg-404 a:hover,
 header a:visited:hover,
 footer a:visited:hover,
 .msg-404 a:visited:hover,
 header a:active,
-footer a:active,
 .msg-404 a:active,
 header a:visited:active,
 footer a:visited:active,
 .msg-404 a:visited:active {
-  color: #fff;
-  border-color: #666;
+  border-color: #181b22;
 }
+
+footer a:active, footer a:hover {
+  border-color:#00acd9
+}
+
 header {
-  padding: 1px 0 85px;
-  color: #d7dde6;
-  background: #171718;
-  font-family: 'AdelleSans-Light', 'Helvetica Neue', Arial, sans-serif;
+  padding: 1px 0 160px;
+  color: #181b22;
+  background: #f4f4f8;
 }
 @media screen and (max-width: 600px) {
   header {
@@ -422,7 +424,7 @@ header sup a:active {
   border: none;
 }
 header .intro {
-  margin-top: 27%;
+  margin-top: 20%;
   position: relative;
   z-index: 100;
 }
@@ -432,11 +434,10 @@ header .intro {
   }
 }
 header .intro h1 {
-  font-size: 40px;
-  line-height: 1.25;
-  letter-spacing: -0.03em;
-  margin-bottom: 25px;
-  font-weight: 300;
+  font-size: 42px;
+  line-height: 1.4;
+  margin-bottom: 80px;
+  font-family: 'TiemposText-Semibold', serif;
   opacity: 0;
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.2s forwards;
@@ -447,6 +448,7 @@ header .intro h1 {
 @media screen and (max-width: 1157px) {
   header .intro h1 {
     font-size: 38px;
+    margin-bottom:32px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -468,7 +470,7 @@ header .intro h1 .name {
   color: #fff;
 }
 header .intro .exp {
-  color: #bac1cc;
+  color: #181b22;
   opacity: 0;
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.6s;
@@ -477,7 +479,6 @@ header .intro .exp {
   -webkit-animation-delay: 0.5s;
 }
 header .intro .exp .left {
-  margin-right: 10px;
   opacity: 0;
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.5s forwards, slideUp ease-in 1s;
@@ -510,21 +511,27 @@ header .intro .exp .right {
 }
 header .intro .exp .cols {
   overflow: hidden;
+  color:rgba(24,27,34,.9);
+  border-left: 2px solid #181b22;
+  padding-left: 40px;
+  margin-left: -40px;
+}
+.cols a {
+  font-family: 'Calibre-Semibold','HelveticaNeue',sans-serif;
 }
 header .intro .exp .cols strong {
   color: #dde1e5;
 }
 header .intro .exp p {
-  font-size: 20px;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 300;
-  line-height: 1.45;
+  font-size: 24px;
+  line-height: 1.35;
+  margin-top: 0;
+  margin-bottom: 2px;
 }
 @media screen and (max-width: 600px) {
   header .intro .exp p {
     font-size: 17px;
+    margin-bottom:15px
   }
 }
 header .intro .exp p sup a {
@@ -574,10 +581,10 @@ header .intro .exp p sup a:active {
   padding: 8px;
   overflow: hidden;
   border-radius: 0;
-  background: rgba(245, 245, 245, 0.92);
+  background: rgba(255, 255, 255, 0.98);
   font-size: 12px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.74902) 2px 2px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px 0px;
 }
 .ui-tooltip p {
   font-size: 13px;
@@ -593,7 +600,7 @@ header .intro .exp p sup a:active {
 }
 .ui-tooltip h4 {
   margin-bottom: 4px;
-  font: 13px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
+  font: 13px 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
 }
 .ui-tooltip p.date {
   margin: -4px 0 3px;
@@ -604,7 +611,7 @@ header .intro .exp p sup a:active {
   text-rendering: optimizeLegibility;
   text-transform: none;
   font-size: 10px;
-  color: #6b7682;
+  color: #797e89;
   font-weight: 500 !important;
   text-align: center;
 }
@@ -641,7 +648,7 @@ body .ui-tooltip {
 nav {
   position: fixed;
   width: 100%;
-  padding: 70px 70px 10px 0;
+  padding: 40px 56px 10px 0;
   -webkit-transition: all 0.65s;
   -moz-transition: all 0.65s;
   -ms-transition: all 0.65s;
@@ -666,7 +673,7 @@ nav ul {
 nav li {
   display: inline;
   margin-left: 25px;
-  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
+  font: 14px 'Calibre-Semibold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: 0.075em;
@@ -674,7 +681,7 @@ nav li {
 }
 nav li a,
 nav li a:visited {
-  color: #bfbfbf;
+  color: #181b22;
   cursor: pointer;
   padding-bottom: 8px;
   border-bottom: 2px solid transparent;
@@ -683,20 +690,25 @@ nav li a:hover,
 nav li a:visited:hover,
 nav li a:active,
 nav li a:visited:active {
-  color: #fff;
-  border-color: #666666;
+  color: #181b22;
+  border-color: #181b22;
 }
 nav li span {
-  color: #7da5cc;
+  color: #181b22;
+  opacity: 0.3;
+  font-family: 'AdelleSans', 'Helvetica Neue', Arial, sans-serif;
 }
 nav li span.sep {
   padding: 0 0 0 14px;
 }
 nav.smaller {
   padding: 15px 40px 15px 0;
+  background: rgba(244, 244, 248, 0.93);
+  backdrop-filter: blur(3px);
 }
 nav.smaller.with-bg {
-  background: rgba(255, 255, 255, 0.959);
+  background: rgba(255, 255, 255, 0.93);
+  backdrop-filter: blur(3px);
 }
 nav.smaller.with-bg li a,
 nav.smaller.with-bg li a:visited {
@@ -715,6 +727,7 @@ nav.smaller.with-bg li span {
   nav,
   nav.smaller {
     padding: 15px 0 !important;
+    background: #f4f4f8;
   }
   nav ul,
   nav.smaller ul {
@@ -729,12 +742,6 @@ nav.smaller.with-bg li span {
   nav li span,
   nav.smaller li span {
     display: none;
-  }
-  nav li a,
-  nav.smaller li a,
-  nav li a:visited,
-  nav.smaller li a:visited {
-    color: #bfbfbf !important;
   }
 }
 @media screen and (max-width: 860px) and screen and (max-width: 600px) {
@@ -807,17 +814,17 @@ nav.smaller.with-bg li span {
   }
 }
 .portfolio h4 {
-  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
+  font: 14px 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: 0.075em;
   text-rendering: optimizeLegibility;
-  color: #6b7682;
-  margin-bottom: 8px;
+  color: #797e89;
+  margin-bottom: 2px;
 }
 .portfolio aside {
   position: absolute;
-  width: 200px;
+  width: 195px;
   margin-left: 160px;
 }
 @media screen and (max-width: 1157px) {
@@ -836,6 +843,7 @@ nav.smaller.with-bg li span {
   font-weight: 600;
   line-height: 1.4em;
   text-indent: 0;
+  font-size: 20px;
 }
 .portfolio .story p,
 .portfolio .story h2,
@@ -889,9 +897,9 @@ nav.smaller.with-bg li span {
   font-weight: 600;
 }
 .portfolio .story .press .source {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 12px;
-  color: #6b7682;
+  color: #797e89;
   letter-spacing: 0.025em;
 }
 .portfolio .story .press a,
@@ -906,24 +914,35 @@ nav.smaller.with-bg li span {
   color: #4072a3;
 }
 .portfolio .story p {
-  font-size: 17px;
+  font-size: 22px;
 }
+@media screen and (max-width: 600px) {
+  .portfolio .story p {
+    font-size: 18px;
+  }
+}
+
+.portfolio .story .press p {
+  font-size: 20px;
+}
+
 .portfolio .story h2 {
-  font-size: 2.2em;
+  font: 3rem 'TiemposText-Semibold', serif;
+  margin-top: -10px;
+  margin-bottom: 24px;
 }
 @media screen and (max-width: 600px) {
   .portfolio .story h2 {
     font-size: 1.6em;
-    font-weight: 600;
   }
 }
 .portfolio .story h3 {
-  font-weight: 600;
-  font-size: 21px;
+  font-size: 26px;
   margin-top: 10px;
-  line-height: 1.5em;
-  color: #6b7682;
-  margin-bottom: 20px;
+  line-height: 1.3em;
+  color: #797e89;
+  margin-bottom: 24px;
+  font-family: 'Calibre-Semibold','Helvetica Neue', Arial, sans-serif;
 }
 .portfolio .story figure {
   display: block;
@@ -934,7 +953,7 @@ nav.smaller.with-bg li span {
   position: absolute;
   margin: 292px 0 0 549px;
   z-index: 999;
-  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
+  font: 12px 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: 0.075em;
@@ -982,7 +1001,7 @@ nav.smaller.with-bg li span {
 }
 
 .portfolio .story figure figcaption {
-  color: #6b7682;
+  color: #797e89;
   font-size: 12px;
   font-weight: 600;
   margin-top: 15px;
@@ -1035,8 +1054,8 @@ footer .col {
   text-align: left;
 }
 footer .col h5 {
-  color: #6b7682;
-  font: 12px 'AdelleSans-Bold', 'Helvetica Neue', Arial, sans-serif;
+  color: #797e89;
+  font: 12px 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: 0.075em;
@@ -1061,71 +1080,33 @@ footer .col.right {
 footer p {
   margin: 10px 0 -8px;
   text-indent: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 footer p strong {
   color: #f0f0f0;
 }
-/*
-.overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(255, 255, 255, 0.96);
-	z-index: 999;
-	.contact-wrap {
-		top:50%;
-		position: relative;
-  		transform: translateY(-50%);
-  		width:500px;
-  		margin:0 auto;
-  		h1 {
-  			display: none;
-  		}
-	}
+
+@font-face {
+  font-family: 'Calibre-Regular';
+  src: url('../fonts/Calibre-Regular.eot');
+  src: url('../fonts/Calibre-Regular.woff') format('woff');
 }
 
-.overlay .overlay-close {
-	width: 80px;
-	height: 80px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	overflow: hidden;
-	border: none;
-	background: url(../img/cross-black.png) no-repeat center center;
-	text-indent: 200%;
-	color: transparent;
-	outline: none;
-	z-index: 100;
-	cursor: pointer;
+@font-face {
+  font-family: 'Calibre-Bold';
+  src: url('../'fonts/Calibre-Bold.eot');
+  src: url('../fonts/Calibre-Bold.woff') format('woff');
 }
 
-.overlay-simplegenie {
-	visibility: hidden;
-	-webkit-transform: translateY(60%) scale(0);
-	transform: translateY(60%) scale(0);
-	-webkit-transition: -webkit-transform 0.4s, visibility 0s 0.4s;
-	transition: transform 0.4s, visibility 0s 0.4s;
+
+@font-face {
+  font-family: 'TiemposText-Regular';
+  src: url('../fonts/TiemposText-Regular.eot');
+  src: url('../fonts/TiemposText-Regular.woff') format('woff');
 }
 
-.overlay-simplegenie.open {
-	visibility: visible;
-	-webkit-transform: translateY(0%) scale(1);
-	transform: translateY(0%) scale(1);
-	-webkit-transition: -webkit-transform 0.4s;
-	transition: transform 0.4s;
+@font-face {
+  font-family: 'TiemposText-Semibold';
+  src: url('../fonts/TiemposText-Semibold.eot');
+  src: url('../fonts/TiemposText-Semibold.woff') format('woff');
 }
-
-@media screen and (max-height: 30.5em) {
-	.overlay nav {
-		height: 70%;
-		font-size: 34px;
-	}
-	.overlay ul li {
-		min-height: 34px;
-	}
-}
-	*/
