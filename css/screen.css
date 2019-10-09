@@ -410,10 +410,37 @@ footer a:active, footer a:hover {
 }
 
 header {
-  padding: 1px 0 160px;
-  color: #181b22;
-  background: #f9f9fa;
+  padding: 1px 0 80px;
 }
+.mark {
+  width:63px; 
+  height:61px;
+  margin-left: 56px;
+  position: absolute;
+  top: 21px;
+}
+@media screen and (max-width: 860px) {
+  .mark {
+    margin: 80px auto 0;
+    display: block;
+    position: relative;
+  }
+}
+
+.mark, nav {
+  -webkit-transition: all 0.65s;
+  -moz-transition: all 0.65s;
+  -ms-transition: all 0.65s;
+  -o-transition: all 0.65s;
+  transition: all 0.65s;
+  opacity: 0;
+  -moz-opacity: 0;
+  animation: fadeIn ease-in 1s forwards;
+  -webkit-animation: fadeIn ease-in 1s forwards;
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+
 @media screen and (max-width: 600px) {
   header {
     padding: 30px 0;
@@ -431,6 +458,7 @@ header .intro {
 @media screen and (max-width: 860px) {
   header .intro {
     opacity: 1 !important;
+    margin-top:80px
   }
 }
 header .intro h1 {
@@ -517,7 +545,7 @@ header .intro .exp .cols {
   margin-left: -40px;
 }
 .cols a {
-  font-family: 'Calibre-Semibold','HelveticaNeue',sans-serif;
+  font-family: 'Calibre-Bold','HelveticaNeue',sans-serif;
 }
 header .intro .exp .cols strong {
   color: #dde1e5;
@@ -526,7 +554,6 @@ header .intro .exp p {
   font-size: 24px;
   line-height: 1.35;
   margin-top: 0;
-  margin-bottom: 2px;
 }
 @media screen and (max-width: 600px) {
   header .intro .exp p {
@@ -584,12 +611,12 @@ header .intro .exp p sup a:active {
   background: rgba(255, 255, 255, 0.98);
   font-size: 12px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) -1px 1px 1px 1px;
 }
 .ui-tooltip p {
   font-size: 13px;
   text-align: left;
-  margin: 4px 12px;
+  margin: 8px 12px;
   text-indent: 0;
 }
 .ui-tooltip .cover {
@@ -599,12 +626,12 @@ header .intro .exp p sup a:active {
   display: block;
 }
 .ui-tooltip h4 {
-  margin-bottom: 4px;
-  font: 13px 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
+  padding: 8px 0;
+  font: 16px 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
 }
 .ui-tooltip p.date {
   margin: -4px 0 3px;
-  font: 12px 'AdelleSans', 'Helvetica Neue', Arial, sans-serif;
+  font: 14px 'AdelleSans', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: 0.075em;
@@ -649,18 +676,8 @@ nav {
   position: fixed;
   width: 100%;
   padding: 40px 56px 10px 0;
-  -webkit-transition: all 0.65s;
-  -moz-transition: all 0.65s;
-  -ms-transition: all 0.65s;
-  -o-transition: all 0.65s;
-  transition: all 0.65s;
-  opacity: 0;
-  -moz-opacity: 0;
-  animation: fadeIn ease-in 1s forwards;
-  -webkit-animation: fadeIn ease-in 1s forwards;
-  animation-delay: 1.5s;
-  -webkit-animation-delay: 1.5s;
   z-index: 999;
+  top:0
 }
 nav ul {
   float: right;
@@ -673,7 +690,7 @@ nav ul {
 nav li {
   display: inline;
   margin-left: 25px;
-  font: 14px 'Calibre-Semibold', 'Helvetica Neue', Arial, sans-serif;
+  font: 14px 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
   letter-spacing: 0.075em;
@@ -716,13 +733,14 @@ nav li span.sep {
   padding: 0 0 0 14px;
 }
 nav.smaller {
-  padding: 20px 40px 15px 0;
-  background: rgba(249, 249, 250, 0.93);
-  backdrop-filter: blur(3px);
+  padding: 20px 20px 15px 0;
+  backdrop-filter: blur(2px);
 }
 nav.smaller.with-bg {
+}
+nav.smaller, 
+nav.smaller.with-bg {
   background: rgba(255, 255, 255, 0.93);
-  backdrop-filter: blur(3px);
 }
 nav.smaller.with-bg li a,
 nav.smaller.with-bg li a:visited {
@@ -741,7 +759,6 @@ nav.smaller.with-bg li span {
   nav,
   nav.smaller {
     padding: 15px 0 !important;
-    background: #f4f4f8;
   }
   nav ul,
   nav.smaller ul {
@@ -785,7 +802,7 @@ nav.smaller.with-bg li span {
 .portfolio .project-icon.air-icon {
   height: 323px;
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 860px) {
   .portfolio .project-icon.air-icon {
     height: auto;
   }
@@ -846,7 +863,7 @@ nav.smaller.with-bg li span {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .portfolio aside {
     position: static;
     margin-bottom: 32px;
@@ -875,7 +892,7 @@ nav.smaller.with-bg li span {
     margin-left: 180px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .portfolio .story p,
   .portfolio .story h2,
   .portfolio .story h3,
@@ -911,7 +928,7 @@ nav.smaller.with-bg li span {
   font-weight: 600;
 }
 .portfolio .story .press .source {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 12px;
   color: #797e89;
   letter-spacing: 0.025em;
@@ -942,7 +959,7 @@ nav.smaller.with-bg li span {
 
 .portfolio .story h2 {
   font: 3rem 'TiemposText-Semibold', serif;
-  margin-top: -10px;
+  margin-top: -13px;
   margin-bottom: 24px;
 }
 @media screen and (max-width: 600px) {
@@ -952,16 +969,18 @@ nav.smaller.with-bg li span {
 }
 .portfolio .story h3 {
   font-size: 26px;
-  margin-top: 10px;
+  margin-top: -10px;
+  margin-bottom:44px;
   line-height: 1.3em;
   color: #797e89;
   margin-bottom: 24px;
-  font-family: 'Calibre-Semibold','Helvetica Neue', Arial, sans-serif;
+  font-family: 'Calibre-Bold','Helvetica Neue', Arial, sans-serif;
 }
 .portfolio .story figure {
   display: block;
-  width: 1000px;
+  max-width: 1300px;
   margin: 75px auto;
+  text-align: center;
 }
 .portfolio .story figure .status {
   position: absolute;
@@ -1000,6 +1019,7 @@ nav.smaller.with-bg li span {
 }
 .portfolio .story figure .screen {
   display: block;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1157px) {
   .portfolio .story figure .screen {
@@ -1008,6 +1028,11 @@ nav.smaller.with-bg li span {
     margin: 0 auto !important;
   }
 }
+.portfolio .story figure .ipad { 
+  max-width:800px;
+  margin:0 auto;
+}
+
 .portfolio .story figure .iphone {
   position: relative;
   z-index: 1;
@@ -1016,9 +1041,9 @@ nav.smaller.with-bg li span {
 
 .portfolio .story figure figcaption {
   color: #797e89;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 16px;
   margin-top: 15px;
+  text-align:left;
 }
 @media screen and (max-width: 1157px) {
   .portfolio .story figure figcaption {
@@ -1038,26 +1063,27 @@ footer {
   background: #21262b;
   overflow: hidden;
   text-align: center;
-  height: 350px;
+  height: 380px;
   position: fixed;
   width: 100%;
   z-index: 1;
   bottom: 0;
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   footer {
     padding-top: 50px;
     opacity: 1 !important;
   }
 }
-footer .logo {
+footer .mark-footer {
   display: block;
   margin: 0 auto 50px;
-  opacity: 0.65;
+  width:63px;
+  height:61px;
 }
 @media screen and (max-width: 600px) {
-  footer .logo {
+  footer .mark-footer {
     display: none;
   }
 }
@@ -1094,7 +1120,7 @@ footer .col.right {
 footer p {
   margin: 10px 0 -8px;
   text-indent: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 footer p strong {
   color: #f0f0f0;
@@ -1103,7 +1129,9 @@ footer p strong {
 @font-face {
   font-family: 'Calibre-Regular';
   src: url('../fonts/Calibre-Regular.eot');
-  src: url('../fonts/Calibre-Regular.woff') format('woff');
+  src: url('../fonts/Calibre-Regular.eot') format('embedded-opentype'),
+  url('../fonts/Calibre-Regular.ttf') format('truetype'),
+  url('../fonts/Calibre-Regular.svg#Calibre-Regular') format('svg');
 }
 
 @font-face {
