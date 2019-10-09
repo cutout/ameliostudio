@@ -124,7 +124,8 @@ sub {
   font-size: 60%;
   padding-left: 1px;
 }
-strong, nav a {
+strong,
+nav a {
   font-family: 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
 }
 article,
@@ -212,7 +213,7 @@ h5 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: normal
+  font-weight: normal;
 }
 @font-face {
   font-family: 'AdelleSans-Light';
@@ -342,18 +343,18 @@ h5 {
   clear: both;
   margin: 0 auto;
 }
-@media screen and (max-width: 1157px) {
+@media screen and (max-width: 1100px) {
   .row {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 56px;
+    padding-right: 56px;
     max-width: 100%;
     width: 100%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .row {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 a.btn {
@@ -405,16 +406,17 @@ footer a:visited:active,
   border-color: #181b22;
 }
 
-footer a:active, footer a:hover {
-  border-color:#00acd9
+footer a:active,
+footer a:hover {
+  border-color: #00acd9;
 }
 
 header {
   padding: 1px 0 80px;
 }
 .mark {
-  width:63px; 
-  height:61px;
+  width: 63px;
+  height: 61px;
   margin-left: 56px;
   position: absolute;
   top: 21px;
@@ -427,7 +429,8 @@ header {
   }
 }
 
-.mark, nav {
+.mark,
+nav {
   -webkit-transition: all 0.65s;
   -moz-transition: all 0.65s;
   -ms-transition: all 0.65s;
@@ -458,7 +461,7 @@ header .intro {
 @media screen and (max-width: 860px) {
   header .intro {
     opacity: 1 !important;
-    margin-top:80px
+    margin-top: 80px;
   }
 }
 header .intro h1 {
@@ -473,10 +476,10 @@ header .intro h1 {
   animation-delay: 0.5s;
   -webkit-animation-delay: 0.5s;
 }
-@media screen and (max-width: 1157px) {
+@media screen and (max-width: 860px) {
   header .intro h1 {
     font-size: 38px;
-    margin-bottom:32px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -539,13 +542,24 @@ header .intro .exp .right {
 }
 header .intro .exp .cols {
   overflow: hidden;
-  color:rgba(24,27,34,.9);
+  color: rgba(24, 27, 34, 0.9);
   border-left: 2px solid #181b22;
   padding-left: 40px;
   margin-left: -40px;
 }
+@media screen and (max-width: 1160px) {
+  header .intro .exp .cols {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 860px) {
+  header .intro .exp .cols {
+    border: none;
+    padding-left: 0;
+  }
+}
 .cols a {
-  font-family: 'Calibre-Bold','HelveticaNeue',sans-serif;
+  font-family: 'Calibre-Bold', 'HelveticaNeue', sans-serif;
 }
 header .intro .exp .cols strong {
   color: #dde1e5;
@@ -558,7 +572,7 @@ header .intro .exp p {
 @media screen and (max-width: 600px) {
   header .intro .exp p {
     font-size: 17px;
-    margin-bottom:15px
+    margin-bottom: 15px;
   }
 }
 header .intro .exp p sup a {
@@ -677,7 +691,7 @@ nav {
   width: 100%;
   padding: 40px 56px 10px 0;
   z-index: 999;
-  top:0
+  top: 0;
 }
 nav ul {
   float: right;
@@ -710,18 +724,19 @@ nav li a:visited:active {
   color: #181b22;
   border-color: #181b22;
 }
-nav li a.nav-contact, nav li a.nav-contact:visited {
-  border:2px solid #0098c0;
+nav li a.nav-contact,
+nav li a.nav-contact:visited {
+  border: 2px solid #0098c0;
   border-radius: 4px;
   padding: 13px 12px 7px 12px;
   color: #fff;
-  color:#00acd9 !important;
-  border:2px solid #00acd9 !important;
-
+  color: #00acd9 !important;
+  border: 2px solid #00acd9 !important;
 }
-nav li a.nav-contact:hover, nav li a.nav-contact:active {
-  color:#007b9b !important;
-  border-color:#007b9b !important;
+nav li a.nav-contact:hover,
+nav li a.nav-contact:active {
+  color: #007b9b !important;
+  border-color: #007b9b !important;
 }
 
 nav li span {
@@ -738,7 +753,7 @@ nav.smaller {
 }
 nav.smaller.with-bg {
 }
-nav.smaller, 
+nav.smaller,
 nav.smaller.with-bg {
   background: rgba(255, 255, 255, 0.93);
 }
@@ -970,11 +985,11 @@ nav.smaller.with-bg li span {
 .portfolio .story h3 {
   font-size: 26px;
   margin-top: -10px;
-  margin-bottom:44px;
+  margin-bottom: 44px;
   line-height: 1.3em;
   color: #797e89;
   margin-bottom: 24px;
-  font-family: 'Calibre-Bold','Helvetica Neue', Arial, sans-serif;
+  font-family: 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
 }
 .portfolio .story figure {
   display: block;
@@ -1028,9 +1043,9 @@ nav.smaller.with-bg li span {
     margin: 0 auto !important;
   }
 }
-.portfolio .story figure .ipad { 
-  max-width:800px;
-  margin:0 auto;
+.portfolio .story figure .ipad {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .portfolio .story figure .iphone {
@@ -1043,7 +1058,7 @@ nav.smaller.with-bg li span {
   color: #797e89;
   font-size: 16px;
   margin-top: 15px;
-  text-align:left;
+  text-align: left;
 }
 @media screen and (max-width: 1157px) {
   .portfolio .story figure figcaption {
@@ -1078,8 +1093,8 @@ footer {
 footer .mark-footer {
   display: block;
   margin: 0 auto 50px;
-  width:63px;
-  height:61px;
+  width: 63px;
+  height: 61px;
 }
 @media screen and (max-width: 600px) {
   footer .mark-footer {
@@ -1129,16 +1144,25 @@ footer p strong {
   font-family: 'Calibre-Regular';
   src: url('../fonts/Calibre-Regular.eot');
   src: url('../fonts/Calibre-Regular.eot') format('embedded-opentype'),
-  url('../fonts/Calibre-Regular.ttf') format('truetype'),
-  url('../fonts/Calibre-Regular.svg#Calibre-Regular') format('svg');
+    url('../fonts/Calibre-Regular.ttf') format('truetype'),
+    url('../fonts/Calibre-Regular.svg#Calibre-Regular') format('svg');
+}
+
+@font-face {
+  font-family: 'Calibre-Medium';
+  src: url('../fonts/Calibre-Medium.eot');
+  src: url('../fonts/Calibre-Medium.eot') format('embedded-opentype'),
+    url('../fonts/Calibre-Medium.ttf') format('truetype'),
+    url('../fonts/Calibre-Medium.svg#Calibre-Medium') format('svg');
 }
 
 @font-face {
   font-family: 'Calibre-Bold';
-  src: url('../'fonts/Calibre-Bold.eot');
-  src: url('../fonts/Calibre-Bold.woff') format('woff');
+  src: url('../fonts/Calibre-Bold.eot');
+  src: url('../fonts/Calibre-Bold.eot') format('embedded-opentype'),
+    url('../fonts/Calibre-Bold.ttf') format('truetype'),
+    url('../fonts/Calibre-Bold.svg#Calibre-Bold') format('svg');
 }
-
 
 @font-face {
   font-family: 'TiemposText-Regular';
