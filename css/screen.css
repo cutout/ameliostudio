@@ -1070,10 +1070,9 @@ footer {
   bottom: 0;
   display: none;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 400px) {
   footer {
     padding-top: 50px;
-    opacity: 1 !important;
   }
 }
 footer .mark-footer {
