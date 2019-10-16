@@ -729,6 +729,7 @@ nav li a:visited:active {
 nav li a.nav-contact,
 nav li a.nav-contact:visited {
   border: 2px solid #0098c0;
+  background-color: #fff;
   padding: 16px 15px 12px 15px;
   color: #00acd9 !important;
   border: 2px solid #00acd9 !important;
@@ -754,7 +755,7 @@ nav.smaller.with-bg {
 }
 nav.smaller,
 nav.smaller.with-bg {
-  background: rgba(255, 255, 255, 0.93);
+  background: rgba(255, 255, 255, 0.96);
 }
 nav.smaller.with-bg li a,
 nav.smaller.with-bg li a:visited {
