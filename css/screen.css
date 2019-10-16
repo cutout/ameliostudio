@@ -821,6 +821,11 @@ nav.smaller.with-bg li span {
     height: auto;
   }
 }
+.portfolio .project-icon.icon-bned {
+  height: 330px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .project hr {
   height: 2px;
   color: #181b22;
