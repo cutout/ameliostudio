@@ -461,7 +461,7 @@ header .intro {
 @media screen and (max-width: 860px) {
   header .intro {
     opacity: 1 !important;
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 header .intro h1 {
@@ -490,6 +490,7 @@ header .intro h1 {
 @media screen and (max-width: 600px) {
   header .intro h1 {
     font-size: 22px;
+    line-height: 1.5;
   }
 }
 header .intro h1 sup {
@@ -748,7 +749,6 @@ nav li span.sep {
 }
 nav.smaller {
   padding: 24px 20px 17px 0;
-  backdrop-filter: blur(2px);
 }
 nav.smaller.with-bg {
 }
@@ -772,7 +772,7 @@ nav.smaller.with-bg li span {
 @media screen and (max-width: 860px) {
   nav,
   nav.smaller {
-    padding: 15px 0 !important;
+    padding: 24px 0 !important;
   }
   nav ul,
   nav.smaller ul {
@@ -812,6 +812,7 @@ nav.smaller.with-bg li span {
 .portfolio .project-icon {
   display: block;
   margin: 0 auto;
+  height: auto;
 }
 .portfolio .project-icon.air-icon {
   height: 323px;
@@ -823,7 +824,7 @@ nav.smaller.with-bg li span {
 }
 .portfolio .project-icon.icon-bned {
   height: 330px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 60px;
 }
 .project hr {
@@ -990,6 +991,7 @@ nav.smaller.with-bg li span {
 @media screen and (max-width: 600px) {
   .portfolio .story h2 {
     font-size: 1.6em;
+    margin-top: 0;
   }
 }
 .portfolio .story h3 {
