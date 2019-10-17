@@ -819,7 +819,9 @@ nav.smaller.with-bg li span {
   height: 323px;
 }
 @media screen and (max-width: 860px) {
-  .portfolio .project-icon.air-icon {
+  .portfolio .project-icon.air-icon,
+  .portfolio .project-icon.icon-bned,
+  .portfolio .project-icon.icon-bpl {
     height: auto;
   }
 }
@@ -827,6 +829,16 @@ nav.smaller.with-bg li span {
   height: 330px;
   margin-top: 30px;
   margin-bottom: 60px;
+}
+.portfolio .project-icon.icon-rdb {
+  height: 220px;
+  margin-top: 30px;
+  margin-bottom: 85px;
+}
+.portfolio .project-icon.icon-bpl {
+  height: 220px;
+  margin-top: 30px;
+  margin-bottom: 85px;
 }
 .project hr {
   height: 2px;
@@ -852,7 +864,7 @@ nav.smaller.with-bg li span {
 }
 .portfolio .project.third .project-icon {
   margin-top: 45px;
-  margin-bottom: 15px;
+  margin-bottom: 90px;
 }
 .portfolio video {
   position: absolute;
