@@ -385,10 +385,8 @@ a.btn:active {
   border-color: #4072a3;
 }
 header a,
-footer a,
 .msg-404 a,
 header a:visited,
-footer a:visited,
 .msg-404 a:visited {
   color: #00acd9;
   border-bottom: 2px solid transparent;
@@ -396,12 +394,10 @@ footer a:visited,
 header a:hover,
 .msg-404 a:hover,
 header a:visited:hover,
-footer a:visited:hover,
 .msg-404 a:visited:hover,
 header a:active,
 .msg-404 a:active,
 header a:visited:active,
-footer a:visited:active,
 .msg-404 a:visited:active {
   border-color: #181b22;
 }
@@ -1098,7 +1094,7 @@ nav.smaller.with-bg li span {
   margin: 0 10px 12px;
 }
 footer {
-  color: #d7dde6;
+  color: #a3abb6;
   padding: 70px 15px 52px;
   background: #21262b;
   overflow: hidden;
@@ -1161,8 +1157,16 @@ footer p {
   text-indent: 0;
   font-size: 18px;
 }
-footer p strong {
-  color: #f0f0f0;
+
+footer a,
+footer a:visited {
+  color: #fff;
+  border-bottom: 1px solid transparent;
+}
+
+footer a:hover,
+footer a:active {
+  border-color: #a3abb6;
 }
 
 @font-face {
