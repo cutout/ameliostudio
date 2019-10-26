@@ -450,7 +450,7 @@ header sup a:active {
   border: none;
 }
 header .intro {
-  margin-top: 20%;
+  margin-top: 22%;
   position: relative;
   z-index: 100;
 }
@@ -824,7 +824,7 @@ nav.smaller.with-bg li span {
   }
 }
 .portfolio .project-icon {
-  height: 300px;
+  height: 280px;
   margin-top: 60px;
   margin-bottom: 80px;
 }
