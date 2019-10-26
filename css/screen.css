@@ -144,10 +144,23 @@ object {
 }
 body {
   background: #fff;
-  color: #181b22;
   min-width: 740px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
+body,
+.intro a,
+.intro a:visited,
+header .intro .exp,
+nav li a,
+nav li a:visited,
+nav li a:hover,
+nav li a:visited:hover,
+nav li a:active,
+nav li a:visited:active,
+nav li span,
+.project hr {
+  color: #181b22;
 }
 @media screen and (max-width: 740px) {
   body {
@@ -384,23 +397,6 @@ a.btn:active {
   background: #4072a3;
   border-color: #4072a3;
 }
-header a,
-.msg-404 a,
-header a:visited,
-.msg-404 a:visited {
-  color: #00acd9;
-  border-bottom: 2px solid transparent;
-}
-header a:hover,
-.msg-404 a:hover,
-header a:visited:hover,
-.msg-404 a:visited:hover,
-header a:active,
-.msg-404 a:active,
-header a:visited:active,
-.msg-404 a:visited:active {
-  border-color: #181b22;
-}
 
 footer a:active,
 footer a:hover {
@@ -409,6 +405,10 @@ footer a:hover {
 
 header {
   padding: 1px 0 80px;
+}
+.down {
+  text-align: center;
+  display: none;
 }
 .mark {
   width: 63px;
@@ -454,6 +454,15 @@ header .intro {
   position: relative;
   z-index: 100;
 }
+.intro a,
+.intro a:visited {
+  box-shadow: inset 0 -0.165em white, inset 0 -0.4em #72e1ff;
+}
+.intro a:hover,
+.intro a:active {
+  box-shadow: inset 0 -0.165em white, inset 0 -0.4em #3ec2e6;
+}
+
 @media screen and (max-width: 860px) {
   header .intro {
     opacity: 1 !important;
@@ -498,7 +507,6 @@ header .intro h1 .name {
   color: #fff;
 }
 header .intro .exp {
-  color: #181b22;
   opacity: 0;
   -moz-opacity: 0;
   animation: fadeIn ease-in 1.2s forwards, slideUp ease-in 0.6s;
@@ -539,7 +547,6 @@ header .intro .exp .right {
 }
 header .intro .exp .cols {
   overflow: hidden;
-  color: rgba(24, 27, 34, 0.9);
   border-left: 2px solid #181b22;
   padding-left: 40px;
   margin-left: -40px;
@@ -556,7 +563,7 @@ header .intro .exp .cols {
   }
 }
 .cols a {
-  font-family: 'Calibre-Bold', 'HelveticaNeue', sans-serif;
+  font-family: 'Calibre-Semibold', 'HelveticaNeue', sans-serif;
 }
 header .intro .exp .cols strong {
   color: #dde1e5;
@@ -709,7 +716,6 @@ nav li {
 }
 nav li a,
 nav li a:visited {
-  color: #181b22;
   cursor: pointer;
   padding-bottom: 8px;
   border-bottom: 2px solid transparent;
@@ -719,7 +725,6 @@ nav li a:hover,
 nav li a:visited:hover,
 nav li a:active,
 nav li a:visited:active {
-  color: #181b22;
   border-color: #181b22;
 }
 nav li a.nav-contact,
@@ -737,7 +742,6 @@ nav li a.nav-contact:active {
 }
 
 nav li span {
-  color: #181b22;
   opacity: 0.3;
   font-family: 'AdelleSans', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -811,9 +815,7 @@ nav.smaller.with-bg li span {
   margin: 0 auto;
   height: auto;
 }
-.portfolio .project-icon.air-icon {
-  height: 323px;
-}
+
 @media screen and (max-width: 860px) {
   .portfolio .project-icon.air-icon,
   .portfolio .project-icon.icon-bned,
@@ -821,24 +823,17 @@ nav.smaller.with-bg li span {
     height: auto;
   }
 }
-.portfolio .project-icon.icon-bned {
-  height: 330px;
-  margin-top: 30px;
-  margin-bottom: 60px;
+.portfolio .project-icon {
+  height: 300px;
+  margin-top: 60px;
+  margin-bottom: 80px;
 }
-.portfolio .project-icon.icon-rdb {
-  height: 220px;
-  margin-top: 30px;
-  margin-bottom: 85px;
+.portfolio .project-icon.icon-air {
+  margin-top: 100px;
 }
-.portfolio .project-icon.icon-bpl {
-  height: 220px;
-  margin-top: 30px;
-  margin-bottom: 85px;
-}
+
 .project hr {
   height: 2px;
-  color: #181b22;
   width: 100px;
   margin: 0 auto 8%;
 }
@@ -846,30 +841,6 @@ nav.smaller.with-bg li span {
   border-bottom: 1px solid #e5e5e8;
   padding: 5% 0 7.5%;
   overflow: hidden;
-}
-.portfolio .project.first .project-icon {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.portfolio .project.second .project-icon {
-  margin-top: 20px;
-  margin-bottom: 35px;
-}
-.portfolio .project.third {
-  border: none;
-}
-.portfolio .project.third .project-icon {
-  margin-top: 45px;
-  margin-bottom: 90px;
-}
-.portfolio video {
-  position: absolute;
-}
-.portfolio video.vid-festival {
-  margin: 319px 0 0 209px;
-}
-.portfolio video.pov-dj {
-  margin: 67px 0 0 528px;
 }
 .portfolio .row {
   max-width: 1280px;
@@ -1096,7 +1067,7 @@ nav.smaller.with-bg li span {
 footer {
   color: #a3abb6;
   padding: 70px 15px 52px;
-  background: #21262b;
+  background: #181b22;
   overflow: hidden;
   text-align: center;
   height: 380px;
