@@ -548,14 +548,6 @@ header .intro h1 .name {
   color: #fff;
 }
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
 nav {
   margin: 104px 91px 10px 0;
   z-index: 999;
@@ -864,27 +856,78 @@ nav a:visited {
   }
 }
 
-.quote {
+cite {
+  font-style: normal;
 }
 
-.corner,
 .quote {
+  text-align: center;
+  padding: 60px 80px;
 }
 
-.corner {
-  width: 20px;
-  height: 20px;
-  background: #fff;
+@media screen and (max-width: 500px) {
+  .quote {
+    padding: 20px;
+  }
 }
-.corner.corner-left {
+
+.results .frame-border.frame-border-vert.left {
+  left: 0;
+  height: 180px;
+  top: 0;
+  width: 3px;
+  z-index: 1;
+  background: #ff317b;
+}
+
+.results .frame-border.frame-border-horiz.top {
+  left: 0;
+  height: 3px;
+  top: auto;
+  width: 100px;
+  z-index: 1;
+  background: #ff317b;
+}
+
+.results .frame-border.frame-border-horiz.right-top {
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  width: 3px;
+  z-index: 1;
+  background: #ff317b;
+  top: auto;
+}
+
+.results .frame-border.frame-border-vert.right {
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  width: 250px;
+  z-index: 1;
+  background: #ff317b;
+  top: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .results .frame-border.frame-border-vert.left,
+  .results .frame-border.frame-border-horiz.top,
+  .results .frame-border.frame-border-horiz.right-top,
+  .results .frame-border.frame-border-vert.right {
+    display: none;
+  }
 }
 
 .results {
-  padding: 10% 0 20%;
+  padding: 5% 0 15%;
 }
 
 .results .row {
-  max-width: 900px;
+  max-width: 930px;
+}
+
+cite .name {
+  font-family: 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .results blockquote {
@@ -894,14 +937,14 @@ nav a:visited {
 }
 
 blockquote p.flush {
-  text-indent: -6px;
+  text-indent: -11px;
 }
 
 .results cite {
   margin-top: 50px;
   display: block;
   font-style: normal;
-  font: 20px 'Calibre-Semibold', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 20px;
 }
 
 .results h3 {
