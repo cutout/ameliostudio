@@ -726,7 +726,7 @@ nav a:visited {
   float: right;
   width: 200px;
   margin: 35px 110px 25px 25px;
-  border-left: 2px solid #181b22;
+  border-left: 3px solid #ff317b;
   padding-left: 20px;
 }
 
@@ -788,7 +788,7 @@ nav a:visited {
   font-size: 20px;
 }
 
-.portfolio .story h2 {
+.portfolio h2 {
   font: 4rem Calibre-Bold, 'Helvetica Neue', Arial, sans-serif;
   margin-bottom: 16px;
 }
@@ -873,7 +873,7 @@ cite {
 
 .results .frame-border.frame-border-vert.left {
   left: 0;
-  height: 180px;
+  height: 248px;
   top: 0;
   width: 3px;
   z-index: 1;
@@ -903,13 +903,13 @@ cite {
   right: 0;
   bottom: 0;
   height: 3px;
-  width: 250px;
+  width: 310px;
   z-index: 1;
   background: #ff317b;
   top: auto;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .results .frame-border.frame-border-vert.left,
   .results .frame-border.frame-border-horiz.top,
   .results .frame-border.frame-border-horiz.right-top,
@@ -923,7 +923,7 @@ cite {
 }
 
 .results .row {
-  max-width: 930px;
+  max-width: 1020px;
 }
 
 cite .name {
