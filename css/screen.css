@@ -79,7 +79,7 @@ body {
 
 a,
 a:visited {
-  color: #4e8dca;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -587,6 +587,7 @@ nav a:visited {
   background: #fff;
   margin-top: -210px;
   padding-top: 210px;
+  padding-bottom: 10%;
 }
 
 @media screen and (max-width: 860px) {
@@ -603,15 +604,14 @@ nav a:visited {
 
 .portfolio a,
 .portfolio a:visited {
-  color: #4377aa;
+  border-bottom: 2px solid #fe317a;
 }
 
 .portfolio a:active,
 .portfolio a:hover,
 .portfolio a:visited:active,
 .portfolio a:visited:hover {
-  color: #396591;
-  border-bottom: 1px solid #bababa;
+  color: #fe317a;
 }
 
 .portfolio .project-icon {
@@ -636,7 +636,7 @@ nav a:visited {
   margin-top: 100px;
 }
 
-.portfolio .project {
+.portfolio .project.first {
   padding: 5% 0;
   overflow: hidden;
 }
@@ -899,6 +899,17 @@ cite {
   top: auto;
 }
 
+.portfolio .story figure .ipad {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.portfolio .story figure .iphone {
+  position: relative;
+  z-index: 1;
+  margin: -889px 0 0 120px;
+}
+
 .results .frame-border.frame-border-vert.right {
   right: 0;
   bottom: 0;
@@ -919,7 +930,7 @@ cite {
 }
 
 .results {
-  padding: 5% 0 15%;
+  padding: 5% 0 7%;
 }
 
 .results .row {
