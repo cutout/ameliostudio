@@ -1048,6 +1048,11 @@ footer a:hover {
   border-color: #a3abb6;
 }
 
+.more {
+  background:#f3f3f3;
+  padding:3rem;
+}
+
 @font-face {
   font-family: Calibre-Regular;
   src: url(../fonts/Calibre-Regular.eot);
