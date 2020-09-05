@@ -98,7 +98,7 @@ p {
   text-indent: 1.5em;
 }
 
-p.flush {
+.flush {
   text-indent: 0;
 }
 
@@ -698,7 +698,8 @@ nav a:visited {
 .portfolio .story h2,
 .portfolio .story h3,
 .portfolio .story h4,
-.portfolio .story p {
+.portfolio .story p,
+.want {
   margin-left: 382px;
   margin-right: 382px;
 }
@@ -1048,9 +1049,21 @@ footer a:hover {
   border-color: #a3abb6;
 }
 
-.more {
-  background:#f3f3f3;
-  padding:3rem;
+.want {
+  margin-top:6rem;
+}
+.want .exp {
+  font-size:22px;
+}
+
+.want .hdr {
+  font-size:3rem;
+  margin-top:1.5rem;
+}
+
+.want img {
+  height:200px;
+  display: block;
 }
 
 @font-face {
