@@ -1049,21 +1049,29 @@ footer a:hover {
   border-color: #a3abb6;
 }
 
-.want {
-  margin-top:6rem;
-}
-.want .exp {
+
+.want p {
   font-size:22px;
 }
 
 .want .hdr {
-  font-size:3rem;
-  margin-top:1.5rem;
+  font-size:2rem;
 }
 
 .want img {
   height:200px;
   display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .want {
+    margin:0;
+    padding-bottom:3rem;
+  }
+  .want .hdr {
+    font-size:2rem;
+    margin-top:2rem;
+  }
 }
 
 @font-face {
