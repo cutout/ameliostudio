@@ -1049,13 +1049,17 @@ footer a:hover {
   border-color: #a3abb6;
 }
 
+.want {
+  margin-top:1rem;
+}
 
-.want p {
+.want .exp {
   font-size:22px;
 }
 
 .want .hdr {
   font-size:2rem;
+  margin-top:1.5rem;
 }
 
 .want img {
