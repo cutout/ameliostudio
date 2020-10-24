@@ -497,6 +497,8 @@ header .intro {
 @media screen and (max-width: 500px) {
   .clarify {
     width: auto;
+    font-size: .85rem;
+    padding:0 50px;
   }
 }
 
@@ -536,7 +538,7 @@ header .intro h1,
 @media screen and (max-width: 600px) {
   header .intro h1 {
     font-size: 32px;
-    line-height: 1.5;
+    line-height: 1.4;
     width: auto;
     margin-left: 20px;
     margin-right: 20px;
