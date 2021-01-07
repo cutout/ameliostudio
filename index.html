@@ -19,7 +19,10 @@
 <meta name='robots' content='index,follow' />
 
 <link rel='stylesheet' id='style-css'  href='css/jquery-ui.css' type='text/css' media='all' />
-<link rel='stylesheet' id='style-css'  href='css/screen.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='css/global.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='css/masthead.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='css/portfolio.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='css/footer.css' type='text/css' media='all' />
 
 </head>
 <body>
@@ -28,30 +31,55 @@
 <span class="frame-border frame-border-horiz right-top"></span>
 <span class="frame-border frame-border-vert right"></span>
 <img src="img/mark.svg" class="mark" />
+<!-- <img src="img/turn.svg" class="turn" /> -->
 <section class="container" id="top">
 	<section class="main clearfix">
-		
 		<nav>
 			<ul>
-				<!--<li><a href="#work">Recent work</a></li>-->
+				<li><a href="#services">Services</a></li>
+				<li><a href="#work">Recent work</a></a></li>
 				<li><a class="btn" target="_blank" href="mailto:cutout@gmail.com?subject=Contact submission for Amelio"><span>Contact</span></a></li>
 			</ul>
 		</nav>
-		
-		<header class="masthead clearfix" role="banner">
+		<header class="masthead" role="banner">
 			<div class="row">
-				<div class="intro" id="about">
-					<h1>Amelio is a tiny Brooklyn studio specializing in design systems and mobile apps<span class="asterisk">*</span></h1>
-					<p class="clarify"><span class="asterisk">*</span> ...and 10+ years experience building websites, mobile and native apps, WordPress sites...</p>
+				<div class="intro clearfix" id="about">
+					<div class="lead">
+						<img src="img/Plant-3.png" class="mast-img" />
+					</div>	
+					<div class="text">
+						<h1>Scale is everything</h1>
+						<div class="clarify">
+							<p><strong>Amelio</strong> is a New York-based consultancy with 10+ years experience specializing in product design and design systems. We work closely with developers to help shape and scale component libraries for maxiumum reusability, working with clients like Barnes &amp; Noble, Air, Zocdoc, and more.</p>
+						</div>
+					</div>
 				</div><!--/intro-->
+				<h2 class="sub" id="services"><strong>How we can help</strong><h2>
+				<div class="quad clearfix">
+					<div class="first block">
+						<h3>Scoping and planning</h3>
+						<p>We love working with busy design teams who often don't have bandwidth to plan a design system. We create and prioritize milestones to help reach your goals and prevent design debt.</p>
+					</div>
+					<div class="second block"><h3>Consulting</h3>
+						<p>For over a decade we've embedded with successful companies to audit their process and design assets and either optimize their existing system or advise on building powerful systems from scratch.</p>
+					</div>
+					<div class="third block">
+						<h3>Designing</h3>
+						<p>Years of product design and front-end work give our consultants greater insight into the benefits of a design system, helping us easily embed with your team and solve difficult problems in parallel.</p>
+					</div>
+					<div class="fourth block">
+						<h3>Testing and training</h3>
+						<p>We prioritize regular check-ins, interviews, audits, and fun exercises with teams to keep them engaged as well as doing workshops on using the system with tools like Figma, Storybook, and Zeroheight.</p>
+					</div>
+				</div>
 			</div><!--/row-->
 		</header>
-
-		<h3 class="latest">[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Featured project&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</h3>
-		<img src="img/air-phones.png" class="air-phones" />
-
-	<section class="portfolio" id="work">
-
+		
+		<div class="row">
+			<h2 class="sub featured" id="work"><strong>Recent work</strong></h2>
+			<img src="img/phone-group.png" class="air-phones" />
+		</div>
+	<section class="portfolio">
 		<div class="project first">
 				<section class="row">
 					<aside>
@@ -59,7 +87,7 @@
 						<p>Air Labs</p>
 
 						<h4>Role</h4>
-						<p>Sr. Product Designer</p>
+						<p>Sr. Product Designer and design systems</p>
 
 						<h4>Timeframe</h4>
 						<p>2017 - 2020</p>
@@ -69,20 +97,16 @@
 					</aside>
 
 				<div class="story">
-
 					<h2>Air</h2>
 					<h3>A new generation of digital asset management tools for enterprise teams.</h3>
-
 					<div class="press">
 						<h4>Press</h4>
 						<p><a href="https://techcrunch.com/2018/03/02/air-lets-you-record-high-quality-home-movies-without-running-out-of-space/" target="_blank">Air’s app lets you record high-quality home movies without running out of space</a></p>
 						<div class="source">via TechCrunch</div>
 					</div>
-
 					<p class="flush"><strong>Air Labs was founded in 2017</strong> by 2 Stanford grads with a track record of successful projects focused around streaming video. Early iterations of the platform focused on consumer experiences and limitless video storage, but the focus shifted to team collaboration around both video and photos.</p>
 
 					<p>I came aboard as first hire in March 2017 and immediately began a discovery process with the founders to figure out messaging and how we wanted to position the product. For months, we researched, sketched, and wrote before beginning to mock up what a more robust digital asset management app could look like, starting with onboarding and authentication.</p>
-
 					<figure>
 							<img src="img/screen-air.png" class="screen" alt="" />
 							<figcaption>Authentication screens, Air for iOS</figcaption>
@@ -114,7 +138,7 @@
 						<figcaption>Partial pattern library in Figma</figcaption>
 					</figure>
 
-					<p class="flush">We also used Storybook to create <a href="https://design.air.inc/" target="_blank">public-facing documentation</a>	that defined everything from brand guidelines to writing voice, SVG icons, and common UI components with the goal of syncing Figma with Storybook and Github for more seamless deployment.</p>
+					<p class="flush">We also used Storybook to define everything from brand guidelines to writing voice, SVG icons, and common UI components with the goal of syncing Figma with Storybook and Github for more seamless deployment.</p>
 					
 					<figure>
 						<img src="img/air-zephyr.png" class="screen" alt="" />
@@ -147,18 +171,18 @@
 
 <footer role="contentinfo">
 	<section class="row">
-		<a href="#top"><img class="mark-footer" src="img/mark.svg" /></a>
+		<img class="mark-footer" src="img/mark-footer.svg" />
 		<div class="col">
 		<p>&#169;2019, Amelio studio</p>
 		<p>Design + Code</p>
 		</div>
 		<div class="col center">
-			<p><a class="request" href="mailto:cutout@gmail.com?subject=Request work samples" target="blank">Request more work samples</a></p>
+			<p><a class="request" href="mailto:cutout@gmail.com?subject=Request work samples" target="blank">Request more work samples &rarr;</a></p>
 			<p>Brooklyn, NY</p>
 		</div>
 		<div class="col right">
 			<p><a href="http://dribbble.com/darrenhoyt" target="_blank">Dribbble</a></p>
-			<p><a href="https://www.linkedin.com/in/darrenhoyt/" target="_blank">LinkedIn</a>
+			<p><a href="https://www.linkedin.com/company/amelio-studio/" target="_blank">LinkedIn</a>
 		</div>
 		</section>
 </footer>

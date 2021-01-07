@@ -1,0 +1,431 @@
+.air-phones {
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio {
+  padding: 100px 0;
+}
+
+#work {
+  outline:none;
+}
+
+@media screen and (max-width: 860px) {
+  .portfolio {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio {
+    margin-top: -90px;
+  }
+}
+
+.portfolio a,
+.portfolio a:visited {
+  border-bottom: 2px solid #fe317a;
+}
+
+.portfolio a:active,
+.portfolio a:hover,
+.portfolio a:visited:active,
+.portfolio a:visited:hover {
+  color: #fe317a;
+}
+
+.portfolio .project-icon {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+@media screen and (max-width: 860px) {
+  .portfolio .project-icon.air-icon {
+    height: auto;
+  }
+}
+
+.portfolio .project-icon {
+  height: 280px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.portfolio .project-icon.icon-air {
+  margin-top: 100px;
+}
+
+.portfolio .project.first {
+  padding:0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 740px) {
+  .portfolio .row {
+    max-width: auto;
+  }
+}
+
+.portfolio h4 {
+  font: 14px Calibre-Bold, 'Helvetica Neue', Arial, sans-serif;
+  text-transform: uppercase;
+  -webkit-font-smoothing: auto;
+  letter-spacing: 0.12em;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 2px;
+}
+
+.portfolio h4,.portfolio .story .press .source, .portfolio .story h3, .quad p {
+  color: #565b63
+}
+
+.portfolio aside {
+  float:left;
+  width: 190px;
+  margin-top:8px;
+}
+
+@media screen and (max-width: 1157px) {
+  .portfolio aside {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio aside {
+    position: static;
+    margin-bottom: 32px;
+    margin-top: 0px;
+    float:none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio aside {
+    margin-top: 30px;
+  }
+}
+
+.portfolio aside p {
+  margin: 2px 0 24px;
+  font-weight: 600;
+  line-height: 1.4em;
+  text-indent: 0;
+  font-size: 20px;
+}
+
+.portfolio .story h2,
+.portfolio .story h3,
+.portfolio .story h4,
+.portfolio .story p,
+.want {
+  margin-left: 262px;
+  margin-right: 262px;
+}
+
+@media screen and (max-width: 1157px) {
+  .portfolio .story h2,
+  .portfolio .story h3,
+  .portfolio .story h4,
+  .portfolio .story p {
+    margin-right: 0;
+    margin-left: 240px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio .story h2,
+  .portfolio .story h3,
+  .portfolio .story h4,
+  .portfolio .story p {
+    margin-left: 0;
+  }
+}
+
+.portfolio .story .press {
+  float: right;
+  width: 200px;
+  margin: 35px 0 25px 25px;
+  border-left: 1px solid #172d71;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio .story .press {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio .story .press {
+    float: none;
+    margin: 35px 0;
+    width:100%;
+    width:auto;
+    padding:0;
+    border:none;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .portfolio .story .press {
+    margin-left:0;
+  }
+}
+
+.portfolio .story .press h4,
+.portfolio .story .press p {
+  text-indent: 0;
+  margin: 0;
+}
+
+.portfolio .story .press p {
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.portfolio .story .press .source {
+  font-size: 16px;
+  margin-bottom: 12px;
+  letter-spacing: 0.025em;
+}
+
+.portfolio .story .press a,
+.portfolio .story .press a:visited {
+  border: none;
+  color: #151515;
+}
+
+.portfolio .story .press a:active,
+.portfolio .story .press a:hover,
+.portfolio .story .press a:visited:active,
+.portfolio .story .press a:visited:hover {
+  color: #4072a3;
+}
+
+.portfolio .story p {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio .story p {
+    font-size: 18px;
+  }
+}
+
+.portfolio .story .press p {
+  font-size: 20px;
+}
+
+.portfolio h2 {
+  font: 4rem Calibre-Bold, 'Helvetica Neue', Arial, sans-serif;
+  margin-bottom: 16px;
+  color:#152D70;
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio h2 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+}
+
+.portfolio .story h3 {
+  font-size: 26px;
+  margin-top: -2px;
+  margin-bottom: 44px;
+  line-height: 1.3em;
+  margin-bottom: 24px;
+  
+}
+
+.portfolio .story h3, .results h3, footer a {
+font-family: 'Calibre-Semibold', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.sub {
+  margin-top:40px; 
+  color: #152D70;
+  font-size:40px;
+  outline:none;
+}
+
+@media screen and (max-width: 900px) {
+  .sub {
+  margin-top:0;
+  }
+}
+
+.sub.featured {
+  margin: 100px 0 24px;
+}
+
+@media screen and (max-width: 900px) {
+  .sub.featured {
+  margin-top:80px
+  }
+}
+
+.portfolio .story figure {
+  display: block;
+  max-width: 1300px;
+  margin: 75px auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1157px) {
+  .portfolio .story figure {
+    width: auto;
+    margin: 30px 0;
+  }
+}
+
+@media screen and (max-width: 1157px) {
+  .portfolio .story figure video {
+    display: none;
+  }
+}
+
+.portfolio .story figure .screen {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1157px) {
+  .portfolio .story figure .screen {
+    position: static !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
+
+.portfolio .story figure figcaption {
+  color: #797e89;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1157px) {
+  .portfolio .story figure figcaption {
+    text-align: center;
+  }
+}
+
+cite {
+  font-style: normal;
+}
+
+.quote {
+  text-align: center;
+  padding: 60px 80px;
+}
+
+@media screen and (max-width: 700px) {
+  .quote {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.results .frame-border.frame-border-vert.left, .results .frame-border.frame-border-horiz.top, 
+.results .frame-border.frame-border-horiz.right-top,.results .frame-border.frame-border-vert.right, 
+.frame-border {
+  background: #172d71
+}
+
+.results .frame-border.frame-border-vert.left {
+  left: 0;
+  height: 248px;
+  top: 0;
+  width: 1px;
+  z-index: 1;
+}
+
+.results .frame-border.frame-border-horiz.top {
+  left: 0;
+  height: 1px;
+  top: auto;
+  width: 100px;
+  z-index: 1;
+}
+
+.results .frame-border.frame-border-horiz.right-top {
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  width: 1px;
+  z-index: 1;
+  top: auto;
+}
+
+.results .frame-border.frame-border-vert.right {
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 310px;
+  z-index: 1;
+  top: auto;
+}
+
+.portfolio .story figure .ipad {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.portfolio .story figure .iphone {
+  position: relative;
+  z-index: 1;
+  margin: -889px 0 0 120px;
+}
+
+@media screen and (max-width: 800px) {
+  .results .frame-border.frame-border-vert.left,
+  .results .frame-border.frame-border-horiz.top,
+  .results .frame-border.frame-border-horiz.right-top,
+  .results .frame-border.frame-border-vert.right {
+    display: none;
+  }
+}
+
+.results {
+  padding: 5% 0 7%;
+}
+
+.results .row {
+  max-width: 1020px;
+}
+
+cite .name {
+  font-family: 'Calibre-Bold', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.results blockquote {
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .results blockquote {
+    font-size:24px;
+  }
+}
+
+blockquote p.flush {
+  text-indent: -11px;
+}
+
+.results cite {
+  margin-top: 50px;
+  display: block;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.results h3 {
+  font-size: 3.2rem;
+  text-align: center;
+}
