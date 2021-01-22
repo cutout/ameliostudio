@@ -261,7 +261,7 @@ header {
   }
 
   .mark,
-  nav, .mark-2, .turn {
+  nav, .mark-2, .turn, .lead {
     -webkit-transition: all 0.65s;
     -moz-transition: all 0.65s;
     -ms-transition: all 0.65s;
