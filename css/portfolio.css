@@ -333,7 +333,7 @@ cite {
 .results .frame-border.frame-border-vert.left, .results .frame-border.frame-border-horiz.top, 
 .results .frame-border.frame-border-horiz.right-top,.results .frame-border.frame-border-vert.right, 
 .frame-border {
-  background: #172d71
+  background:#F253AB !important;
 }
 
 .results .frame-border.frame-border-vert.left {

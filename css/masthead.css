@@ -287,9 +287,9 @@ header {
     z-index: 100;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     .intro {
-      margin: 50px 0;
+      margin: 100px 0;
     }
   }
   
@@ -374,17 +374,17 @@ header {
   
   @media screen and (max-width: 1280px) {
     h1 {
-      font-size: 72px;
-    }
-  }
-  
-  @media screen and (max-width: 1024px) {
-    h1 {
       font-size: 64px;
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1140px) {
+    h1 {
+      font-size: 56px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
     h1 {
       font-size: 48px;
       line-height: 1.1;
@@ -440,7 +440,7 @@ nav {
 
   .text {
     float:right;
-    width:72%;
+    width:56%;
     padding-top:55px
   }
 
@@ -455,7 +455,7 @@ nav {
     }
   }
 
-  @media screen and (max-width: 500px) { 
+  @media screen and (max-width: 900px) { 
     .mast-img {
       display:none
     }
@@ -466,11 +466,11 @@ nav {
 
   .lead {
     float:left;
-    width:20%;
-    margin-top:-90px
+    width:38%;
+    margin-top:-2px
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     .text, .lead {
       float:none;
       width:100%
