@@ -330,11 +330,16 @@ cite {
   }
 }
 
-.results .frame-border.frame-border-vert.left, .results .frame-border.frame-border-horiz.top, 
-.results .frame-border.frame-border-horiz.right-top,.results .frame-border.frame-border-vert.right, 
 .frame-border {
-  background:#F253AB !important;
+  background: #152D70;
 }
+
+
+.results .frame-border.frame-border-vert.left, .results .frame-border.frame-border-horiz.top, 
+.results .frame-border.frame-border-horiz.right-top,.results .frame-border.frame-border-vert.right {
+  background:#F253AB;
+}
+
 
 .results .frame-border.frame-border-vert.left {
   left: 0;
